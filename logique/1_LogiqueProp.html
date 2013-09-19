@@ -1,0 +1,203 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+	<title>Logique propositionnelle</title>
+	<h1>Logique propositionnelle.</h1>
+</head>
+<body>
+	<ol>
+		<li>
+		<h2> Syntaxe. </h2>
+		<p>
+			<ol>
+				<li>
+					<h3> D&eacute;finition. Syntaxe.</h3>
+					<p>
+						<ul>
+						<li><p> On fixe un ensemble d'objets index&eacute;s sur \( \mathbb N \), souvent not&eacute;s \( ((X_1), (X_2), ...) \) et \( ((Y_1), (Y_2), ...) \), appel&eacute;s variables propositionnelles. </p></li>
+						<li>
+							<p>
+								On fixe un ensemble de connecteurs : <br />
+								<ul>
+									<li>\(\neg\) : N&eacute;gation.</li>
+									<li>\(\vee\) : Disjonction. </li>
+									<li>\(\wedge\) : Conjonction. </li>
+									<li>\(\Rightarrow\) : Implication </li>
+									<li>\(\Leftrightarrow\) : &Eacute;quivalence ( par praticit&eacute; ). </li>
+								</ul>
+							</p>
+						</li>
+						<li><p>On considère deux symboles : \( ( \) et \( ) \).</p></li>
+						</ul>
+					</p>
+				</li>
+				<li><h3>D&eacute;finition. Formules propositionnelles.</h3>
+					<p> D&eacute;finition inductive. </p>
+					<ul>
+					<li><p>\( (X_1), (X_2) ... (X_i) \) sont des formules propositionnelles atomiques (elles sont ins&eacute;cables quoi.).</p></li>
+					<li><p> Si \( P \) et \( Q \) sont deux formules propositionnelles alors : $$ \left\{
+															\begin{array}{11}
+																(\neg P) \\
+																(P \vee Q) \\
+																(P \wedge Q) \\
+																(P \Rightarrow Q) \\
+																(P \Leftrightarrow Q)
+															\end{array}
+														    \right.
+														 $$
+						Sont des formules propositionnelles.<br />
+						Remarque : On convient de ne pas &eacute;crire les parenth&egrave;ses les plus (ext/int)&eacute;rieures.
+						$$ (((X_1) \wedge (X_2)) \Rightarrow ((\neg (X_2)) \Rightarrow (X_3))) $$
+						$$ \text{devient} $$
+						$$ (X_1 \wedge X_2) \Rightarrow ((\neg X_2) \Rightarrow X_3 ) $$
+						<br />
+						<br />
+						On peut aussi donner une vision "th&eacute;orie des langages".
+						$$ A \Rightarrow (X_i)|(A \wedge A)|(A \Rightarrow A)|(\neg A). \text{   ??} $$
+						On admet que les deux d&eacute;finitions sont &eacute;quivalentes.
+					</p></li>	
+					</ul>
+				</li>
+				<li>
+					<h3>Th&eacute;or&egrave;me de lecture unique.</h3>
+					<p>
+					<em>&Eacute;nonc&eacute;</em> : Soit \( P \) une formule propositionnelle.<br />
+					P est soit de la forme \( (X_i) \), \( (R \vee S) \), \((R \wedge S)\), \((R \Rightarrow S)\), \((\neg R)\), avec \(R\) et \(S\) formules propositionnelles.<br />
+	   				Conditions deux &agrave; deux exclusives.<br /><br />
+	   				<em>D&eacute;monstration</em> :<br /><br /><p> On commence par d&eacute;finir la notion de poids des parenth&egrave;ses. <br />
+	   				Dans une formule, on associe &agrave; chaque instance de parenth&egrave;ses un poids de la mani&egrave;re suivante :<br /><br />
+	   				$$ \Bigg(_{1} \bigg(_{2} \Big(_{3} \big(_{4} X_{1} \big)_{3} \Rightarrow \big(_{4} X_2 \big)_{3} \Big)_{2} \wedge \Big(_{3} X_3 \Big)_{2} \bigg)_{1} \Rightarrow \big(_{2} X_4 \big)_{1} \Bigg)_{0} $$
+	   				Remarques :<br /><br />
+	   				<ul>
+	   				<li> La premi&egrave;re parenth&egrave;se est ouvrante et de poids 1. </li>
+	   				<li> La derni&egrave;re parenth&egrave;se est fermante et de poids 0. </li>
+	   				<li> Le nombre de parenth&egrave;ses est toujours pair. </li>
+	   				<li> On a autant de fermantes que d'ouvrantes. </li>
+	   				<li><strong>Une formule contient au maximum 2 parenth&egrave;ses fermantes de poids 1.</strong></li>
+	   				</ul>
+	   				La d&eacute;monstration se d&eacute;roule en deux temps : Preue de l'existence, puis de l'unicit&eacute;.<br />
+	   				L'existence est admise.
+	   				<p> 
+	   					Unicit&eacute; :<br />
+	   					Soit F une formule propositionnelle. <br />
+	   					On consid&egrave;re 3 cas.<br />
+	   					<ol>
+	   					<li>\(F = (X_i) \)</li>
+	   					<li>\(F = (P c Q) \) avec \( c \in \{\wedge, \vee, \Rightarrow \} \)</li>
+	   					<li>\(F = (\neg P)\)</li>
+	   					</ol>
+	   					Supposons que \( F \) admette une &eacute;criture correspondant au premier cas.<br />
+	   					Il existe \( i \in \mathbb N \) tel que \( F = (X_i) \).<br />
+	   					On ne peut avoir \(F = (X_j) \) avec \( i \neq j \), car les formules propositionnelles sont distinctes deux à deux.<br />
+	   					On ne peut &egrave;tre dans le second cas car \( F \) n'admet pas \( \wedge, \vee ou \Rightarrow \)<br />
+	   					De m&ecirc;me, \( F\) n'admet pas \( \neg \).<br />
+	   					On a donc preuve ici de l'unicit&eacute; pour \( F = (X_i) \)<br />
+	   					Supposons que \( F \) corresponde au cas deux.<br />
+	   					Il existe \( c \in \{\wedge, \vee, \Rightarrow \} \) et deux formules propositionnelles \( P \) et \( Q \) telles que \( F = (PcQ) \).<br />
+	   					Nous ne sommes pas dans le premier cas, puisque \( c \) existe.
+	   					Pas de troisi&egrave;me cas car si \( F = (\neg \tilde{P} \) alors deuxi&egrave;me caract&egrave;re de \( F\) est \( ( \).<br />
+	  					Ce qui n'est pas le cas de \(P\).<br />
+	  					De m&ecirc;me nous avons preuve de l'unicit&eacute; pour \( F = (PcQ) \)<br />
+	  					Concernant le cas 2. Supposons qu'il y a ait deux &eacute;critures pour F.
+	  					\( F = (PcQ) \) et \( F = (\tilde{P}\tilde{c}\tilde{Q}) \) <br />
+	  					Le principe est de montrer que \( (P, c, Q) = (\tilde{P}, \tilde{c}, \tilde{Q}) \)<br />
+	  					\( P \) est une formule : \( P = (_1P'{\color{red})}_0 \) (\( P' \) n'est pas une formule. ) 
+	  					<br />
+	  					De m&ecirc;me, \( Q = (_1Q'{\color{red})}_0 \)
+	  					<br />
+	  					$$ F = \big(_{1}(_{2} P' {\color{red})}_1 c (_{2} Q' {\color{green})}_1\big)_0 $$ et
+	  					$$ F = \big(_{1}(_{2} \tilde{P}' {\color{red})}_1 \tilde{c} (_{2} \tilde{Q}' {\color{green})}_1\big)_0 $$ <br />
+	  					Argument qui tue : Toute formule proposistionnelle admet au maximum deux parenth&egrave;ses fermantes de poids 1.<br />
+	  					Ce sont donc les m&ecirc;mes instances de parenth&egrave;ses.
+	  					Donc : $$ \left\{
+	  						 	\begin{array}{11}
+	  						 		P = \tilde{P} \\
+	  						 		Q = \tilde{Q} \\
+	  						 		c = \tilde{c} 
+	  						 	\end{array}
+	  						 \right.
+	  					       $$
+	  					Pour le dernier cas, \(F \notin \) aux autres, par la pr&eacute;sence de \( \neg \)
+	  					De fa&ccedil;on &eacute;vidente, \( F = (\neg P) = (\neg \tilde{P}) \) 
+	  				</p>
+					</p>
+				</li>
+				<li>
+				<h3> Arbre de formule. </h3>
+				<p>
+				<em>R&eacute;fl&eacute;chir a une fa&ccedil;on de repr&eacute;senter &ccedil;a.</em>
+				En gros on fait un arbre entre les variables et les connecteurs logiques. C'tout con.
+				</p>
+				</li>
+				<li>
+				<h3>Hauteur</h3>
+				<p>
+				<em> Remplacer la formule par l'arbre quand t'auras trouv&eacute; comment faire. </em><br />
+				<strong>A replacer dans un lieu plus adéquat.</strong> Exemple : La formule propositionnelle \( \neg ( X_2 \Rightarrow X_1 ) \wedge X_2 \) est une formule de hauteur 3. Pour trouver ça tu fais l'arbre et tu compte la "hauteur" de l'arbre.
+				\( \mathbb P = \) le plus petit ensemble tel que \( (X_i) \in \mathbb P \), \( (\neg P), (P \wedge Q), ( P \vee Q), (P \Rightarrow Q) \). <br />
+				 C'est pas démontrable. DOnc on utilise l'instersection de tous les ensembles, à la place de "plus petit ensemble.". <br />
+				 k
+				</p>
+			</ol>
+		</p>
+		</li>
+	</ol>
+		<li>
+		<h2>Sémantique</h2>
+		<p>
+			<ol>
+			<li><h3>Définition</h3>
+			<p>
+					<ul>
+					<li>On appelle affectation de valeurs booléennes ou plus simplement affectation toute application partielle \( V:(X_i)_{i\in\mathbb N} \mapsto \{0; 1\} \) <br />
+					Pour que \( V \) soit valide pour \( F \) formule propositionnelle il faut que \( D_v \subset Var(F) \)<br />
+					<em>Fonction = Application partielle.</em><br />
+					Par exemple : \( f: x \mapsto \sqrt{x} \) est une application partielle.<br /></li>
+					<li>Soit \(v\) une affectation. <br />On définit l'évaluation d'une formule pour \(F\)l'affectation \(v\) 
+					lorsque \( Var(F) \subset D_v \) de la manière suivante : <ul><li>\(\text{eval}_v(X_i) = v(X_i) \) pour tout \( X_i \in D_v \)</li>
+					<li>Si \( F = P \Rightarrow Q\) alors \( evalv(F) = f_\rightarrow (evalv(P), evalv(Q)) avec :
+					x > 0 0 1 1
+					y > 0 1 0 1
+					f > 1 1 0 1
+					</li>
+					<li>Si \(F = P \wedge Q \) <em>la même qu'en haut</em> = \( f_{\rightarrow} = .... avec :
+					x > 0 0 1 1
+					y > 0 1 0 1
+					f > 0 0 0 1
+					</li>
+					<li>Si <em>La même pour \vee </em>
+					x > 0 0 1 1
+					y > 0 1 0 1
+					f > 0 1 1 1
+					</li>
+					<li> Pour négation : 
+					x > 0 1
+					f > 1 0
+					</li>
+					<li> <em>Note : </em>Equivalence :
+					x > 0 0 1 1
+					y > 0 1 0 1
+					f > 1 0 0 1
+					</li>
+					</ul>
+					Exemple : F = ((X1 -> X2 ) -> X3 ) ET ( X1 ET (X2 ET(X3 OU X4 
+					Théorème : SOit F une formule propositionnelle.<br />
+					Soient V et V' deux affectations telles que
+					$$ \forall X_i \in Var(F), V(X_i)=V'(X_i) $$
+					On a alors evalv(F) = evalv'(F).<br />
+					Les variables qui "n'apparaissent pa" dans la formule F n'interviennent pas dans le calcul des evalv(F) ou (evalv'(F)).<br />
+					Corollaire : Il suffit de calculer les évaluations d'une formule \(F\), pour toutes les possibilités d'affectation, des variables de var(F).<br />
+					On peut résumer l'ensemble des évaluations possibles d'une fp : dans une table de vérité de \( 2^{|Var(F)|} \)
+					</li>
+					</ul>
+			</p>
+			</li>
+			</ol>
+		</p>
+		</li>
+</body>
+</html>
+

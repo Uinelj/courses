@@ -1,0 +1,207 @@
+<html>
+<head>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Dimensions, unités, analyse dimensionnelle.</title>
+<h1>Dimensions, unités, analyse dimensionnelle.</h1>
+</head>
+<body>
+<ol>
+	<li>
+		<h2>Dimension</h2>
+		<p>
+			<ol>
+				<li><h3>Mesurer</h3>
+				<p>
+					Mesurer, c'est comparer quelque chose de comparable &agrave; une grandeur choisie en tant qu'unité.<br />
+					Exemple : Une longeur et une hauteur sont comparables, mais pas une longeur et une surface. Aucun sens.<br />
+				</p>
+				</li>
+				<li><h3>Notion de dimension</h3>
+				<p>
+					Une dimension est une famille de grandeurs comparables.<br />
+					Notation : La dimension de \( g \) est notée \( [g] \).<br />
+					Il y a 7 grandeurs fondamentales.
+					<ul>
+						<li>Longeur : \( L \)</li>
+						<li>Temps : \( T \)</li>
+						<li>Masse : \( M \)</li>
+						<li>Température : \( \theta \)</li>
+						<li>Quantité de mati&egrave;re : \( N \)</li>
+						<li>Intensité du courant : \( I \)</li>
+						<li>Intensité lumineuse : \( J \) <em>Pas manipulée cette année.</em></li>
+					</ul>
+					Par exemple : 
+					$$ [h] = [l] = [\lambda] = L $$
+					$$ [t] = [\tau] = T $$ 
+				</p>
+				</li>
+				<li><h3>Equation aux dimensions</h3>
+				<p>
+					C'est exprimer la dimension d'une grandeur en fonction des sept dimensions fondamentales \( M, L, T, \theta, I, N, J \)<br /><br />
+					R&egrave;gles de calcul : <br />
+					<ul>
+					<li><p>Les membres des opérateurs \( =,>,<,+,- \) doivent &ecirc;tre de m&ecirc;me dimension. <br /> $$ l_1 > l_2 $$ possible, $$ l_1 > s_5 $$ impossible.</p></li>
+					<li><p>\( [g_1g_2] = [g_1][g_2] \) et \( [\frac{g_1}{g_2}] = \frac{[g_1]}{[g2]} \).<br /> Exemple : $$ [S] = [Ll] = [L][l] = L^2 $$</p></li>
+					<li><p>Les constantes, angles, fonctions et arguments sont sans dimension : \(  [\alpha] = 1 \)</p></li>
+					<li><p style="color : red;">Pas d'addition / soustraction de dimensions !</p></li>
+					
+					</ul>
+				</p>
+				</li>
+				<li><h3>Homogénéité</h3>
+				<p>
+					Vérifier l'homogénéité, c'est vérifier que tous les membres d'une expression ont la m&ecirc;me dimension. Exemple :<br />
+					<em> Vérifier l'homogénéité de l'expression suivante : </em>
+					$$ h = \frac{v_{0}^2}{2g} $$
+					$$ [h] = L $$
+					$$ \left[\frac{v_{0}^2}{2g}\right] = \frac{[v_{0}^2]}{[2g]} = \frac{[v_0][v_0]}{[2][g]} = \frac{LT^{-1}LT^{-1}}{1LT^{-2}} = \frac{L^2T^{-2}}{LT^{-2}} = L $$ 
+					</p>
+				</li>
+				<li><h3>Analyse dimensionnelle</h3>
+				<p>
+					On utilise l'homogénéité pour prédire des dépendances entre différentes grandeurs entrant en jeu dans une situation donnée.<br />
+					Exemple : <br /><br />
+					On cherche à conjecturer l'expression de la hauteur maximale atteinte par un objet lancé en l'air.<br />
+					Intuitivement, on déc&egrave;le les grandeurs pertinentes :
+					<ul>
+						<li>La vitesse initiale, \( v_0 \),</li>
+						<li>L'accélération gravitationnelle \( g \),</li>
+						<li>La masse \( m \).</li>
+					</ul>
+					On va chercher une loi de dépendance. C est une constante indéterminable par le biais de l'analyse dimensionnelle.
+					$$ h_{max} = Cv_{0}^{\alpha}g^{\beta}m^{\gamma}, (\alpha, \beta, \gamma) \in \mathbb R^3. $$
+					$$ [h_{max}] = L $$
+					$$ [Cv_{0}^{\alpha}g^{\beta}m^{\gamma}] = 1[v_0]^{\alpha}[g]^{\beta}[m]^{\gamma} = (LT^{-1})^{\alpha}(LT^{-2})^{\beta}M^{\gamma} = M^{\gamma}L^{\alpha + \beta }T^{-\alpha -2\beta }. (1) $$
+					$$ [h_{max}] = L = M^0L^1T^0 (2)$$
+					$$ (1=2) : M^0L^1T^0 = M^{\gamma}L^{\alpha + \beta }T^{-\alpha -2\beta } $$
+					On en déduit le syst&egrave;me suivant : 
+					$$ \left\{
+								\begin{array}{11}
+									0=\gamma \\
+									1= \alpha + \beta \\
+									0= -\alpha -2\beta \\
+												\end{array}
+												\right.
+					\Leftrightarrow \left\{
+								\begin{array}{11}
+									\gamma = 0 \\
+									\beta = -1 \\
+									\alpha = 2 \\
+												\end{array}
+												\right.
+					$$
+					On a donc finalement :
+					$$ h_{max} = C \frac{v_0^2}{g} $$
+					C'est une méthode puissante qui nécessite cependant un bon sens physique.
+			</p>
+			</li>
+			</ol>
+		</p>
+		<h2>Unités</h2>
+		<p>
+			<ol>
+				<li><h3>Définition</h3></li>
+				<p>
+					Une unité, c'est une caleur de référence associée à une dimension, définie par un étalon.
+				</p>
+				<li><h3>Les sept unités de base du Système International</h3></li>
+				<p>
+					\( L  \mapsto m \) <br />
+					\( M  \mapsto kg \) <br />
+					\( T  \mapsto s \) <br />
+					\( \theta  \mapsto K \) <br />
+					\( I  \mapsto A \) <br />
+					\( N  \mapsto \text{mol} \) <br />
+					\( J  \mapsto \text{candela} \) <br />
+				</p>
+				</li>
+				<li><h3>Préfixes SI</h3></li>
+				<p>
+				<table border="1">
+				<tr>
+					<th>\( 10^n \)</th>
+					<th>Préfixe</th>
+				</tr>
+				<tr>
+					<td>\( 10^{-15} \)</td>
+					<td>Femto \((f)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-12} \)</td>
+					<td>Pico \((p)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-9} \)</td>
+					<td>Nano \((n)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-6} \)</td>
+					<td>Micro \((\mu)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-3} \)</td>
+					<td>Milli \((m)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-2} \)</td>
+					<td>Centi \((c)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-1} \)</td>
+					<td>Déci \((d)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{1} \)</td>
+					<td>Déca \((da)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{2} \)</td>
+					<td>Hecto \((h)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{3} \)</td>
+					<td>Kilo \((k)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{6} \)</td>
+					<td>Méga \((M)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{9} \)</td>
+					<td>Giga \((G)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{12} \)</td>
+					<td>Téra \((T)\)</td>
+				</tr>
+				</table>
+				</p>
+				<li><h3> Pseudo unités du SI</h3>
+				<p>
+					Ce sont des unités associées à des grandeurs sans dimension.
+					<ul>
+					<li>
+					<p>
+						Radian : \( \theta = frac{l}{r} \Rightarrow [\theta] = frac{[l]}{[r]} = frac{L}{L} = 1 \)<br />
+						Le stéradian est associé aux angles solides.
+					</p>
+					</li>
+					</ul>
+				</p>
+				</li>
+				<li><h3>Unités dérivées du SI</h3>
+				<p>
+				Unités composées des unités fondamentales : 
+				<ul>
+				<li>Volume : \( m^3 \)</li>
+				</ul>
+				</p>
+				</li>
+			</ol>
+		</p>
+		
+	</li>
+</ol>
+</body>
+</html>

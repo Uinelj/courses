@@ -1,0 +1,71 @@
+<html>
+<body>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Suites num&eacute;riques.</title>
+<h1>Suites num&eacute;riques</h1>
+</body>
+<head>
+<ol>
+<li>
+	Introduction.
+	<p>
+		Traditionnellement, une suite num&eacute;rique est une suite infinie de nombres rang&eacute;s ( l'ordre a une importance. )
+		Exemple : 1, 2, 3, 5, 8, 1, 0, 1.. // Suite des d&eacute;cimales des nombres irrationnels (\(\pi\), \(e\) ) (( 3.1415926545 => 3, 1, 4, 1, 5, 9..)
+		On peut formaliser certaines suites, i.e. de les mettre sous une forme plus "condens&eacute;e". ( Pas syst&eacute;matique, par ex pour une suite des naturels => \(u_n=n\)
+		<br />
+		La suite se note \((u_n)\) ou \((u_n)_{n \in \mathbb N}\)
+		La suite est ainsi totalement d&eacute;finie par son terme g&eacute;n&eacute;ral : pour l'obtenir en tant qu'&eacute;num&eacute;ration on n'a qu'&agrave; it&eacute;rer n.
+		On peut remarquer une r&eacute;gularit&eacute; dans les termes de la suite ( alternance de 0 et de 1 par exemple ) a partir d'un certain rang.
+		Pour avoir \(u_n\) tu penses &agrave; une formule qui satisfasse cette alternance.
+		<br />
+		Il se trouve que \(u_n\) = \(\dfrac{1}{2}(1-(-1)^n), \forall n \in \{1, 2, 3, 4, 5, 6\} \)
+		<br />
+		Observation fondamentale : Les suites num&eacute;riques sont des cas particulier de fonctions \(f:\mathbb R \mapsto \mathbb R\) au sous-ensemble \(\mathbb N\) (ou \(\mathbb Z\)) de \(\mathbb R\).
+		Sur les exemples donn&eacute;es on peut trouver des fonctions \(f:\mathbb R \mapsto \mathbb R \) telles que \(f_{\left|\mathbb N\right.} = u \) o&ugrave; \( u:\mathbb N \mapsto Im(f) \subset \mathbb R\) 
+		 v&eacute;rifie \(u(n) = u_n \)
+		<br />
+		( \(f_{\left|\mathbb N\right.} \) c'est la restriction d'une fonction sur un sous ensemble. // \(Im(f)\) -> Image de \(f\))
+		<br />
+		La suite des entiers naturels peut &ecirc;tre vue comme une correspondance :
+		$$\mathbb N^* = \{1,2,3...\}$$
+		<br />
+		et 
+		<br />
+		$$(u_n)_{n \in \mathbb N^*} \equiv \{1, 2, 3,..\}$$
+		<br />
+		Donc la suite \( (u_n)_{n \in \mathbb N } \) n'est autre qu'une fonction \( \mathbb N^* \mapsto \mathbb R \) qui v&eacute;rifie \( u(n) = u_n \). Dans ce cas \( u(n) = n \), 
+		donc une des fonctions \(f:\mathbb R \mapsto \mathbb R \) tel que \(f_{\left|\mathbb N^*\right.} = u \)est \(f(x) = x\).
+		<br />
+		( C'est marrant alors je le note : \( f(x)=0 \forall x \in \bigcup_{n=6}^{\infty} ]n, n+1[ \))
+	</p>
+</li>
+<li>
+	D&eacute;finir une suite. Diff&eacute;rentes fa&ccedil;ons.
+	<p>
+		<ul>
+		<li> 
+			Cas 1 ( heureux )
+			<p>
+				\(u_n\) a une formule explicite.
+				Par exemple : La suite \( (u_n) : u_n = \frac{n^{2}+2n}{3} \)		
+			</p>
+		</li>
+		<li>
+			Cas 2 (implicite heureux )
+			<p>
+				On n'a pas de formule explicite pour (\(u_n\)), mais on a une forme implicite.
+				Apr&egrave;s un peu de boulot, on peut d&eacute;duire une formule explicite pour (\(u_n\)).
+				Par exemple $$ u_n = \sum_{k=0}^{n}k $$
+				<br />
+				D&eacute;mo &agrave; la Gauss, &ccedil;a donne \( \frac{n(n+1)}{2} \)
+				<br />
+				Dans des cas trop cool, on peut deviner une formule pour (\(u_n\)) et d&eacute;montrer que c'est la bonne par r&eacute;currence.
+			</p>
+		</ul>
+	</p>
+</li>
+</ol>
+</body>	
+</html>
