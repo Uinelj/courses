@@ -1,62 +1,62 @@
 <html>
 <head>
 <script type="text/javascript"
-  src="..\..\MathJax\MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
-<center><h1>Mathématiques pour les sciences</h1></center><br />
+<center><h1>Mathï¿½matiques pour les sciences</h1></center><br />
 Exemples de suites :<br />
 <ol>
 <li>
 <p>
-	Suites géométriques : ont le terme général du type \( u_n = u_o.r^n \) où \( u_0 \) premier terme ( si \( n \in \mathbb N \)dans la def de \( {u_n}\) et \(r = \) = raison.<br />
-	Observation : celle-ci est une formule ecxplicite. Mais remarquons que on a aussi \( u_{n+1} = U_0.r^n.r = U_n.r\) ce qui fournit une relation de récurrence<br />
+	Suites gï¿½omï¿½triques : ont le terme gï¿½nï¿½ral du type \( u_n = u_o.r^n \) oï¿½ \( u_0 \) premier terme ( si \( n \in \mathbb N \)dans la def de \( {u_n}\) et \(r = \) = raison.<br />
+	Observation : celle-ci est une formule ecxplicite. Mais remarquons que on a aussi \( u_{n+1} = U_0.r^n.r = U_n.r\) ce qui fournit une relation de rï¿½currence<br />
 	\(U_{n+1} - U_n.r = 0, \forall n \in \mathbb N\) <br />
-	Observation : On peut se poser la questino suivante ; Etant donnée une relation de récurrence du type de ce qu'il y a au dessus, 
-	peut-on toujours la résoudre ?<br />
-	La réponse est oui, si elle est assez simple, par exemple si elle est linéaire, comme celle du dessus.<br />
+	Observation : On peut se poser la questino suivante ; Etant donnï¿½e une relation de rï¿½currence du type de ce qu'il y a au dessus, 
+	peut-on toujours la rï¿½soudre ?<br />
+	La rï¿½ponse est oui, si elle est assez simple, par exemple si elle est linï¿½aire, comme celle du dessus.<br />
 	Explication de terminologie :<br />
-	Linéaire : vient de l'équation d'une droite<br />
+	Linï¿½aire : vient de l'ï¿½quation d'une droite<br />
 	$$ f(x) = ax +b $$
-	On peut avoir des fonctions de plusieurs paramètres :<br /> 
+	On peut avoir des fonctions de plusieurs paramï¿½tres :<br /> 
 	$$ f(x,y,z) = ax + by  + cz + d $$
-	\( g(x) = x^2+2 \) n'est pas une fonction linéaire par contre. elle n'est pas linéaire en x.<br />
-	et on dit que \(x^2+2 \) n'est pséa linéaire enn \(x\).<br />
+	\( g(x) = x^2+2 \) n'est pas une fonction linï¿½aire par contre. elle n'est pas linï¿½aire en x.<br />
+	et on dit que \(x^2+2 \) n'est psï¿½a linï¿½aire enn \(x\).<br />
 	Aussi, $$ h_1(x, y, z) = xy+z+z $$
 	$$ h_2(x, y, z) = x^2 +y $$
-	ne sont pas linéaires en \((x, y, z)\)<br />
+	ne sont pas linï¿½aires en \((x, y, z)\)<br />
 	Dans le cas des suites, on a par exemple : \( 2u_{n+2} +nu_{n+1} + u_n = 3n^2 \)<br />
-	( Récurrence d'ordre 2 mais qui n'as pas de coeffs constants à cause du \(n\).<br />
+	( Rï¿½currence d'ordre 2 mais qui n'as pas de coeffs constants ï¿½ cause du \(n\).<br />
 	Mais $$ u_{n+1} - u{n} = 0 $$<br />
 	Ou bien $$ u_{n+1}u_n = n^2 $$
-	Ne sont pas des récurrences linéaires..<br />
-	Approches numériques peuvent aiguiller un peu.<br />
-	Exemple 2 : Suite artmético-géométrique<br />
+	Ne sont pas des rï¿½currences linï¿½aires..<br />
+	Approches numï¿½riques peuvent aiguiller un peu.<br />
+	Exemple 2 : Suite artmï¿½tico-gï¿½omï¿½trique<br />
 	\(V_n = a.r^n + b\)<br />
-	Elle vérifie la récurrence \(V_{n+1} - r.V_n = b\)<br />
+	Elle vï¿½rifie la rï¿½currence \(V_{n+1} - r.V_n = b\)<br />
 </p>
 </li>
 <li>
 <p>
-	Résolution de quelques recurrences linéaires<br />
+	Rï¿½solution de quelques recurrences linï¿½aires<br />
 	<ol>
 	<li>
 	<p>	
 		\(U_{n+1} + a.U_n = 0, n \in \mathbb N\, a \in \mathbb R^*\) (*)<br />
 		On propose comme solution : \(U_n = \alpha.r^n\)<br />
-		On remplace dans la formule du début<br />
+		On remplace dans la formule du dï¿½but<br />
 		\(\alpha.r^{n+1} + a.\alpha.r^n = 0 \leftrightarrow a.r^n(r+a) = 0 \leftrightarrow r = -a\)<br />
-		Dans l'ensemble des solutions de la formule du début est formé de suites \((U_n)_{n \in \mathbb N} \\
+		Dans l'ensemble des solutions de la formule du dï¿½but est formï¿½ de suites \((U_n)_{n \in \mathbb N} \\
 		U_n = \alpha(-a)^n, \forall n \in \mathbb N\)<br />
-		Observation : \(\alpha\) n'a joué aucun rôle dans le calcul antérieur (il peut être même \( \alpha = 0 \) car alors on a 
-		\( u_n = 0 \) qui vérifie sans problème la relation du début<br />
-		Conclusion : la récurrence (*) a comme nsolution possible TOUTE suite \((u_n)\) tel que \(un = \alpha(-a)^n\)<br />
-		Donc * a une infinité de solutions. On dit que l'ensemble de ces solutions est : <br />
+		Observation : \(\alpha\) n'a jouï¿½ aucun rï¿½le dans le calcul antï¿½rieur (il peut ï¿½tre mï¿½me \( \alpha = 0 \) car alors on a 
+		\( u_n = 0 \) qui vï¿½rifie sans problï¿½me la relation du dï¿½but<br />
+		Conclusion : la rï¿½currence (*) a comme nsolution possible TOUTE suite \((u_n)\) tel que \(un = \alpha(-a)^n\)<br />
+		Donc * a une infinitï¿½ de solutions. On dit que l'ensemble de ces solutions est : <br />
 		$$ S_0 = \{(u_n)_{n\in n} | u_n = \alpha(-a)^n, \forall n \in \mathbb N, \forall\alpha\in\mathbb R\} $$
-		Par contre, si on ajoute à la récurrence * une condition supplémentaire (nommée condition initiale) alors il n'y aura qu'une seule suite solution, de \(S_0\) qui
-		satisfera la condition initiale donnée.
-		La condifion initiale s'écrit : \( u_0 = \beta \) (\(\beta\) constante fixée)<br />
+		Par contre, si on ajoute ï¿½ la rï¿½currence * une condition supplï¿½mentaire (nommï¿½e condition initiale) alors il n'y aura qu'une seule suite solution, de \(S_0\) qui
+		satisfera la condition initiale donnï¿½e.
+		La condifion initiale s'ï¿½crit : \( u_0 = \beta \) (\(\beta\) constante fixï¿½e)<br />
 		Du coup, si \(n=0\) dans \(u_n = \alpha(-a)^n\) on a \(u_0 = \beta \leftrightarrow \alpha(-a)^0 = \beta \leftrightarrow \
 		\alpha = \beta.\)
 		DONC la seule solution de \( \left\{
@@ -69,22 +69,22 @@ Exemples de suites :<br />
 	</li>
 	<li>
 	<p>
-		Récurrence linéaires d'ordre 2 à coefficients constants<br />
+		Rï¿½currence linï¿½aires d'ordre 2 ï¿½ coefficients constants<br />
 		Soit : \(U_{n+2} + a.U_{n+1} + b.U_n = 0, \forall n \in \mathbb N\) (**)<br />
 		On propose toujours \(U_n = \alpha;r^n\) qu'on remplace dans (**) et on a : \(\alpha.r^n(r^2+a.r+b) = 0\)<br />
-		\(\leftrightarrow r^2 + a.r + b = 0 \leftarrow\) equation caractéristique attachée à la récurrence (**)<br />
+		\(\leftrightarrow r^2 + a.r + b = 0 \leftarrow\) equation caractï¿½ristique attachï¿½e ï¿½ la rï¿½currence (**)<br />
 		3 cas de figure : 
 		<ul>
-		<li>\(\delta = 0 \Rightarrow r_1 \neq r_2 \text{ et } r_1, r_2 \in \mathbb R\), et, dans ce cas, chacune des possibilités.<br />
-		Alors remarquons qu'une COMBINAISON LINEAIRE(langage (?)) de ces 2 possibilités, à savoir : 
+		<li>\(\delta = 0 \Rightarrow r_1 \neq r_2 \text{ et } r_1, r_2 \in \mathbb R\), et, dans ce cas, chacune des possibilitï¿½s.<br />
+		Alors remarquons qu'une COMBINAISON LINEAIRE(langage (?)) de ces 2 possibilitï¿½s, ï¿½ savoir : 
 		$$ u_n = \alpha r^n_1 + \beta r^n_2 $$
 		Est aussi solution de **, \( \forall n \text{ et } \forall(\alpha,\beta)\in \mathbb R^2 \)<br />
  		\( S_0 = \{(u_n)_{n\in\mathbb N}\} | u_n = \alpha r^n + \beta r^n_2, \forall n \in \mathbb N \text{ et } \forall (\alpha, \beta) \in \mathbb R^2 \)
 		</li>
 		<li>
 		\( \delta = 0 \Rightarrow r_1 = r_2(\equiv - \frac{a}{2}) \)<br />
-		Alors, bien sûr, \( u_n = \alpha ( -(\frac{a}{2})^n) \) est solution de ** ! ( LateX je te hais. )<br />
-		Mais ceci ne crée qu'une infinité de solutions (?)<br />
+		Alors, bien sï¿½r, \( u_n = \alpha ( -(\frac{a}{2})^n) \) est solution de ** ! ( LateX je te hais. )<br />
+		Mais ceci ne crï¿½e qu'une infinitï¿½ de solutions (?)<br />
 		Observation(admis) : En proposant comme autre solution de ** ( dans le cas \( \delta = 0 \), la suite de tg : 
 		$$ u_n = \beta n (-\frac{a}{2})^n $$ voyons ce que ce passe :
 		$$ \beta(n+2)(-\frac{a}{2})^n )(-\frac{a}{2})^2) + a\beta(n+1)(\frac{-a}{2})^n .(-\frac{a}{2}) + b\beta n (\frac{-a}{2})^n = 0 $$
@@ -96,10 +96,10 @@ Exemples de suites :<br />
 		Par exemple, une combinaison du type :<br />
 		\( U_n = \alpha(-\frac{a}{2})^n + \beta.n(-\frac{-a}{2})^n, \forall(\alpha, \beta) \in \mathbb R^2\)<br />
 		Cas 3 : <br />
-		\( \delta \rightarrow r_1 \text{différent de } r_2\text{, } r_1 \text{ et } r_2 \in \mathbb C \ \mathbb R \)<br />
-		Plus précisément : \( r_1 = \not{r_2} \)<br />
+		\( \delta \rightarrow r_1 \text{diffï¿½rent de } r_2\text{, } r_1 \text{ et } r_2 \in \mathbb C \ \mathbb R \)<br />
+		Plus prï¿½cisï¿½ment : \( r_1 = \not{r_2} \)<br />
 		$$ \frac{-a\pm i\sqrt{|\delta|}}{2} $$
-		Si vous avez réussi à lire jusqu'à la, je vend des cordes pas cher......
+		Si vous avez rï¿½ussi ï¿½ lire jusqu'ï¿½ la, je vend des cordes pas cher......
 		Enjoy ! (Julien & Bastien)
 		</li>
 		</ul>
