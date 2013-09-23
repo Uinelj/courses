@@ -1,44 +1,44 @@
 <html>
-<body>
+<head>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <title>Suites num&eacute;riques.</title>
 <h1>Suites num&eacute;riques</h1>
-</body>
-<head>
+</head>
+<body>
 <ol>
 <li>
 	Introduction.
 	<p>
-		Traditionnellement, une suite num&eacute;rique est une suite infinie de nombres rang&eacute;s ( l'ordre a une importance. )
-		Exemple : 1, 2, 3, 5, 8, 1, 0, 1.. // Suite des d&eacute;cimales des nombres irrationnels (\(\pi\), \(e\) ) (( 3.1415926545 => 3, 1, 4, 1, 5, 9..)
-		On peut formaliser certaines suites, i.e. de les mettre sous une forme plus "condens&eacute;e". ( Pas syst&eacute;matique, par ex pour une suite des naturels => \(u_n=n\)
+		Traditionnellement, une suite num&eacute;rique est une suite infinie de nombres rang&eacute;s ( l'ordre a une importance. )<br />
+		Exemple : 1, 2, 3, 5, 8, 1, 0, 1.. // Suite des d&eacute;cimales des nombres irrationnels (\(\pi\), \(e\) ) (( 3.1415926545 => 3, 1, 4, 1, 5, 9..)<br />
+		On peut formaliser certaines suites, i.e. de les mettre sous une forme plus "condens&eacute;e". ( Pas syst&eacute;matique, par ex pour une suite des naturels => \(u_n=n\)<br />
 		<br />
-		La suite se note \((u_n)\) ou \((u_n)_{n \in \mathbb N}\)
-		La suite est ainsi totalement d&eacute;finie par son terme g&eacute;n&eacute;ral : pour l'obtenir en tant qu'&eacute;num&eacute;ration on n'a qu'&agrave; it&eacute;rer n.
-		On peut remarquer une r&eacute;gularit&eacute; dans les termes de la suite ( alternance de 0 et de 1 par exemple ) a partir d'un certain rang.
-		Pour avoir \(u_n\) tu penses &agrave; une formule qui satisfasse cette alternance.
+		La suite se note \((u_n)\) ou \((u_n)_{n \in \mathbb N}\)<br />
+		La suite est ainsi totalement d&eacute;finie par son terme g&eacute;n&eacute;ral : pour l'obtenir en tant qu'&eacute;num&eacute;ration on n'a qu'&agrave; it&eacute;rer n.<br />
+		On peut remarquer une r&eacute;gularit&eacute; dans les termes de la suite ( alternance de 0 et de 1 par exemple ) a partir d'un certain rang.<br />
+		Pour avoir \(u_n\) tu penses &agrave; une formule qui satisfasse cette alternance.<br />
 		<br />
-		Il se trouve que \(u_n\) = \(\dfrac{1}{2}(1-(-1)^n), \forall n \in \{1, 2, 3, 4, 5, 6\} \)
+		Il se trouve que \(u_n\) = \(\dfrac{1}{2}(1-(-1)^n), \forall n \in \{1, 2, 3, 4, 5, 6\} \).<br />
 		<br />
-		Observation fondamentale : Les suites num&eacute;riques sont des cas particulier de fonctions \(f:\mathbb R \mapsto \mathbb R\) au sous-ensemble \(\mathbb N\) (ou \(\mathbb Z\)) de \(\mathbb R\).
-		Sur les exemples donn&eacute;es on peut trouver des fonctions \(f:\mathbb R \mapsto \mathbb R \) telles que \(f_{\left|\mathbb N\right.} = u \) o&ugrave; \( u:\mathbb N \mapsto Im(f) \subset \mathbb R\) 
-		 v&eacute;rifie \(u(n) = u_n \)
+		Observation fondamentale : Les suites num&eacute;riques sont des cas particulier de fonctions \(f:\mathbb R \mapsto \mathbb R\) au sous-ensemble \(\mathbb N\) (ou \(\mathbb Z\)) de \(\mathbb R\).<br />
+		Sur les exemples donn&eacute;es on peut trouver des fonctions \(f:\mathbb R \mapsto \mathbb R \) telles que \(f_{\left|\mathbb N\right.} = u \) o&ugrave; \( u:\mathbb N \mapsto Im(f) \subset \mathbb R\) <br />
+		 v&eacute;rifie \(u(n) = u_n \)<br />
 		<br />
-		( \(f_{\left|\mathbb N\right.} \) c'est la restriction d'une fonction sur un sous ensemble. // \(Im(f)\) -> Image de \(f\))
+		( \(f_{\left|\mathbb N\right.} \) c'est la restriction d'une fonction sur un sous ensemble. // \(Im(f)\) -> Image de \(f\))<br />
 		<br />
-		La suite des entiers naturels peut &ecirc;tre vue comme une correspondance :
-		$$\mathbb N^* = \{1,2,3...\}$$
+		La suite des entiers naturels peut &ecirc;tre vue comme une correspondance :<br />
+		$$\mathbb N^* = \{1,2,3...\}$$<br />
 		<br />
-		et 
+		et <br />
 		<br />
-		$$(u_n)_{n \in \mathbb N^*} \equiv \{1, 2, 3,..\}$$
+		$$(u_n)_{n \in \mathbb N^*} \equiv \{1, 2, 3,..\}$$<br />
 		<br />
 		Donc la suite \( (u_n)_{n \in \mathbb N } \) n'est autre qu'une fonction \( \mathbb N^* \mapsto \mathbb R \) qui v&eacute;rifie \( u(n) = u_n \). Dans ce cas \( u(n) = n \), 
 		donc une des fonctions \(f:\mathbb R \mapsto \mathbb R \) tel que \(f_{\left|\mathbb N^*\right.} = u \)est \(f(x) = x\).
 		<br />
-		( C'est marrant alors je le note : \( f(x)=0 \forall x \in \bigcup_{n=6}^{\infty} ]n, n+1[ \))
+		( C'est marrant alors je le note : \( f(x)=0 \forall x \in \bigcup_{n=6}^{\infty} ]n, n+1[ \))<br />
 	</p>
 </li>
 <li>
@@ -48,15 +48,15 @@
 		<li> 
 			Cas 1 ( heureux )
 			<p>
-				\(u_n\) a une formule explicite.
+				\(u_n\) a une formule explicite.<br />
 				Par exemple : La suite \( (u_n) : u_n = \frac{n^{2}+2n}{3} \)		
 			</p>
 		</li>
 		<li>
 			Cas 2 (implicite heureux )
 			<p>
-				On n'a pas de formule explicite pour (\(u_n\)), mais on a une forme implicite.
-				Apr&egrave;s un peu de boulot, on peut d&eacute;duire une formule explicite pour (\(u_n\)).
+				On n'a pas de formule explicite pour (\(u_n\)), mais on a une forme implicite.<br />
+				Apr&egrave;s un peu de boulot, on peut d&eacute;duire une formule explicite pour (\(u_n\)).<br />
 				Par exemple $$ u_n = \sum_{k=0}^{n}k $$
 				<br />
 				D&eacute;mo &agrave; la Gauss, &ccedil;a donne \( \frac{n(n+1)}{2} \)
@@ -66,6 +66,106 @@
 		</ul>
 	</p>
 </li>
+<li><h2>Suites g&eacute;om&eacute;triques : </h2>
+<p>
+	Les suites géométriques ont le terme g&eacute;n&eacute;ral du type \( u_n = u_o.r^n \) o&eacute; \( u_0 \) premier terme ( si \( n \in \mathbb N \)dans la def de \( {u_n}\) et \(r = \) = raison.<br />
+	Observation : celle-ci est une formule ecxplicite. Mais remarquons que on a aussi \( u_{n+1} = U_0.r^n.r = U_n.r\) ce qui fournit une relation de r&eacute;currence<br />
+	\(U_{n+1} - U_n.r = 0, \forall n \in \mathbb N\) <br />
+	Observation : On peut se poser la questino suivante ; Etant donn&eacute;e une relation de r&eacute;currence du type de ce qu'il y a au dessus, 
+	peut-on toujours la r&eacute;soudre ?<br />
+	La r&eacute;ponse est oui, si elle est assez simple, par exemple si elle est lin&eacute;aire, comme celle du dessus.<br />
+	Explication de terminologie :<br />
+	Lin&eacute;aire : vient de l'&eacute;quation d'une droite<br />
+	$$ f(x) = ax +b $$
+	On peut avoir des fonctions de plusieurs param&eacute;tres :<br /> 
+	$$ f(x,y,z) = ax + by  + cz + d $$
+	\( g(x) = x^2+2 \) n'est pas une fonction lin&eacute;aire par contre. elle n'est pas lin&eacute;aire en x.<br />
+	et on dit que \(x^2+2 \) n'est ps&eacute;a lin&eacute;aire enn \(x\).<br />
+	Aussi, $$ h_1(x, y, z) = xy+z+z $$
+	$$ h_2(x, y, z) = x^2 +y $$
+	ne sont pas lin&eacute;aires en \((x, y, z)\)<br />
+	Dans le cas des suites, on a par exemple : \( 2u_{n+2} +nu_{n+1} + u_n = 3n^2 \)<br />
+	( R&eacute;currence d'ordre 2 mais qui n'as pas de coeffs constants &eacute; cause du \(n\).<br />
+	Mais $$ u_{n+1} - u{n} = 0 $$<br />
+	Ou bien $$ u_{n+1}u_n = n^2 $$
+	Ne sont pas des r&eacute;currences lin&eacute;aires..<br />
+	Approches num&eacute;riques peuvent aiguiller un peu.<br />
+	Exemple 2 : Suite artm&eacute;tico-g&eacute;om&eacute;trique<br />
+	\(V_n = a.r^n + b\)<br />
+	Elle v&eacute;rifie la r&eacute;currence \(V_{n+1} - r.V_n = b\)<br />
+</p>
+</li>
+<li>
+<p>
+	R&eacute;solution de quelques recurrences lin&eacute;aires<br />
+	<ol>
+	<li>
+	<p>	
+		\(U_{n+1} + a.U_n = 0, n \in \mathbb N\, a \in \mathbb R^*\) (*)<br />
+		On propose comme solution : \(U_n = \alpha.r^n\)<br />
+		On remplace dans la formule du d&eacute;but<br />
+		\(\alpha.r^{n+1} + a.\alpha.r^n = 0 \leftrightarrow a.r^n(r+a) = 0 \leftrightarrow r = -a\)<br />
+		Dans l'ensemble des solutions de la formule du d&eacute;but est form&eacute; de suites \((U_n)_{n \in \mathbb N} \\
+		U_n = \alpha(-a)^n, \forall n \in \mathbb N\)<br />
+		Observation : \(\alpha\) n'a jou&eacute; aucun r&eacute;le dans le calcul ant&eacute;rieur (il peut &eacute;tre m&eacute;me \( \alpha = 0 \) car alors on a 
+		\( u_n = 0 \) qui v&eacute;rifie sans probl&eacute;me la relation du d&eacute;but<br />
+		Conclusion : la r&eacute;currence (*) a comme nsolution possible TOUTE suite \((u_n)\) tel que \(un = \alpha(-a)^n\)<br />
+		Donc * a une infinit&eacute; de solutions. On dit que l'ensemble de ces solutions est : <br />
+		$$ S_0 = \{(u_n)_{n\in n} | u_n = \alpha(-a)^n, \forall n \in \mathbb N, \forall\alpha\in\mathbb R\} $$
+		Par contre, si on ajoute &eacute; la r&eacute;currence * une condition suppl&eacute;mentaire (nomm&eacute;e condition initiale) alors il n'y aura qu'une seule suite solution, de \(S_0\) qui
+		satisfera la condition initiale donn&eacute;e.
+		La condifion initiale s'&eacute;crit : \( u_0 = \beta \) (\(\beta\) constante fix&eacute;e)<br />
+		Du coup, si \(n=0\) dans \(u_n = \alpha(-a)^n\) on a \(u_0 = \beta \leftrightarrow \alpha(-a)^0 = \beta \leftrightarrow \
+		\alpha = \beta.\)
+		DONC la seule solution de \( \left\{
+        \begin{array}{11} 
+        U_{n+1} + a.U_n = 0 \\
+		U_0 = \beta
+        \end{array} 
+        \right.\) est \(U_n = \beta(-a)^n, \forall n \in \mathbb N\)<br />
+	</p>
+	</li>
+	<li>
+	<p>
+		R&eacute;currence lin&eacute;aires d'ordre 2 &eacute; coefficients constants<br />
+		Soit : \(U_{n+2} + a.U_{n+1} + b.U_n = 0, \forall n \in \mathbb N\) (**)<br />
+		On propose toujours \(U_n = \alpha;r^n\) qu'on remplace dans (**) et on a : \(\alpha.r^n(r^2+a.r+b) = 0\)<br />
+		\(\leftrightarrow r^2 + a.r + b = 0 \leftarrow\) equation caract&eacute;ristique attach&eacute;e &eacute; la r&eacute;currence (**)<br />
+		3 cas de figure : 
+		<ul>
+		<li>\(\delta = 0 \Rightarrow r_1 \neq r_2 \text{ et } r_1, r_2 \in \mathbb R\), et, dans ce cas, chacune des possibilit&eacute;s.<br />
+		Alors remarquons qu'une COMBINAISON LINEAIRE(langage (?)) de ces 2 possibilit&eacute;s, &eacute; savoir : 
+		$$ u_n = \alpha r^n_1 + \beta r^n_2 $$
+		Est aussi solution de **, \( \forall n \text{ et } \forall(\alpha,\beta)\in \mathbb R^2 \)<br />
+ 		\( S_0 = \{(u_n)_{n\in\mathbb N}\} | u_n = \alpha r^n + \beta r^n_2, \forall n \in \mathbb N \text{ et } \forall (\alpha, \beta) \in \mathbb R^2 \)
+		</li>
+		<li>
+		\( \delta = 0 \Rightarrow r_1 = r_2(\equiv - \frac{a}{2}) \)<br />
+		Alors, bien s&eacute;r, \( u_n = \alpha ( -(\frac{a}{2})^n) \) est solution de ** ! ( LateX je te hais. )<br />
+		Mais ceci ne cr&eacute;e qu'une infinit&eacute; de solutions (?)<br />
+		Observation(admis) : En proposant comme autre solution de ** ( dans le cas \( \delta = 0 \), la suite de tg : 
+		$$ u_n = \beta n (-\frac{a}{2})^n $$ voyons ce que ce passe :
+		$$ \beta(n+2)(-\frac{a}{2})^n )(-\frac{a}{2})^2) + a\beta(n+1)(\frac{-a}{2})^n .(-\frac{a}{2}) + b\beta n (\frac{-a}{2})^n = 0 $$
+		$$ \beta n (\frac{-a}{2})^n[(\frac{-a}{2})^2)(\frac{n+2}{n})+a(\frac{n+1}{n})(\frac{-a}{2}) +b ] = 0 $$
+		$$ \Leftrightarrow (\frac{-a}{2})^2(n+2) -\frac{a^2}{2}(n+1) + bn = 0 $$
+		$$ n[(-\frac{a}{2})^2 - \frac{a^2}{2} + b ] + 2\frac{a^2}{4} - \frac{a^2}{2} = 0 $$
+		$$ 0 = 0 $$
+		Conclusion : une suite \((U_n)\) dont \(U_n = \beta.n(-\frac{a}{2})^n\) est aussi solution de (**)<br />
+		Par exemple, une combinaison du type :<br />
+		\( U_n = \alpha(-\frac{a}{2})^n + \beta.n(-\frac{-a}{2})^n, \forall(\alpha, \beta) \in \mathbb R^2\)<br />
+		Cas 3 : <br />
+		\( \delta \rightarrow r_1 \text{diff&eacute;rent de } r_2\text{, } r_1 \text{ et } r_2 \in \mathbb C \ \mathbb R \)<br />
+		Plus pr&eacute;cis&eacute;ment : \( r_1 = \not{r_2} \)<br />
+		$$ \frac{-a\pm i\sqrt{|\delta|}}{2} $$
+		Si vous avez r&eacute;ussi &eacute; lire jusqu'&eacute; la, je vend des cordes pas cher......
+		Enjoy ! (Julien & Bastien)
+		</li>
+		</ul>
+	</p>
+	</li>
+	</ol>
+</p>
+</li>
 </ol>
-</body>	
+</body>
 </html>

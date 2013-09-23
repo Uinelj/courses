@@ -5,58 +5,58 @@
 </script>
 </head>
 <body>
-<center><h1>Math�matiques pour les sciences</h1></center><br />
+<center><h1>Math&eacute;matiques pour les sciences</h1></center><br />
 Exemples de suites :<br />
 <ol>
-<li>
+<li><h2>Suites g&eacute;om&eacute;triques : </h2>
 <p>
-	Suites g�om�triques : ont le terme g�n�ral du type \( u_n = u_o.r^n \) o� \( u_0 \) premier terme ( si \( n \in \mathbb N \)dans la def de \( {u_n}\) et \(r = \) = raison.<br />
-	Observation : celle-ci est une formule ecxplicite. Mais remarquons que on a aussi \( u_{n+1} = U_0.r^n.r = U_n.r\) ce qui fournit une relation de r�currence<br />
+	Les suites géométriques ont le terme g&eacute;n&eacute;ral du type \( u_n = u_o.r^n \) o&eacute; \( u_0 \) premier terme ( si \( n \in \mathbb N \)dans la def de \( {u_n}\) et \(r = \) = raison.<br />
+	Observation : celle-ci est une formule ecxplicite. Mais remarquons que on a aussi \( u_{n+1} = U_0.r^n.r = U_n.r\) ce qui fournit une relation de r&eacute;currence<br />
 	\(U_{n+1} - U_n.r = 0, \forall n \in \mathbb N\) <br />
-	Observation : On peut se poser la questino suivante ; Etant donn�e une relation de r�currence du type de ce qu'il y a au dessus, 
-	peut-on toujours la r�soudre ?<br />
-	La r�ponse est oui, si elle est assez simple, par exemple si elle est lin�aire, comme celle du dessus.<br />
+	Observation : On peut se poser la questino suivante ; Etant donn&eacute;e une relation de r&eacute;currence du type de ce qu'il y a au dessus, 
+	peut-on toujours la r&eacute;soudre ?<br />
+	La r&eacute;ponse est oui, si elle est assez simple, par exemple si elle est lin&eacute;aire, comme celle du dessus.<br />
 	Explication de terminologie :<br />
-	Lin�aire : vient de l'�quation d'une droite<br />
+	Lin&eacute;aire : vient de l'&eacute;quation d'une droite<br />
 	$$ f(x) = ax +b $$
-	On peut avoir des fonctions de plusieurs param�tres :<br /> 
+	On peut avoir des fonctions de plusieurs param&eacute;tres :<br /> 
 	$$ f(x,y,z) = ax + by  + cz + d $$
-	\( g(x) = x^2+2 \) n'est pas une fonction lin�aire par contre. elle n'est pas lin�aire en x.<br />
-	et on dit que \(x^2+2 \) n'est ps�a lin�aire enn \(x\).<br />
+	\( g(x) = x^2+2 \) n'est pas une fonction lin&eacute;aire par contre. elle n'est pas lin&eacute;aire en x.<br />
+	et on dit que \(x^2+2 \) n'est ps&eacute;a lin&eacute;aire enn \(x\).<br />
 	Aussi, $$ h_1(x, y, z) = xy+z+z $$
 	$$ h_2(x, y, z) = x^2 +y $$
-	ne sont pas lin�aires en \((x, y, z)\)<br />
+	ne sont pas lin&eacute;aires en \((x, y, z)\)<br />
 	Dans le cas des suites, on a par exemple : \( 2u_{n+2} +nu_{n+1} + u_n = 3n^2 \)<br />
-	( R�currence d'ordre 2 mais qui n'as pas de coeffs constants � cause du \(n\).<br />
+	( R&eacute;currence d'ordre 2 mais qui n'as pas de coeffs constants &eacute; cause du \(n\).<br />
 	Mais $$ u_{n+1} - u{n} = 0 $$<br />
 	Ou bien $$ u_{n+1}u_n = n^2 $$
-	Ne sont pas des r�currences lin�aires..<br />
-	Approches num�riques peuvent aiguiller un peu.<br />
-	Exemple 2 : Suite artm�tico-g�om�trique<br />
+	Ne sont pas des r&eacute;currences lin&eacute;aires..<br />
+	Approches num&eacute;riques peuvent aiguiller un peu.<br />
+	Exemple 2 : Suite artm&eacute;tico-g&eacute;om&eacute;trique<br />
 	\(V_n = a.r^n + b\)<br />
-	Elle v�rifie la r�currence \(V_{n+1} - r.V_n = b\)<br />
+	Elle v&eacute;rifie la r&eacute;currence \(V_{n+1} - r.V_n = b\)<br />
 </p>
 </li>
 <li>
 <p>
-	R�solution de quelques recurrences lin�aires<br />
+	R&eacute;solution de quelques recurrences lin&eacute;aires<br />
 	<ol>
 	<li>
 	<p>	
 		\(U_{n+1} + a.U_n = 0, n \in \mathbb N\, a \in \mathbb R^*\) (*)<br />
 		On propose comme solution : \(U_n = \alpha.r^n\)<br />
-		On remplace dans la formule du d�but<br />
+		On remplace dans la formule du d&eacute;but<br />
 		\(\alpha.r^{n+1} + a.\alpha.r^n = 0 \leftrightarrow a.r^n(r+a) = 0 \leftrightarrow r = -a\)<br />
-		Dans l'ensemble des solutions de la formule du d�but est form� de suites \((U_n)_{n \in \mathbb N} \\
+		Dans l'ensemble des solutions de la formule du d&eacute;but est form&eacute; de suites \((U_n)_{n \in \mathbb N} \\
 		U_n = \alpha(-a)^n, \forall n \in \mathbb N\)<br />
-		Observation : \(\alpha\) n'a jou� aucun r�le dans le calcul ant�rieur (il peut �tre m�me \( \alpha = 0 \) car alors on a 
-		\( u_n = 0 \) qui v�rifie sans probl�me la relation du d�but<br />
-		Conclusion : la r�currence (*) a comme nsolution possible TOUTE suite \((u_n)\) tel que \(un = \alpha(-a)^n\)<br />
-		Donc * a une infinit� de solutions. On dit que l'ensemble de ces solutions est : <br />
+		Observation : \(\alpha\) n'a jou&eacute; aucun r&eacute;le dans le calcul ant&eacute;rieur (il peut &eacute;tre m&eacute;me \( \alpha = 0 \) car alors on a 
+		\( u_n = 0 \) qui v&eacute;rifie sans probl&eacute;me la relation du d&eacute;but<br />
+		Conclusion : la r&eacute;currence (*) a comme nsolution possible TOUTE suite \((u_n)\) tel que \(un = \alpha(-a)^n\)<br />
+		Donc * a une infinit&eacute; de solutions. On dit que l'ensemble de ces solutions est : <br />
 		$$ S_0 = \{(u_n)_{n\in n} | u_n = \alpha(-a)^n, \forall n \in \mathbb N, \forall\alpha\in\mathbb R\} $$
-		Par contre, si on ajoute � la r�currence * une condition suppl�mentaire (nomm�e condition initiale) alors il n'y aura qu'une seule suite solution, de \(S_0\) qui
-		satisfera la condition initiale donn�e.
-		La condifion initiale s'�crit : \( u_0 = \beta \) (\(\beta\) constante fix�e)<br />
+		Par contre, si on ajoute &eacute; la r&eacute;currence * une condition suppl&eacute;mentaire (nomm&eacute;e condition initiale) alors il n'y aura qu'une seule suite solution, de \(S_0\) qui
+		satisfera la condition initiale donn&eacute;e.
+		La condifion initiale s'&eacute;crit : \( u_0 = \beta \) (\(\beta\) constante fix&eacute;e)<br />
 		Du coup, si \(n=0\) dans \(u_n = \alpha(-a)^n\) on a \(u_0 = \beta \leftrightarrow \alpha(-a)^0 = \beta \leftrightarrow \
 		\alpha = \beta.\)
 		DONC la seule solution de \( \left\{
@@ -69,22 +69,22 @@ Exemples de suites :<br />
 	</li>
 	<li>
 	<p>
-		R�currence lin�aires d'ordre 2 � coefficients constants<br />
+		R&eacute;currence lin&eacute;aires d'ordre 2 &eacute; coefficients constants<br />
 		Soit : \(U_{n+2} + a.U_{n+1} + b.U_n = 0, \forall n \in \mathbb N\) (**)<br />
 		On propose toujours \(U_n = \alpha;r^n\) qu'on remplace dans (**) et on a : \(\alpha.r^n(r^2+a.r+b) = 0\)<br />
-		\(\leftrightarrow r^2 + a.r + b = 0 \leftarrow\) equation caract�ristique attach�e � la r�currence (**)<br />
+		\(\leftrightarrow r^2 + a.r + b = 0 \leftarrow\) equation caract&eacute;ristique attach&eacute;e &eacute; la r&eacute;currence (**)<br />
 		3 cas de figure : 
 		<ul>
-		<li>\(\delta = 0 \Rightarrow r_1 \neq r_2 \text{ et } r_1, r_2 \in \mathbb R\), et, dans ce cas, chacune des possibilit�s.<br />
-		Alors remarquons qu'une COMBINAISON LINEAIRE(langage (?)) de ces 2 possibilit�s, � savoir : 
+		<li>\(\delta = 0 \Rightarrow r_1 \neq r_2 \text{ et } r_1, r_2 \in \mathbb R\), et, dans ce cas, chacune des possibilit&eacute;s.<br />
+		Alors remarquons qu'une COMBINAISON LINEAIRE(langage (?)) de ces 2 possibilit&eacute;s, &eacute; savoir : 
 		$$ u_n = \alpha r^n_1 + \beta r^n_2 $$
 		Est aussi solution de **, \( \forall n \text{ et } \forall(\alpha,\beta)\in \mathbb R^2 \)<br />
  		\( S_0 = \{(u_n)_{n\in\mathbb N}\} | u_n = \alpha r^n + \beta r^n_2, \forall n \in \mathbb N \text{ et } \forall (\alpha, \beta) \in \mathbb R^2 \)
 		</li>
 		<li>
 		\( \delta = 0 \Rightarrow r_1 = r_2(\equiv - \frac{a}{2}) \)<br />
-		Alors, bien s�r, \( u_n = \alpha ( -(\frac{a}{2})^n) \) est solution de ** ! ( LateX je te hais. )<br />
-		Mais ceci ne cr�e qu'une infinit� de solutions (?)<br />
+		Alors, bien s&eacute;r, \( u_n = \alpha ( -(\frac{a}{2})^n) \) est solution de ** ! ( LateX je te hais. )<br />
+		Mais ceci ne cr&eacute;e qu'une infinit&eacute; de solutions (?)<br />
 		Observation(admis) : En proposant comme autre solution de ** ( dans le cas \( \delta = 0 \), la suite de tg : 
 		$$ u_n = \beta n (-\frac{a}{2})^n $$ voyons ce que ce passe :
 		$$ \beta(n+2)(-\frac{a}{2})^n )(-\frac{a}{2})^2) + a\beta(n+1)(\frac{-a}{2})^n .(-\frac{a}{2}) + b\beta n (\frac{-a}{2})^n = 0 $$
@@ -96,10 +96,10 @@ Exemples de suites :<br />
 		Par exemple, une combinaison du type :<br />
 		\( U_n = \alpha(-\frac{a}{2})^n + \beta.n(-\frac{-a}{2})^n, \forall(\alpha, \beta) \in \mathbb R^2\)<br />
 		Cas 3 : <br />
-		\( \delta \rightarrow r_1 \text{diff�rent de } r_2\text{, } r_1 \text{ et } r_2 \in \mathbb C \ \mathbb R \)<br />
-		Plus pr�cis�ment : \( r_1 = \not{r_2} \)<br />
+		\( \delta \rightarrow r_1 \text{diff&eacute;rent de } r_2\text{, } r_1 \text{ et } r_2 \in \mathbb C \ \mathbb R \)<br />
+		Plus pr&eacute;cis&eacute;ment : \( r_1 = \not{r_2} \)<br />
 		$$ \frac{-a\pm i\sqrt{|\delta|}}{2} $$
-		Si vous avez r�ussi � lire jusqu'� la, je vend des cordes pas cher......
+		Si vous avez r&eacute;ussi &eacute; lire jusqu'&eacute; la, je vend des cordes pas cher......
 		Enjoy ! (Julien & Bastien)
 		</li>
 		</ul>
