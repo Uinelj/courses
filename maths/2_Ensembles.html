@@ -10,24 +10,24 @@
 	D&eacute;finition : 
 	<ol>
 	<li>Si \(E\) et \(F\) sont des ensembles, on dit que \(E\) est inclus dans \(F\), not&eacute; \(E\subset F\), si tout &eacute;l&eacute;ment de \(E\) est aussi &eacute;l&eacute;ment de \(F\). <em>On dit aussi que \(E\) est un sous-ensemble de \(F\).</em></li>
-	<li>On appelle instersection de \(E\) et \F\), not&eacute; \(E\cap F\), l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) et dans \(F\)</li>
+	<li>On appelle instersection de \(E\) et (\F\), not&eacute; \(E\cap F\), l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) et dans \(F\)</li>
 	<li>Si E et F sont des ensembles, on appelle r&eacute;union de E et F, not&eacute; EuF, l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) ou dans \(F\)</li>
-	<li>On appelle compl&eacute;mentaire de \( E \) dans \( F \), not&eacute; \( F \ E \), l'ensemble des &eacute;l&eacute;ments qui sont dans \(F\) qui ne sont pas dans \(E\)</li>
+	<li>On appelle compl&eacute;mentaire de \( E \) dans \( F \), not&eacute; \( F \setminus E \), l'ensemble des &eacute;l&eacute;ments qui sont dans \(F\) qui ne sont pas dans \(E\)</li>
 	</ol>
 	Notation : <br />
 	<p>
 		<ul>
-			<li>L'ensemble vide, noté o barré, est l'ensemble qui ne contient aucun élément.</li>
+			<li>L'ensemble vide, not&eacute; \(\varnothing \), est l'ensemble qui ne contient aucun &eacute;l&eacute;ment.</li>
 			<li>
-				Un ensemble contenant un seul élément \(x\) est appelé singleton, noté \(\\{x\}\)<br />
-				Exemple : \( 1 \in \mathbb N\) signifie "\(1\) est un élément de \(\mathbb N \)<br />
-				\(\{1\} \subset \mathbb N \) signifie "Le singleton \(\{1\}\) est inclus dans \(\mathbb N\)<br />
+				Un ensemble contenant un seul &eacute;l&eacute;ment \(x\) est appel&eacute; singleton, not&eacute; \(\{x\}\).<br />
+				Exemple : \( 1 \in \mathbb N\) signifie "\(1\) est un &eacute;l&eacute;ment de \(\mathbb N \).<br />
+				\(\{1\} \subset \mathbb N \) signifie "Le singleton \(\{1\}\) est inclus dans \(\mathbb N\)".<br />
 			</li>
 			<li>
 			<p>
-				L'ensemble des parties de \(E\) est notée \(P(E\) : Si \( E = \{0, 1\}, P(E) = \{zerobarre, \{0\}, \{1\}, \{0, 1\}.
-				Remarque : si \( F \subset E \), on écrira aussi \( F \in P(E) \)<br />
-				Remarque : Lorsqu'on prend le complémentaire, s'il n'y a pas d'ambiguité sur \(F\), on notera aussi \(E^C \) au lieu de \( F\E \)
+				L'ensemble des parties de \(E\) est not&eacute;e \(P(E)\) : Si \( E = \{0, 1\}, P(E) = \{\varnothing, \{0\}, \{1\}, \{0, 1\}.
+				Remarque : si \( F \subset E \), on &eacute;crira aussi \( F \in P(E) \).<br />
+				Remarque : Lorsqu'on prend le compl&eacute;mentaire, s'il n'y a pas d'ambiguit&eacute; sur \(F\), on notera aussi \(E^C \) au lieu de \( F\setminus E \).<br />
 			</p>
 			</li>
 		</ul>
@@ -37,13 +37,13 @@
 		<p>
 			Si \(E\) est une ensemble et \( A \subset E \), on peut leur associer une proposition logique \( P(x) \)
 			\(P(x)\) est vraie si \( x \in A \)<br />
-			\(P(x)\) est fausse si \( x \nin A \)<br />
-			On prend \( B \subset E \) et \( Q(x) \) la proposition logique associée. <br />
+			\(P(x)\) est fausse si \( x \notin A \)<br />
+			On prend \( B \subset E \) et \( Q(x) \) la proposition logique associ&eacute;e. <br />
 			Alors :<br />
 			<ol>
-				<li>La proposition logique associée à \( A\cap B \) est \(P(x)\) et \(Q(x)\)</li>
-				<li>Celle associée à AuB est \( P(x) \vee Q(x) \)</li>
-				<li>Celle associée à \( A^C = E\A \) est \( \neg P(x) \)</li>
+				<li>La proposition logique associ&eacute;e &agrave; \( A\cap B \) est \(P(x)\) et \(Q(x)\)</li>
+				<li>Celle associ&eacute;e &agrave; \(A \cup B\) est \( P(x) \vee Q(x) \)</li>
+				<li>Celle associ&eacute;e &agrave; \( A^C = E\setminus A \) est \( \neg P(x) \)</li>
 				<li>\( A \subset B \) se traduit par : \( P(x) \rightarrow Q(x) \)</li>
 				<li>\( A = B \) se traduit par : \( P(x) \leftrightarrow Q(x) \)</li>
 				
