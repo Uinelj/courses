@@ -114,39 +114,43 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 </li>
 <li> Accélération moyenne, instantannée.
 	<p>
-		A une dimension : <br />
-		$$ a_{\text{moy}} = \frac{v(t+\Delta t) - v(t)}{\Delta t} = \frac{\Delta v}{\Delta t} $$
-		$$ a(t) = lim_{\Delta t \to 0} a_{\text{moy}} $$
-		Notation différentielle : <br />
-		$$ a(t) = \frac{d}{dt} v(t) $$
-		$$ v(t) = \frac{dx(t)}{dt} $$
-		$$ \mapsto a(t) = \frac{d}{dt}\left(\frac{d}{dt} x(t) \right) $$
-		$$ = \frac{d^2x}{dt^2} $$
-		\(d^2\) : On dérive deux fois.<br />
-		\(dt^2\) : Chaque fois par rappot à t.<br />
-		Au niveau des dimensions :<br />
-		\( [d^2x] = L \text{MAIS} [dt^2] = [dt]^2 = T^2 \)<br />
-		et donc : <br />
-		$$ [a]= \frac{[d^2x]}{[dt]^2} = \frac{L}{T^2} $$
-		$$ a(t) = \frac{dv}{dt}(t) = \frac{d^2x}{dt^2} = v'(t) = x''(t) = \dot{v} = \dotdot{x} $$
-		<br />
-		<br />
-		A 3 dimensions :<br />
-		\( \vec{a_{\text{moy}}} = \frac{\Delta \vec{v}}{\Delta t} \)
-		$$ \vec{a}(t) = lim_{\Delta t \to 0}\Vec{a}_{moy} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{OM}}{dt^2} $$
-		$$ = \frac{d^2x}{dt^2}\vec{u_x} + \frac{d^2y}{dt^2}\vec{u_y} + \frac{d^2z}{dt^2}\vec{u_z} $$
-		Mouvement accéléré : si et seulement si \( || \vec{v}(t) \)fonction croissante du temps. <br />
-		<br />
-		$$ \vec{v} . \vec{a} = \vec{v} . \frac{d\vec{v}}{dt} =  \frac{d}{dt}\left(\frac{v^2}{2}\right) $$
-		$$ ff'  = \left(\frac{f^2}{2}\right) $$
-		or \(\vec{v^2} = ||\vec{v}||^2\)<br />
-		DONC : \( v.a = \frac{1}{2}\frac{d}{dt}\left(||\vec{v}||^2 \right)\)<br />
-		Si \(||\vec{v}||\) fonction croissante du temps<br />
-		alors ||v||^2 la même, <br />
-		donc \( \frac{d}{dt}||\vec{v}||^2 > 0. \)<br />
-		Donc \(\vec{a} . \vec{v} > 0\) ! Eh oui Jamie !<br />
-		Mouvement accéléré ssi \vec{a}{v}>0, freiné si <0. <br />
-		Mouvement uniformément varié. ssi : \( \vec{a}(t) = \text{cste} \ne 0 \)<br />
+		<ul>
+            <li>A une dimension : <br />
+                $$ a_{\text{moy}} = \frac{v(t+\Delta t) - v(t)}{\Delta t} = \frac{\Delta v}{\Delta t} $$
+                $$ a(t) = lim_{\Delta t \to 0} a_{\text{moy}} $$
+                Notation différentielle : <br />
+                $$ a(t) = \frac{d}{dt} v(t) $$
+                $$ v(t) = \frac{dx(t)}{dt} $$
+                $$ \mapsto a(t) = \frac{d}{dt}\left(\frac{d}{dt} x(t) \right) $$
+                $$ = \frac{d^2x}{dt^2} $$
+                \(d^2\) : On dérive deux fois.<br />
+                \(dt^2\) : Chaque fois par rappot à t.<br />
+                Au niveau des dimensions :<br />
+                \( [d^2x] = L \text{ MAIS } [dt^2] = [dt]^2 = T^2 \)<br />
+                et donc : <br />
+                $$ [a]= \frac{[d^2x]}{[dt]^2} = \frac{L}{T^2} $$
+                $$ a(t) = \frac{dv}{dt}(t) = \frac{d^2x}{dt^2} = v'(t) = x''(t) = \dot{v} = \ddot{x} $$
+                <br />
+                <br />
+            </li>
+            <li>A 3 dimensions :<br />
+                \( \vec{a_{\text{moy}}} = \frac{\Delta \vec{v}}{\Delta t} \)
+                $$ \vec{a}(t) = lim_{\Delta t \to 0}\vec{a}_{moy} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{OM}}{dt^2} $$
+                $$ = \frac{d^2x}{dt^2}\vec{u_x} + \frac{d^2y}{dt^2}\vec{u_y} + \frac{d^2z}{dt^2}\vec{u_z} $$
+                Mouvement accéléré : si et seulement si \( || \vec{v}(t) \)fonction croissante du temps. <br />
+                <br />
+                $$ \vec{v} . \vec{a} = \vec{v} . \frac{d\vec{v}}{dt} =  \frac{d}{dt}\left(\frac{v^2}{2}\right) $$
+                $$ ff'  = \left(\frac{f^2}{2}\right) $$
+                or \(\vec{v^2} = ||\vec{v}||^2\)<br />
+                DONC : \( v.a = \frac{1}{2}\frac{d}{dt}\left(||\vec{v}||^2 \right)\)<br />
+                Si \(||\vec{v}||\) fonction croissante du temps<br />
+                alors ||v||^2 la même, <br />
+                donc \( \frac{d}{dt}||\vec{v}||^2 > 0. \)<br />
+                Donc \(\vec{a} . \vec{v} > 0\) ! Eh oui Jamie !<br />
+                Mouvement accéléré ssi \vec{a}{v}>0, freiné si <0. <br />
+                Mouvement uniformément varié. ssi : \( \vec{a}(t) = \text{cste} \ne 0 \)<br />
+            </li>
+        </ul>
 	</p>
 </li>
 
