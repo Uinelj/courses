@@ -6,13 +6,13 @@
 <body>
 <h1>Th&eacute;orie des ensembles.</h1>
 <p>
-	Un ensemble est <em>(D&eacute;finition pas vraiment math&eacute;matique)</em> une collection d'objets (d'&eacute;l&eacute;ments)<br /><br />
+	Un ensemble est <em>(D&eacute;finition pas vraiment math&eacute;matique)</em> une collection d'objets (d'&eacute;l&eacute;ments).<br /><br />
 	D&eacute;finition : 
 	<ol>
-	<li>Si \(E\) et \(F\) sont des ensembles, on dit que \(E\) est inclus dans \(F\), not&eacute; \(E\subset F\), si tout &eacute;l&eacute;ment de \(E\) est aussi &eacute;l&eacute;ment de \(F\). <em>On dit aussi que \(E\) est un sous-ensemble de \(F\).</em></li>
-	<li>On appelle instersection de \(E\) et (\F\), not&eacute; \(E\cap F\), l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) et dans \(F\)</li>
-	<li>Si E et F sont des ensembles, on appelle r&eacute;union de E et F, not&eacute; EuF, l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) ou dans \(F\)</li>
-	<li>On appelle compl&eacute;mentaire de \( E \) dans \( F \), not&eacute; \( F \setminus E \), l'ensemble des &eacute;l&eacute;ments qui sont dans \(F\) qui ne sont pas dans \(E\)</li>
+		<li>Si \(E\) et \(F\) sont des ensembles, on dit que \(E\) est inclus dans \(F\), not&eacute; \(E\subset F\), si tout &eacute;l&eacute;ment de \(E\) est aussi &eacute;l&eacute;ment de \(F\). <em>On dit aussi que \(E\) est un sous-ensemble de \(F\).</em></li>
+		<li>On appelle instersection de \(E\) et (\F\), not&eacute; \(E\cap F\), l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) et dans \(F\)</li>
+		<li>Si E et F sont des ensembles, on appelle r&eacute;union de E et F, not&eacute; EuF, l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) ou dans \(F\)</li>
+		<li>On appelle compl&eacute;mentaire de \( E \) dans \( F \), not&eacute; \( F \setminus E \), l'ensemble des &eacute;l&eacute;ments qui sont dans \(F\) qui ne sont pas dans \(E\)</li>
 	</ol>
 	Notation : <br />
 	<p>
@@ -25,7 +25,7 @@
 			</li>
 			<li>
 			<p>
-				L'ensemble des parties de \(E\) est not&eacute;e \(P(E)\) : Si \( E = \{0, 1\}, P(E) = \{\varnothing, \{0\}, \{1\}, \{0, 1\}.
+				L'ensemble des parties de \(E\) est not&eacute;e \(P(E)\) : Si \( E = \{0, 1\}, P(E) = \{\varnothing, \{0\}, \{1\}, \{0, 1\}\}\).<br />
 				Remarque : si \( F \subset E \), on &eacute;crira aussi \( F \in P(E) \).<br />
 				Remarque : Lorsqu'on prend le compl&eacute;mentaire, s'il n'y a pas d'ambiguit&eacute; sur \(F\), on notera aussi \(E^C \) au lieu de \( F\setminus E \).<br />
 			</p>
@@ -33,22 +33,68 @@
 		</ul>
 	</p>
 	<p>
-		<h3>Lien entre sous-ensemble et connecteurs logiques</h3>
-		<p>
-			Si \(E\) est une ensemble et \( A \subset E \), on peut leur associer une proposition logique \( P(x) \)
-			\(P(x)\) est vraie si \( x \in A \)<br />
-			\(P(x)\) est fausse si \( x \notin A \)<br />
-			On prend \( B \subset E \) et \( Q(x) \) la proposition logique associ&eacute;e. <br />
-			Alors :<br />
-			<ol>
-				<li>La proposition logique associ&eacute;e &agrave; \( A\cap B \) est \(P(x)\) et \(Q(x)\)</li>
-				<li>Celle associ&eacute;e &agrave; \(A \cup B\) est \( P(x) \vee Q(x) \)</li>
-				<li>Celle associ&eacute;e &agrave; \( A^C = E\setminus A \) est \( \neg P(x) \)</li>
-				<li>\( A \subset B \) se traduit par : \( P(x) \rightarrow Q(x) \)</li>
-				<li>\( A = B \) se traduit par : \( P(x) \leftrightarrow Q(x) \)</li>
-				
-			</ol>
-		</p>
+	<ul>
+		
+		<li><h3>Lien entre sous-ensemble et connecteurs logiques</h3>
+			<p>
+				Si \(E\) est une ensemble et \( A \subset E \), on peut leur associer une proposition logique \( P(x) \)
+				\(P(x)\) est vraie si \( x \in A \)<br />
+				\(P(x)\) est fausse si \( x \notin A \)<br />
+				On prend \( B \subset E \) et \( Q(x) \) la proposition logique associ&eacute;e. <br />
+				Alors :<br />
+				<ol>
+					<li>La proposition logique associ&eacute;e &agrave; \( A\cap B \) est \(P(x)\) et \(Q(x)\)</li>
+					<li>Celle associ&eacute;e &agrave; \(A \cup B\) est \( P(x) \vee Q(x) \)</li>
+					<li>Celle associ&eacute;e &agrave; \( A^C = E\setminus A \) est \( \neg P(x) \)</li>
+					<li>\( A \subset B \) se traduit par : \( P(x) \rightarrow Q(x) \)</li>
+					<li>\( A = B \) se traduit par : \( P(x) \leftrightarrow Q(x) \)</li>
+				</ol>
+			</p>
+		</li>
+		</ul>
+	<p>
+		Def : Si E et F sont deux ensembles, on appelle produit cartésien de E par F,
+		noté \(E \times F\), l'ensemble \(\{x, y) | x\in F\text{et} y\in F\}\)<br />
+		Exemple : L'ensemble des points du plan est \(\mathbb R \times \mathbb R = \mathbb  R^2\).<br />
+		Remarque : De même, on définit \( E_1 \times E_2 \times ... \times E_n = \{ (x_1,..x_n) | x_1 \in E_1, ... x_n \in E_n \}\)<br />
+		Et on notera \(E^n = E\times E\times E\times E.. \), \(n\) fois.<br />
+		Remarque : \(E\times F, (x,y)=(x',y') \text{ssi} x=x' et y=y'\).<br />
+		Applications entre ensembles<br />
+		Def : Si \(E\) et \F\) sont deux ensembles, une application \(F\) de \(E\) dans \(F\) est la donnée pour <strong>chaque</strong> élément \(x\in E \) d'un unique élément \(y \in F\)<br />
+		On notera \( y = f(x) \).<br />
+		<em>Schéma 1</em>
+		<br />
+		Définition : Deux applications \(f\) et \(g\) sont les mêmes si : 
+		<ul>
+			<li>Les ensembles de départ et d'arrivée sont les mêmes.</li>
+			<li>\(\exists x\in E, f(x) = g(x)\)</li>
+		</ul>
+		Def : \(F\), \(E\) deux ensmebles, \( f:E\rightarrow F\) une application et \(A\subset E\).<br />
+		On appelle image directe de \(A\) par \(f\) l'ensemble \( f(A)= \{ f(x) | x\in A \} \)
+		On peut aussi écrire : \(f(A) = \{y\in F | \foreach x\in A, y=f(x) \}\)<br />
+		Proprieté : \(E, F\) deux ensembles, \(f:E\rightarrow F \text{et} A, B \subset E \)
+		<ol>
+			<li>\(A \subset B \) \rightarrow \( f(A) \subset f(B)\)
+				<p>
+					On suppose que \(A\subset B\)<br />
+					Soit \(y\in f(A)\), on montre que \(y\in f(B)\)<br />
+					C'est à dire : \(\exists x\in B, y=f(x)\)<br />
+					On sait que \(y\in f(A)\)donc<br />
+					$$ \exists x\in A, y=f(x)$$<br />
+					Par ailleurs, \(A\subset B \)donc\( x\in B\)<br />
+					Et vérifie \(y=f(x)\)<br />
+					On a bien montré \(y\in f(A) \rightarrow y\in f(B)\)<br />
+					Autrement dit : $$ f(A) \subset f(B) $$<br />	
+				</p>
+			</li>
+			<li>\(f(A\cup B) = f(A) \cup f(B)\)</li>
+			<li>\(f(A\cap B \subset f(A)\cap f(b)\)</li>
+		</ol> 
+		Définition : Soient \(E, F\) deux ensembles, \( f:E\rightarrow F\) et \( C\subset F \).<br />
+		On appelle image réciproque de \(C\) par \(f\), notée \(f^{-1}(C)\), l'ensemble \(\{x\in E | f(x) \in C \}\)<br />
+		Schéma 3 !<br />
+		Remarque : \(x\in f^{-1}(C) \leftrightarrow f(x) \in C \)<br />
+		Proprieté : Si \( E, F \) sont des ensembles, $$ f: E \rightarrow F, C, D \subset F \\ C \subset D \rightarrow f^{-1}(C) \\ f^{-1}(C\cup D) = f^{-1}(C) \cup f^{-1}(D) \\ f^{-1}(C\cap D) = f^{-1}(C) \cap f^{-1}(C)\ $$
 	</p>
 	
 </p>
