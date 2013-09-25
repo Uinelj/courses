@@ -8,66 +8,189 @@
 <body>
 Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accélération.<br />
 <ol>
-    <li>Position et déplacement
-        <ul>
-            <li> * à 1d
-                <p>
-                    Shéma 1<br />
-                    position : x(t) = \(\not{OM}\)<br />
-                    déplacement pendant \(\Delta\)t : \(\Delta\)x = x(t+\(\Delta\)t)-x(t) = \(\not{MM}\)<br />
-                </p>
-            </li>
-            <li>* à 3d
-                <p>
-                    position : \(\vec{r} \text{(t) = } \vec{OM} \)(t) = x(t)\(\vec{U_x}\) + y(t)\(\vec{U_y}\) + z(t)\(\vec{U_z}\)<br />
-                    déplacement : \(\Delta\vec{OM}=\vec{OM}(t+\Delta t) - \vec{om}(t) = \vec{MM'} \)<br />
-                    trajectoire : ensemble des points \( M(t) \)<br />
-                    Eq. horaires : \(\{x(t),y(t),z(t) \}\) Relie la position au temps. <br />
-                </p>
-            </li>
-        </ul>
-    </li>
-    <li>Vitesse moyenne
-        <ul>
-            <li>* à 1d
-                <p>
-                    \( v_{moy} = \frac{\Delta x}{\Delta t} = \frac{x(t+\Delta t) - x(t)}{\Delta t}\)<br />
-                    Sur trajectoire : shema trajectoire.<br />
-                    Sur équations horaires : shema eq horaires.<br />
-                    \( v_moy = \frac{\Delta x }{\Delta t} \)<br />
-                    \( tan\alpha = \frac{\Delta x}{\Delta t} = v_moy \) <em>Pente de la droite \( (MM') \)</em><br />
-                    \( v_moy = \) pente de la droite (MM') dans le plan \(x(t) \)<br />
-                </p>
-            </li>
-            <li>* à 3d
-                <p>
-                    $$ \vec{v_moy} = \frac {\Delta\vec{OM}}{\Delta t} = \frac{\vec{OM}(t+\Delta T) - \vec{OM}(t)}{\Delta t} = 
-                    \frac{\Delta x}{\Delta t} \vec{u_x} + \frac{\Delta y}{\Delta t} \vec{u_y} + \frac{\Delta z}{\Delta t} \vec{u_z}$$
-                    Sur trajectoire à deux dimensions : voir schéma.<br />
-                    \( \vec{v_moy} = \frac{MM'}{\Delta t} \)<br />
-                    Sur équations horaires x(t) et y(t)<br />
-                    -> A trois dimensions<br />
-                    Attention  : \( ||\vec{v_{moy}} \neq \frac{d}{\Delta t} = \frac{\text{distance parcourue pendant }\Delta t}{\Delta t} \)<br />
-                </p>
-            </li>
-        </ul>
-    <li>Vitesse instantanée
-        <ul>
-            <li>* a 1d
-                <p>
-                    $$ v(t) = lim_{\Delta t \rightarrow 0} v_{moy} 
-                     = lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t) - x(t)}{\Delta t} = x'(t) $$<!-- il y a un truc pour taper proprement des limites ! -->
-                    Sur trajectoire : <br />
-                    Schémaaaaaaa ! <br />
-                    Sur équation horaire :<br />
-                    SCHEMAAAAAAAAAAAAAAAAAAAAA ! <br />
-                    \( v(t) = \lim_{\Delta t \rightarrow 0 }\) pente de MM' dans le plan x(t)
-                    = pente de la tangente à x(t) à t
-                    \( = tan\alpha \)
-                </p>
-            </li>
-        </ul>
-    </li>
+<li>Position et déplacement
+<p>
+	<ul>
+	<li> * à 1d
+		<p>
+			Shéma 1
+			position : x(t) = \(\not{OM}\)
+			déplacement pendant \(\delta\)t : \(\delta\)x = x(t+\(\delta\)t)-x(t) = \(\not{MM}\)
+		</p>
+	</li>
+	<li>* à 3d
+		<p>
+			position : \(\vec{r} \text{(t) = } \vec{OM} \)(t) = x(t)\(\vec{U_x}\) + y(t)\(\vec{U_y}\) + z(t)\(\vec{U_z}\)
+			déplacement : \(\delta\vec{OM}=\vec{OM}(t+\delta t) - \vec{om}(t) = \vec{MM'} \)<br />
+			trajectoire : ensemble des points \( M(t) \)<br />
+			Eq. horaires : \(\{x(t),y(t),z(t) \}\) Relie le position au temps. <br />
+		</p>
+	</li>
+	</ul>
+</li>
+<li>Vitesse moyenne
+	<p>
+	<ul>
+	<li>A 1 d :<br />
+		\( v_{moy} = \frac{\delta x}{\delta t} = \frac{x(t+\Delta t) - x(t)}{\delta t}\)<br />
+		Sur trajectoire : shema trajectoire.<br />
+		Sur équations horaires : shema eq horaires.<br />
+		\( v_moy = \frac{\delta x }{\delta t} \)<br />
+		\( tan\alpha = \frac{\delta x}{\delta t} = v_moy \) <em>Pente de la drroite \( (MM') \)</em><br />
+		\( v_moy = \) pente de la droite (MM') dans le plan \(x(t) \)
+	</li>
+	<li>A 3d :<br />
+		$$ \vec{v_moy} = \frac {\delta\vec{OM}}{\delta t} = \frac{\vec{OM}(t+\delta T) - \vec{OM}(t)}{\delta t} = 
+		\frac{\delta x}{\delta t} \vec{u_x} + \frac{\delta y}{\delta t} \vec{u_y} + \frac{\delta z}{\delta t} \vec{u_z}$$
+		Sur trajectoire à deux dimensions : voir schéma.<br />
+		\( \vec{v_moy} = \frac{MM'}{\delta t} \)
+		Sur équations horaires x(t) et y(t)<br />
+		Attention  : \( ||\vec{v_{moy}} \neq \frac{d}{\Delta t} = \frac{\text{distance parcourue pendant }\Delta t}{\Delta t} \)
+	<br />
+	</li>
+	</ul>
+	</p>
+</li>
+<li>Vitesse instantannée
+	<p>
+		<ul>
+			<li>A une dimension :
+			<p>
+				$$ v(t) = \lim_{\Delta t \rightarrow 0} v_moy $$ <!-- il y a un truc pour taper proprement des limites ! -->
+				$$ = \lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t) - x(t)}{\Delta t} = x'(t) $$
+				Sur trajectoire : <br />
+				Schémaaaaaaa ! <br />
+				Sur équation horaire :<br />
+				SCHEMAAAAAAAAAAAAAAAAAAAAA ! <br />
+				\( v(t) = \lim_{\Delta t \rightarrow 0 } \text{pente de MM' dans le plan }x(t) \)<br />
+				\( = \text{pente de la tangente à} x(t)\) à t
+				\( = tan\alpha \)
+				Shéma
+			<ul>
+			<li>notations différentielles
+			<p>
+				lorsque \(\Delta t \to 0\) :<br />
+				On a \(\Delta x \to 0\); l'accroissement devient tellement petit qu'on peut confondre la droite MM' avec la courbre \(x(t)\)<br />
+				Shema<br />
+				dx = accroissement infinitésimal de la variable x<br />
+				dt = accroissement infinitésimal de la variable t<br />
+				(accroissement infinitésimal : aussi petit que l'on veut \(\ne\) 0<br />
+				dx : différentielle de la variable x<br />
+				dt : différentielle de la variable t<br />
+				$$ dx = x(t+dt) - x(t) $$
+				v(t) = \(tan\alpha\) = pente de la tangente à x(t)<br />
+				= \(\frac{dx}{dt}\) car la droite MM' est confondue avec x(t) entre t et t+dt<br />
+				= x'(t)<br />
+				<br />
+				\(\frac{d}{dt}\) = dérivée par rapport à t<br />
+				et donc on a :<br />
+				$$ dx = v(t) dt$$
+				<br />
+				Remarque : lorsque \(\Delta t \to 0\), on a \(\Delta x \to 0\), mais \(\frac{\Delta x}{\Delta t} \nonto 0\)<br />
+				\(\frac{/Delta x}{\Delta t} \to v(t)\)<br />
+				- à 3d :
+				\(\vec{v}(t) = lim_{\Delta t \rightarrow 0} \frac{\Delta x}{\Delta t}\vec{Ux} + lim_{\Delta t \rightarrow 0} \frac{\Delta y}{\Delta t}\vec{Uy} + lim_{\Delta t \rightarrow 0} \frac{\Delta z}{\Delta t}\vec{Uz}\)
+				$$ \vec{v}(t) = \frac{d\vec{OM}}{dt} = \frac{dx}{dt}\vec{u_x} + \frac{dy}{dt}\vec{u_y} + \frac{dz}{dt}\vec{u_z} $$
+				</p>
+				<p>
+				<br />
+				Sur trajectoire :<br />
+				$$ \vec{v}(t) = \lim_{\Delta t \rightarrow 0} \frac{\vec{MM'}}{\Delta t} $$
+				$$ \lim_{x\to\infty}\frac{1}{x} $$
+				Remarque : En mécanique, la dérivée par rapport à \(t\) est aussi notée \(x'(t)\) = \(\dot{x}\)<br />
+				Qu'en est-il des dimensions ?<br />
+				\(\left[ \frac{dx}{dt}\right] = \frac{[dx]}{[dt]} = \frac{L}{T} \)<br />
+				Mouvement uniforme : Si et seulement si \(||\vec{v}(t)|| = \text{constante}\)<br />
+				Mouvement rectiligne uniforme : Si et seulement si \(\vec{v}(t) = \vec{\text{constante}} \)
+				
+			</p>
+		
+			</li>
+			</ul>
+			</p>
+			</li>
+		</ul>
+	</p>
+</li>
+<li> Accélération moyenne, instantannée.
+	<p>
+		A une dimension : <br />
+		$$ a_{\text{moy}} = \frac{v(t+\Delta t) - v(t)}{\Delta t} = \frac{\Delta v}{\Delta t} $$
+		$$ a(t) = lim_{\Delta t \to 0} a_{\text{moy}} $$
+		Notation différentielle : <br />
+		$$ a(t) = \frac{d}{dt} v(t) $$
+		$$ v(t) = \frac{dx(t)}{dt} $$
+		$$ \mapsto a(t) = \frac{d}{dt}\left(\frac{d}{dt} x(t) \right) $$
+		$$ = \frac{d^2x}{dt^2} $$
+		\(d^2\) : On dérive deux fois.<br />
+		\(dt^2\) : Chaque fois par rappot à t.<br />
+		Au niveau des dimensions :<br />
+		\( [d^2x] = L \text{MAIS} [dt^2] = [dt]^2 = T^2 \)<br />
+		et donc : <br />
+		$$ [a]= \frac{[d^2x]}{[dt]^2} = \frac{L}{T^2} $$
+		$$ a(t) = \frac{dv}{dt}(t) = \frac{d^2x}{dt^2} = v'(t) = x''(t) = \dot{v} = \dotdot{x} $$
+		<br />
+		<br />
+		A 3 dimensions :<br />
+		\( \vec{a_{\text{moy}}} = \frac{\Delta \vec{v}}{\Delta t} \)
+		$$ \vec{a}(t) = lim_{\Delta t \to 0}\Vec{a}_{moy} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{OM}}{dt^2} $$
+		$$ = \frac{d^2x}{dt^2}\vec{u_x} + \frac{d^2y}{dt^2}\vec{u_y} + \frac{d^2z}{dt^2}\vec{u_z} $$
+		Mouvement accéléré : si et seulement si \( || \vec{v}(t) \)fonction croissante du temps. <br />
+		<br />
+		$$ \vec{v} . \vec{a} = \vec{v} . \frac{d\vec{v}}{dt} =  \frac{d}{dt}\left(\frac{v^2}{2}\right) $$
+		$$ ff'  = \left(\frac{f^2}{2}\right) $$
+		or \(\vec{v^2} = ||\vec{v}||^2\)<br />
+		DONC : \( v.a = \frac{1}{2}\frac{d}{dt}\left(||\vec{v}||^2 \right)\)<br />
+		Si \(||\vec{v}||\) fonction croissante du temps<br />
+		alors ||v||^2 la même, <br />
+		donc \( \frac{d}{dt}||\vec{v}||^2 > 0. \)<br />
+		Donc \(\vec{a} . \vec{v} > 0\) ! Eh oui Jamie !<br />
+		Mouvement accéléré ssi \vec{a}{v}>0, freiné si <0. <br />
+		Mouvement uniformément varié. ssi : \( \vec{a}(t) = \text{cste} \ne 0 \)<br />
+	</p>
+</li>
+
+<li>THE LAAST. Interprétation géométrique.<br />
+	<p>
+		A une dimension.<br />
+		Shéééééééééééééééééééééééémaaaaaaaa\(a_{a^aa_a^a}a_a^aa_a^a{a_a^aa_a^a}a_a^aa_a^a\)
+		<br />
+		Courbe \(x(t)\) : \(v(t) = \frac{dx}{dt}\) = pente à courbe x(t) à t.<br />
+		Courbe v(t) :<br />
+		Déterminer a partir de la pente à \(x(t)\).<br />
+		v(t) \(>=\) 0<br />
+		v(t) décroissante de \(V_0\) à 0 (= pente de l'asymptote)<br />
+		Shémaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
+		Supposons qu'on obtient cette courbe<br />
+		a(t) = \(\frac{dv}{dt}\)<br />
+		= pente à v(t) à t<br />
+		<br />
+		on a aussi :<br />
+		v(t) = \(\frac{dx}{dt} => dx = v(t) dt\)<br />
+		On intègre : <br />
+		\(\int^{t_2}_{t_1}\,dx = \int^{t_2}_{t_1} v(t)\,dt\)<br />
+		\(\Delta x = x(t_2) = x(t_1) = \pm \text{ aire sous la courbe } v(t)\)<br />
+		Shéma !!!!!!!!!!!!!!!!!!!!!!!!!!!<br />
+		Ici, \(\Delta x > 0\)<br />
+		\(=> \Delta x = + aire\)<br />
+		Si \(v(t) >= 0 \text{ et } t_2 > t_1 => + l'aire\)<br />
+		Si \(v(t) <= 0 \text{ et } t_2 > t_1 => - l'aire\)<br />
+		<br />
+		* courbe a(t)<br />
+		déterminer à partir de pente v(t)<br />
+		\(a(t) <= 0\)<br />
+		a(t) décroissante jusqu'à \(t_i\) puis croissante jusqu'à t qui tend vers l'infini (elle tend vers 0)<br />
+		\(int^{t_2}_{t_1}\,dv = \int{t_2}_{t_1}a(t)\,dt\)<br />
+		$$ \Delta v = v(t_2)-v(t_1)=\pm\text{ aire sous }a(t)$$
+		ici \(\Delta v < 0\)<br />
+		=> \(\Delta v = - aire\)
+	</p>
+</li>
+
+
+</ul>
+</p>
+</li>
 </ol>
 </body>
 </html>
