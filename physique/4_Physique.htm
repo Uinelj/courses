@@ -1,0 +1,166 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<center><h1>Chapitre</h1></center>
+</head>
+<body>
+<li>Quelques mouvements simples
+	<ol>
+		<li>Mouvements rectilignes uniforme
+			<p>
+				\(vec{v}(t) = \vec{constante} \leftrightarrow \vec{a} = \vec{0} \leftrightarrow \vec{v} = \vec{v}_{moy}\)
+			</p>
+		</li>
+		<li>Mouvement uniformément varié
+			<p>
+				\(vec{a}(t) = \vec{constante} \leftrightarrow \vec{a} = \vec{a}_{moy}\)<br />
+				* à 1d : a(t) = a0 = constante<br />
+				<br />
+				2 méthodes :
+				<ul>
+					<li>
+						<p>
+							a(t) = \(\frac{dv}{dt}\)<br />
+							v(t) = primitive de a(t)<br />
+							a(t) = a0<br />
+							v(t) = a0 t + C<br />
+							or à t = 0, v(0) = V0 = a0 * O + C<br />
+							=> C = V0<br />
+							=> v(t) = a0 t + v0<br />
+							<br />
+							v(t) = \(\frac{dx}{dt}\)<br />
+							=> x(t) = primituve de v(t)<br />
+							x(t) = a0 \(\frac{t^2}{2} + V_O t + C'\)<br />
+							or x(0) = X0 = 0+0+C'<br />
+							=> C4 = X0<br />
+							=> x(t) = a0 \(\frac{t^2}{2} + V_0 t + X_0<br />
+						</p>
+					</li>
+					<li>
+						<p>
+							a(t) = a0 = \(\frac{dv}{dt}\)<br />
+							=> dv = a0 dt<br />
+							on intègre entre t = 0 et t<br />
+							\int^t_t=0 \,dv = a0 \int^t_t=0 \,dt<br />
+							v(t) - V0 = a0 (t-0)<br />
+							v(t) = a0 t + v0<br />
+							v(t) = a0 t + v0 = \(\frac{dx}{dt<br />
+							=> dx = (a0 t + v0) dt = a0 t dt + v0 dt<br />
+							on intègre entre t = 0 et t<br />
+							\int^t_t+0 = a0 \int^t_0 t\,dt + v0 \int^t_0 \,dt<br />
+							x(t)-x0 = a0((\frac{t^2}{2}-0) + v0(t-0)<br />
+							x(t) = a0 t^2/2 + V0 t + x0<br />
+						</p>
+					</li>
+				</ul>
+				ex : chute libre à 1d
+				Shéma 1
+				<ul>
+					<li>chute libre :
+						<p>
+							corps soumis unisuqmenet à son poid \(m\vec{g}\)<br />
+							\(\vec{g} = -g\vec{U}_y\) avec g (environ egale) 9,8 \(m.s^{-1}\)<br />
+							\(m\vec{g} = m\vec{a}\)<br />
+							\(\vec{a}(t) = \vec{g} = \vec{constante}\)<br />
+							ATTENTION \(\not{\vec{a}(t) = -\vec{g}}\)<br />
+							\(\leftrightarrow {ax(t) = 0
+											  {ay(t) = -g\)<br />
+						</p>
+					</li>
+					<li>mouvement rectiligne (1d)
+						<p>
+							ssi \(\vec{V_0} = V_0 \vec{U_y}\)<br />
+							<br />
+							<ul>
+								<li>sur x :
+									<p>
+										ax(t) = 0 = \(\frac{dvx}{dt}\)<br />
+										=> Vx(t) = constante = Vx(t=0) = 0<br />
+										= \(\frac{dx}{dt}<br />
+										=> x(t) = constante = x(t=0) = X0<br />
+										=> On a bien mouvement rectiligne sur \(\vec{U_y}\)<br />
+										<br />
+									</p>
+								</li>
+								<li>sur y :
+									<p>
+										ay(t) = -g = \(\frac{dv_y}{dt}\)<br />
+										V_y(t) = -gt + V_{oy}<br />
+										= -gt + v_0 = \(\frac{dy}{dt}\)<br />
+										\(y(t) = -g\frac{t^2}{2} + v_0 t + y_0\)<br />
+										<br />
+									</p>
+								</li>
+								<li>cas part V_0 = 0
+									<p>
+										Shéma 2<br />
+										<ul>
+											<li>h = y_0 - 0 = y_0 - y(t_f)<br />
+												<p>
+													or \(y(t) = \frac{-gt^2}{2} + 0 + y_0<br />
+													=> y_0 - y(t) = \frac{gt^2}{2} \alpha t^2\)<br />
+													=> h = \(\frac{gt^2_f}{2}\)<br />
+													mesure de t_f permet de calculer la hauteur de la chute<br />
+													ex : mesurer la profondeur d'un puits ou la heuteur d'un pont...<br />
+												</p>
+											</li>
+											<li>
+												<p>
+													V_y(t) = -gt + 0<br />
+													donc : \(||\vec{v}|| = |v_y(t)| car v_2(t) = 0<br />
+													= gt fonction croissante de t<br />
+													=> mouvement accéléré<br />
+													=> V_y(t_f) est la vitesse max et non = 0 !!!!!!!<br />
+												</p>
+											</li>
+											<li>
+												<p>
+													Galilée avait prédit avec l'existence<br />
+													\(h.\alpha.t^2\)<br />
+													\(||\vec{v}|| fonction croissante de t\)<br />
+													v(t) indépendant de la masse<br />
+												</p>
+											</li>
+										</ul>
+									</p>
+								</li>
+								<li>si v0 \(>=\) 0
+									<p>
+										Shéma 3<br />
+										a(t) = -g<br />
+										v_y(t) = -gt + v0<br />
+										\(y(t) = -g\frac{t^2}{2} + V_0 t + y_0<br />
+										hauteur max : à t_s, y(t_s) = y_s<br />
+										or à t_s : v_y(t_s) = 0<br />
+										la balle fait <u>demi tour</u><br />
+										v_y(t_s) = 0
+										\(\leftrightarrow -gt_s + v_0 = 0\)
+										\(\leftrightarrow t_s = \frac{v_0}{g}\)
+										\(\leftrightarrow y_s = y(t_s) = -g\frac{t_s}{2} + v_0 t_s + y_0\)<br />
+										\(y_s = \frac{-g}{2}.\frac{v^2_0}{g^2} + v_0.\frac{v_0}{g} + y_0\)
+										\( \frac{v_0^2}{2g} + y_0\)<br />
+										v_y(t) = -gt + v_0
+										\(0 <= t <= t_s, v_y(t) >= 0\)<br />
+										=> ||\frac{v}(t)|| = |v_y(t)| = v_y(t)
+										= -gt + v_0 fonction décroissante de t<br />
+										=> mouvement ralenti
+										\(t_s <= t <= t_f, v_y(t) <= 0\)
+										=> \(||\vec{v}|| n= |v_y(t)| = -v_y(t)\)
+										= gt - v_0 fonction croissante de t
+										=> mouvement accéléré
+										ATTENTION \(\vec{a}(t) = \vec{constante} = \vec{g}
+										pendant toute la chute et non a = +g à la monté et a =-g à la descente
+									</p>
+								</li>
+							</ul>
+						</p>
+					</li>
+				</ul>
+			</p>
+		</li>
+	</ol>
+</li>
+</body>
+</html>
