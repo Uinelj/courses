@@ -1,0 +1,82 @@
+<html>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<ol>
+	<li><h2>Généralités sur les suites.</h2>
+		<p>
+			<ol>
+				<li><h3>Définition.</h3>
+					<p>
+						Une suite de nombres réels \(u\) esy une application de \(\mathbb N\) dans \(\mathbb R\)<br />
+						On note \(u_n\) l'image de l'entier \(n\in \mathbb N\) par \(u\).<br />
+						La suite se note \(u\) ou \( (u_n)_{n\in\mathbb N} \).<br />
+						Remarque : L'ensemble de départ peut parfois être \(\mathbb N^*, ..\)<br />
+						Ex : \(u: \mathbb N \rightarrow \mathbb R\), \(n \mapsto \mathbb 2n+1\)<br />
+						
+					</p>
+					<p>
+						Définition : Si \(u\) et \(v\) sont deux suites, \(u+v\) est la suite définie par \((u+v)_{n} = u_n + v_n\). <br />
+						De même, \(uv\) est la suite définie par \((uv)_n = u_n \times v_n \)<br />
+						Si \( \lambda \in \mathbb R \) et \(u\) suite, alors \(\lambda u\) est la suite définie par \((\lambda u)_n = \lambda u_n \)<br />
+					</p>
+					<p>
+						Définition : On dira qu'une proprieté \(P(n)\) est vraie à partir d'un certain rang si 
+						$$ \exists n\in\mathbb N \text{ tel que } n\ge n_0 \rightarrow P(n) \text{vraie} $$
+						Exemple : \( P(n) : "u_n \ge 0" \)<br />
+						Soit : \( \mathbb N \rightarrow \mathbb R \)<br />
+						\( n \rightarrow (n-2)(n-6) \)<br />
+						\( u_n = 0 \leftrightarrow n \le 2 \text{ ou } n \ge 6\)<br />
+						Donc \(P(n)\) est vraie à partir d'une certain rang \(n\)<br />
+					</p>
+				</li>
+				<li><h3>Suites croissantes / décroissantes.</h3>
+					<p>
+						Définition : On dit que la suite \((u_n)_{n\in\mathbb N}\) est :
+						<ul>
+							<li>Croissante si : \(\forall n \in \mathbb N, u_n \le u_{n+1}\)</li>
+							<li>Décroissante si : \(\forall n \in \mathbb N, u_n \ge u_{n+1}\)</li>
+							<li>Strictement croissante si : \(\forall n \in \mathbb N, u_n < u_{n+1}\)</li>
+							<li>Croissante si : \(\forall n \in \mathbb N, u_n > u_{n+1}\)</li>
+							<li>Monotone si elle est croissante ou décroissante.</li>
+							<li>Constante si : \( \forall n \in\mathbb N, u_n = u_{n+1}\)</li>
+							<li>Stationnaire si : \exists n_0 \in \mathbb N, \forall n\ge n_0, u_n = u_{n+1}</li>
+						</ul>
+					</p>
+				</li>
+				<li><h3>Suites minorées, majorées, bornées.</h3>
+					<p>	
+						Définition : On dit qu'une suite est :
+						<ul>
+							<li>Majoriée si \( \exists M \in \mathbb R, \forall n \in \mathbb N, u_n \le M\)</li>
+							<li>Minorée si \( \exists m \in \mathbb R, \forall n\in \mathbb N, u_n \ge m\)</li>
+							<li>Bornée si elle est majorée et minorée.</li>
+						</ul>
+						Remarque : Si \(u\) est croissante (resp. décroissante), alors elle est minorée(majorée) par \(u_0\).<br />
+						Remarque : \(u\) est bornée si et seulement si : \( \exists M \in \mathbb R \text{ tel que } \forall n \in \mathbb N, |u_n|\le M\)<br />
+					</p>
+				</li>
+				<li><h3>Limites de suites</h3>
+					<p>
+					<ol>
+						<li>Suites convergentes.
+							<p>
+								On dit qu'une suite \(u_n\) a pour limite \(l \in \mathbb R\), que l'on note \(lim u_n = l \) ou bien \( u_n \rightarrow_{n\rightarrow l}\),
+								si : 
+								$$ \forall \epsilon > 0, \exists N\in\mathbb N, \forall n\ge N, |u_n - l|<\epsilon $$ 
+								( on peut écrire )<br />
+								$$ \forall \epsilon > 0, \exists N\in\mathbb N, \forall n\in\mathbb N, n\ge \rightarrow [u_n - l|< \epsilon $$
+								On dit que la suite \(u_n\) converge s'il existe \(n\in\mathbb R\) tel que \(lim u_n = l\)<br />
+								Sinon, on dit qu'elle diverge.<br />
+								
+							</p>
+						</li>
+						
+					</ol>
+					</p>
+				</li>
+			</ol>
+		</p>
+	</li>
+</ol>
+</html>
