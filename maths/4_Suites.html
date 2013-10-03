@@ -68,6 +68,25 @@
 								$$ \forall \epsilon > 0, \exists N\in\mathbb N, \forall n\in\mathbb N, n\ge \rightarrow [u_n - l|< \epsilon $$
 								On dit que la suite \(u_n\) converge s'il existe \(n\in\mathbb R\) tel que \(lim u_n = l\)<br />
 								Sinon, on dit qu'elle diverge.<br />
+								Proprieté : Si la suite \(u\) converge, alors sa limite est unique.<br />
+								Démonstration : <em>Par l'absurde.</em>
+								<p>
+									On suppose que \(u\) a deux limites \(l_1, l_2\) distinctes.<br />
+									Soit \(\epsilon = |\frac{l_2 - l_1}{2}>0 \).
+									$$ \exists N_1\in\mathbb N, n \ge N_1 \rightarrow |u_n-l_1|<\epsilon $$ <br />
+									$$ \exists N_2\in\mathbb N, n \ge N_2 \rightarrow |u_n-l_2|<\epsilon $$ <br />
+									Soit \(N=max(N_1, N_2)\) <br />
+									Si \(n\ge N on a alors : $$ |u_n - l_1|<\epsilon \text{ et } |u_n - l_2|<epsilon $$<br />
+									Donc si \(n\ge N\):<br />
+									$$ |l_1-l_2| = |(l_1-u_n)+(u_n-l_2)| \\
+										\le |l_1-u_n|+|u_n-l_2| \\ 
+										<\epsilon + \epsilon \\
+										\le |l_2 - l_1 |
+									$$<br />
+									On a donc \(|l_1-l_2| < |l_1-l_2|\)<br />
+									Contradiction.<br />
+									Donc \(l_1=l_2\) et la limite est unique.<br /> 
+								</p>
 								
 							</p>
 						</li>
@@ -80,3 +99,4 @@
 	</li>
 </ol>
 </html>
+œ
