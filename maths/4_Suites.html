@@ -90,13 +90,89 @@
 								
 							</p>
 						</li>
-						
+						<li>Suites divergentes.
+						<p>
+							Définition : On dit que la suite \(u\) tend vers \(+\infty\) si :
+							$$ \forall A\in\mathbb R, \exists n\in\mathbb N, n\ge N \rightarrow u_n > A $$<br />
+							Définition : On dit que la suite \(u\) tend vers \(-\infty\) si :
+							$$ \forall A\in\mathbb R, \exists n\in\mathbb N, n\ge N \rightarrow u_n < A $$<br />
+						</p>
+						</li>
+						Proprietés :
+						<ol>
+							<li>Si \(u\) converge elle est bornée.</li>
+							<li>Si \(u\) tend vers \(+\infty\), elle est minorée et pas majorée.</li>
+							<li>Si \(u\) tend vers \(-\infty\), elle est majorée et pas minorée.</li>
+						</ol>
+						Démontration du (1) et du (2).<br />
+						<ol>
+							<li>
+								<p>
+									Soit \(\epsilon = 1\). <br />
+									$$ \exists N\in\mathbb N, n\ge N \rightarrow |u_n -l|<1 $$<br />
+									En particulier, si n\ge N, 
+									$$  |u_n|=|u_n-l+l| \\ 
+										\le |u_n-l|+|l| \\
+										< 1+|l|\\
+										
+									$$<br />
+									Soit \(M=max(|u_0|, |u_1|, ... |u_{n-1}|,|l|+1\)<br />
+									Pour tout \(n\in\mathbb N\) on a bien : 
+									$$ |u_n| \le M $$
+									Donc \((u_n)_n est bornée. <br /> 
+								</p>
+							</li>
+							<li>
+							<p>
+								Soit \(A=0\).<br />
+								$$ \exists N\in\mathbb N, n\ge N \rightarrow u_n > 0 $$
+								Soit \(m=min(u_0, u_1, ... 0\)\)<br />
+								On a bien \(u_n\ge m\) pout tout \(n\in\mathbb N\)<br />
+								Par l'absurde, si \(M\) est un majorant, par définition de \(u_n \rightarrow +\infty\) :
+								$$ \exists N\in\mathbb N, n\ge N \rightarrow u_n > M $$
+								ce qui contredit le fait que \(M\) est un majorant.<br />
+							</p>
+							</li>
+						</ol>
 					</ol>
 					</p>
 				</li>
 			</ol>
 		</p>
+				<li><h3>Opérations sur les limites.</h3></li>
+				<p>
+				Proprieté : Si \(u\rightarrow l \text{et} v\rightarrow l'\)
+				<ol>
+					<li>\(u+v\) tend vers \(l+l'\)</li>
+					<li>u\times v\) tend vers \(l\times l'\)</li>
+					<li>Si \(\lambda\in\mathbb R, \lambda u\) tend vers \(\lambda l\)</li>
+					<li>Si \(\forall n\in\mathbb N, u_n \ne 0 \text{et} l\ne 0\) :<br />, \(\frac{1}{u}\)tend vers \(\frac{1}{l}\).</li>
+					<li>Si \(\forall n\in\mathbb N, u_n \ne 0 et l\ne 0,\), alors \frac{v}{u} tend vers \frac{l'}{l}\).</li>
+					<li>Si \(u\) bornée et \(v\) tend cers 0 alors u\times v tend vers 0.</li>
+					<li>Si \(u\rightarrow +\infty\) et \(v\rightarrow +\infty alors \(u+v\rightarrow +\infty.\)</li>
+					<li>Si \(u\rightarrow -\infty\) et \(v\rightarrow -\infty alors \(u+v\rightarrow -\infty.\)</li>
+					<li>Si \(u\rightarrow l\) et \(v\rightarrow +\infty alors \(u+v\rightarrow +\infty.\)</li>
+					<li>Si \(u\rightarrow l) et \(v\rightarrow -\infty alors \(u+v\rightarrow -\infty.\)</li>
+					<li>Si \(u\rightarrow +\infty\) et \(v\rightarrow +\infty alors \(u\times v\rightarrow +\infty.\)</li>
+					<li>Si \(u\rightarrow +\infty\) et \(v\rightarrow -\infty alors \(u+v\rightarrow -\infty.\)</li>
+					<li>Si \(u\rightarrow -\infty\) et \(v\rightarrow -\infty alors \(u+v\rightarrow +\infty.\)</li>
+					<li>Si \(u\rightarrow l\) et \(v\rightarrow +\infty alors \(u+v\rightarrow \pm \infty\) en fonction du signe de \(l\).</li>
+					<li>Si \(u\rightarrow +\infty\) alors \frac{1}{u} \rightarrow 0\)</li>
+					<li>Si \[u\rightarrow 0\) et \(u\) strictement positive à partir d'un certain rang, alors \(\frac{1}{u}\rightarrow +\infty</li>
+				</ol>
+				Démonstration du 1.<br />
+				On sait : 
+				<ul>
+					<li>$$\forall\epsilon > 0, \exists N_1\in\mathbb N, n\ge N_1 \rightarrow |u_n-l|<\epsilon $$<br /></li>
+					<li>$$\forall\epsilon > 0, \exists N_2\in\mathbb N, n\ge N_2 \rightarrow |u_n-l'|<\epsilon $$<br /></li>
+				</ul>
+				On veut montrer : 
+				$$ \forall\epsilon > 0, \exists N\in\mathbb N, n\ge N \rightarrow |(u_n+v_n)-(l+l')|<\epsilon $$<br />
+				Soit \(\epsilon > 0.\)<br />
+				Si \(n\ge N\) on a \(|u_n - l|<\epsilon\) et \(|v_n-l'|<\epsilon\)<br />
+				et donc \( |u_n+v_n)-(l+l')|\le|u_n-l|+|v_n-l'|<2\frac{\epsilon}{2}\)<br />
+				</p>
 	</li>
 </ol>
 </html>
-œ
+
