@@ -15,8 +15,8 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 	<li> * à 1d
 		<p>a
 			Shéma 1
-			position : x(t) = \(\bar{OM}\)
-			déplacement pendant \(\delta\)t : \(\delta\)x = x(t+\(\delta\)t)-x(t) = \(\bar{MM}\)
+			position : x(t) = \(\vec{OM}\)
+			déplacement pendant \(\delta\)t : \(\delta\)x = x(t+\(\delta\)t)-x(t) = \(\vec{MM}\)
 		</p>
 	</li>
 	<li>* à 3d
@@ -34,13 +34,7 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 	<ul>
 	<li>A 1 d :<br />
 		\( v_{moy} = \frac{\delta x}{\delta t} = \frac{x(t+\Delta t) - x(t)}{\delta t}\)<br />
-		Sur trajectoire : shema trajectoire.<br />
-		Sur équations horaires : shema eq horaires.<br />
-		\( v_moy = \frac{\delta x }{\delta t} \)<br />
-		\( tan\alpha = \frac{\delta x}{\delta t} = v_moy \) <em>Pente de la drroite \( (MM') \)</em><br />
-		\( v_moy = \) pente de la droite (MM') dans le plan \(x(t) \)
-	</li>
-	<li>A 3d :<br />
+		Sur trajectoire : A
 		$$ \vec{v_moy} = \frac {\delta\vec{OM}}{\delta t} = \frac{\vec{OM}(t+\delta T) - \vec{OM}(t)}{\delta t} = 
 		\frac{\delta x}{\delta t} \vec{u_x} + \frac{\delta y}{\delta t} \vec{u_y} + \frac{\delta z}{\delta t} \vec{u_z}$$
 		Sur trajectoire à deux dimensions : voir schéma.<br />
@@ -57,15 +51,19 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 		<ul>
 			<li>A une dimension :
 			<p>
-				$$ v(t) = \lim_{\Delta t \rightarrow 0} v_moy $$ <!-- il y a un truc pour taper proprement des limites ! -->
-				$$ = \lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t) - x(t)}{\Delta t} = x'(t) $$
+				$$ \begin{align*}
+				v(t) & = \lim_{\Delta t \rightarrow 0} v_moy \\
+				 &= \lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t) - x(t)}{\Delta t} = x'(t)
+				 \end{align*}$$
 				Sur trajectoire : <br />
 				Schémaaaaaaa ! <br />
 				Sur équation horaire :<br />
 				SCHEMAAAAAAAAAAAAAAAAAAAAA ! <br />
-				\( v(t) = \lim_{\Delta t \rightarrow 0 } \text{pente de MM' dans le plan }x(t) \)<br />
-				\( = \text{pente de la tangente à} x(t)\) à t
-				\( = tan\alpha \)
+				\( \begin{align*}
+				v(t) &= \lim_{\Delta t \rightarrow 0 } \text{pente de MM' dans le plan }x(t) \\
+				&= \text{pente de la tangente à} x(t) à t \\
+				&= tan\alpha
+				\end{align*}\)<br />
 				Shéma
 			<ul>
 			<li>notations différentielles
@@ -79,16 +77,18 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 				dx : différentielle de la variable x<br />
 				dt : différentielle de la variable t<br />
 				$$ dx = x(t+dt) - x(t) $$
-				v(t) = \(tan\alpha\) = pente de la tangente à x(t)<br />
-				= \(\frac{dx}{dt}\) car la droite MM' est confondue avec x(t) entre t et t+dt<br />
-				= x'(t)<br />
+				\( \begin{align*}
+				v(t) &= tan\alpha = \text{ pente de la tangente à }x(t) \\
+				&= \frac{dx}{dt} \text{ car la droite MM' est confondue avec x(t) entre t et t+dt } \\
+				&= x'(t)
+				\end{align*}\)<br /> 
 				<br />
 				\(\frac{d}{dt}\) = dérivée par rapport à t<br />
 				et donc on a :<br />
 				$$ dx = v(t) dt$$
 				<br />
 				Remarque : lorsque \(\Delta t \to 0\), on a \(\Delta x \to 0\), mais \(\frac{\Delta x}{\Delta t} \not{\to} = 0\)<br />
-				\(\frac{/Delta x}{\Delta t} \to v(t)\)<br />
+				\(\frac{\Delta x}{\Delta t} \to v(t)\)<br />
 				- à 3d :<br />
 				\(\vec{v}(t) = lim_{\Delta t \rightarrow 0} \frac{\Delta x}{\Delta t}\vec{Ux} + lim_{\Delta t \rightarrow 0} \frac{\Delta y}{\Delta t}\vec{Uy} + lim_{\Delta t \rightarrow 0} \frac{\Delta z}{\Delta t}\vec{Uz}\)<br />
 				$$ \vec{v}(t) = \frac{d\vec{OM}}{dt} = \frac{dx}{dt}\vec{u_x} + \frac{dy}{dt}\vec{u_y} + \frac{dz}{dt}\vec{u_z} $$
@@ -96,8 +96,10 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 				<p>
 				<br />
 				Sur trajectoire :<br />
-				$$ \vec{v}(t) = \lim_{\Delta t \rightarrow 0} \frac{\vec{MM'}}{\Delta t} $$
-				$$ \lim_{x\to\infty}\frac{1}{x} $$
+				$$ \begin{align*}
+				\vec{v}(t) &= \lim_{\Delta t \rightarrow 0} \frac{\vec{MM'}}{\Delta t} \\
+				&= \lim_{x\to\infty}\frac{1}{x} 
+				\end{align*}$$
 				Remarque : En mécanique, la dérivée par rapport à \(t\) est aussi notée \(x'(t)\) = \(\dot{x}\)<br />
 				Qu'en est-il des dimensions ?<br />
 				\(\left[ \frac{dx}{dt}\right] = \frac{[dx]}{[dt]} = \frac{L}{T} \)<br />
@@ -122,10 +124,12 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
                 Notation différentielle : <br />
                 $$ a(t) = \frac{d}{dt} v(t) $$
                 $$ v(t) = \frac{dx(t)}{dt} $$
-                $$ \mapsto a(t) = \frac{d}{dt}\left(\frac{d}{dt} x(t) \right) $$
-                $$ = \frac{d^2x}{dt^2} $$
+                $$ \begin{align*}
+                \mapsto a(t) &= \frac{d}{dt}\left(\frac{d}{dt} x(t) \right) \\
+                &= \frac{d^2x}{dt^2} 
+                \end{align*}$$
                 \(d^2\) : On dérive deux fois.<br />
-                \(dt^2\) : Chaque fois par rappot à t.<br />
+                \(dt^2\) : Chaque fois par rapport à t.<br />
                 Au niveau des dimensions :<br />
                 \( [d^2x] = L \text{ MAIS } [dt^2] = [dt]^2 = T^2 \)<br />
                 et donc : <br />
@@ -136,8 +140,10 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
             </li>
             <li>A 3 dimensions :<br />
                 \( \vec{a_{\text{moy}}} = \frac{\Delta \vec{v}}{\Delta t} \)
-                $$ \vec{a}(t) = lim_{\Delta t \to 0}\vec{a}_{moy} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{OM}}{dt^2} $$
-                $$ = \frac{d^2x}{dt^2}\vec{u_x} + \frac{d^2y}{dt^2}\vec{u_y} + \frac{d^2z}{dt^2}\vec{u_z} $$
+                $$ \begin{align*}
+                \vec{a}(t) = lim_{\Delta t \to 0}\vec{a}_{moy} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{OM}}{dt^2} \\
+                &= \frac{d^2x}{dt^2}\vec{u_x} + \frac{d^2y}{dt^2}\vec{u_y} + \frac{d^2z}{dt^2}\vec{u_z} 
+                \end{align*}$$
                 Mouvement accéléré : si et seulement si \( || \vec{v}(t) \)fonction croissante du temps. <br />
                 <br />
                 $$ \vec{v} . \vec{a} = \vec{v} . \frac{d\vec{v}}{dt} =  \frac{d}{dt}\left(\frac{v^2}{2}\right) $$
@@ -148,7 +154,7 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
                 alors ||v||^2 la même, <br />
                 donc \( \frac{d}{dt}||\vec{v}||^2 > 0. \)<br />
                 Donc \(\vec{a} . \vec{v} > 0\) ! Eh oui Jamie !<br />
-                Mouvement accéléré ssi \vec{a}{v}>0, freiné si <0. <br />
+                Mouvement accéléré ssi \(\vec{a}{v}>0\text{, freiné si < 0}\). <br />
                 Mouvement uniformément varié. ssi : \( \vec{a}(t) = \text{cste} \ne 0 \)<br />
             </li>
         </ul>
@@ -158,7 +164,7 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 <li>THE LAAST. Interprétation géométrique.<br />
 	<p>
 		A une dimension.<br />
-		Shéééééééééééééééééééééééémaaaaaaaa\(a_{a^aa_a^a}a_a^aa_a^a{a_a^aa_a^a}a_a^aa_a^a\)
+		Shéééééééééééééééééééééééémaaaaaaaa
 		<br />
 		Courbe \(x(t)\) : \(v(t) = \frac{dx}{dt}\) = pente à courbe x(t) à t.<br />
 		Courbe v(t) :<br />
@@ -208,27 +214,27 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 						<ul>
 							<li>
 								<p>
-									$$ a(t) = \frac{dv}{dt} $$<br />
-									$$ v(t) = primitive de a(t) $$<br />
-									$$ a(t) = a_0<br />
-									$$ v(t) = a_0 t + C<br />
-									$$ or à t = 0, v(0) = v_0 = a_0 * O + C<br />
-									$$ \rightarrow C = v_0<br />
-									=> v(t) = a_0 t + v_0<br />
+									$$ a(t) = \frac{dv}{dt} $$
+									$$ v(t) = primitive de a(t) $$
+									$$ a(t) = a_0$$
+									$$ v(t) = a_0 t + C$$
+									$$ \text{or à }t = 0, v(0) = v_0 = a_0 * O + C$$
+									$$ \rightarrow C = v_0$$
+									\(\rightarrow v(t) = a_0 t + v_0\)<br />
 									<br />
 									v(t) = \(\frac{dx}{dt}\)<br />
-									=> x(t) = primituve de v(t)<br />
+									=> x(t) = primitive de v(t)<br />
 									x(t) = a_0 \(\frac{t^2}{2} + V_O t + C'\)<br />
 									or x(0) = X0 = 0+0+C'<br />
 									=> C4 = X0<br />
-									=> x(t) = a_0 \(\frac{t^2}{2} + V_0 t + X_0<br />
+									=> x(t) = a_0 \(\frac{t^2}{2} + V_0 t + X_0\)<br />
 								</p>
 							</li>
 							<li>
 								<p>
 									$$ a(t) = a_0 = \frac{dv}{dt} $$
 									$$ => dv = a_0 dt $$
-									$$ on intègre entre t = 0 et t $$
+									$$ \text{on intègre entre t = 0 et t} $$
 									$$ \int^t_t=0 \,dv = a_0 \int^t_t=0 \,dt $$
 									$$ v(t) - v_0 = a_0 (t-0) $$
 									$$ v(t) = a_0 t + v_0 $$
@@ -246,7 +252,7 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 						<ul>
 							<li>chute libre :
 								<p>
-									corps soumis unisuqmenet à son poid \(m\vec{g}\)<br />
+									corps soumis uniquement à son poid \(m\vec{g}\)<br />
 									\(\vec{g} = -g\vec{U}_y\) avec g (environ egale) 9,8 \(m.s^{-1}\)<br />
 									\(m\vec{g} = m\vec{a}\)<br />
 									\(\vec{a}(t) = \vec{g} = \vec{constante}\)<br />
@@ -395,9 +401,66 @@ Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accél
 				</ul>
 			</p>
 		</li>
+		<li>Mouvement circulaire uniforme
+			<p>
+				Def : Mouvement d'un corps sur un cercle avec une vitesse angulaire<br />
+				\(w(t) = \frac{d\theta}{dt} = \dot{\theta} = constante\)<br />
+				Shéma 1<br />
+				La position du corps repéré par l'angle \(\theta(t)\) (W en \(rad.s_{-1}\))<br />
+				Supposons à t=0, \(\theta(t=0)=0 \)<br />
+				\(\rightarrow w = \frac{d\theta}{dt} = constante\)<br />
+				\(\rightarrow \theta(t) = wt\)<br />
+				\( \begin{align*}
+				\vec{OM} &= R.cos(\theta(t)).\vec{U_x} + R.sin(\theta(t)).\vec{U_y} \\
+				&= R.cos(wt).\vec{U_x} + R.sin(wt).\vec{U_y}
+				\end{align*}\)<br />
+				\( \begin{align*}
+				\vec{v}(t) &= \frac{d\vec{OM}}{dt} \\
+				&= -R.w.sin(wt).\vec{U_x} + R.cos(wt).\vec{U_y}
+				\end{align*}\)<br />
+				\(a(t) = -R.w².cos(wt).\vec{U_x} - R.w².sin(wt).\vec{U_y}\)<br />
+				<br />
+				\(\vec{v}(t)\) tangent au cercle<br />
+				\(\rightarrow\) il existe un choix de base plus astucieurx = base polaire<br />
+				Shéma 2<br />
+				\(\vec{U_r}\) = vecteur unitaire parallèle à \(\vec{OM}\)<br />
+				\(\vec{U_{\theta}}\) = vecteur unitaire tant que \((\widehat{U_r;U_{\theta}}) = \frac{\pi}{2}\)<br />
+				Shéma 3<br />
+				\(\vec{U_r} = cos(wt).\vec{U_x} + sin(wt).\vec{U_y}\)<br />
+				\(\vec{U_{\theta}} = -sin(wt).\vec{U_x} + cos(wt).\vec{U_y}\)<br />
+				On peut réécrire ces vecteurs dans la base polaire :<br />
+				\(\vec{OM} = R.\vec{U_r}\)<br />
+				\(\vec{v}(t) = R.w.\vec{U_{\theta}}\)<br />
+				\(\vec{a}(t) = -R.w².\vec{U_r}\) centripète<br />
+				<br />
+				\(||\vec{u}|| = R.w = constante\)<br />
+				\(||\vec{a}|| = R.w² = constante = \frac{v²}{R}\)<br />
+				\(||\vec{v}|| = constante\) MAIS \(\vec{v} \ne \vec{constante}\)<br />
+				<br />
+				période de rotation<br />
+				\(T = \frac{2.\pi}{w}\)<br />
+				\(\vec{OM} = R.\vec{U_r}\)<br />
+				\(\rightarrow \vec{v} = \frac{d\vec{OM}}{dt} = R.\frac{d\vec{U_r}}{dt}\)
+			</p>
+		</li>
+		<li>Mouvement relatif
+			<p>
+				<u>Référentiel</u><br />
+				repère + horloge -> R(0,x,y,z;t)<br />
+				le mouvement est relatif s'il dépend de l'observateur.<br />
+				ex : balle lancée à la verticale dans un train à vitesse constante<br />
+				<br />
+				On considère R' en translation rectiligne uniforme dans R<br />
+				Shéma suivant<br />
+				R'(O',x,y,z;t) tel que O' se déplace avec \(\vec{v} = \vec{constante} \text{ dans R}\)
+				<br />
+				<u>passage de R à R'</u><br />
+				\(\vec{OM} = \vec{OO'} + \vec{O'M}\)<br />
+				\(\vec{V_r}(M) = \vec{V} + \vec{V_R'}(M)\)<br />
+			</p>
+		</li>			
 	</ol>
 </li>
-
 </ul>
 </p>
 </li>
