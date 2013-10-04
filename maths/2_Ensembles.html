@@ -1,0 +1,138 @@
+<html>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Th&eacute;orie des ensembles.</title>
+<body>
+<h1>Th&eacute;orie des ensembles.</h1>
+<p>
+	Un ensemble est <em>(D&eacute;finition pas vraiment math&eacute;matique)</em> une collection d'objets (d'&eacute;l&eacute;ments).<br /><br />
+	D&eacute;finition : 
+	<ol>
+		<li>Si \(E\) et \(F\) sont des ensembles, on dit que \(E\) est inclus dans \(F\), not&eacute; \(E\subset F\), si tout &eacute;l&eacute;ment de \(E\) est aussi &eacute;l&eacute;ment de \(F\). <em>On dit aussi que \(E\) est un sous-ensemble de \(F\).</em></li>
+		<li>On appelle instersection de \(E\) et (\F\), not&eacute; \(E\cap F\), l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) et dans \(F\)</li>
+		<li>Si E et F sont des ensembles, on appelle r&eacute;union de E et F, not&eacute; EuF, l'ensemble des &eacute;l&eacute;ments qui sont dans \(E\) ou dans \(F\)</li>
+		<li>On appelle compl&eacute;mentaire de \( E \) dans \( F \), not&eacute; \( F \setminus E \), l'ensemble des &eacute;l&eacute;ments qui sont dans \(F\) qui ne sont pas dans \(E\)</li>
+	</ol>
+	Notation : <br />
+	<p>
+		<ul>
+			<li>L'ensemble vide, not&eacute; \(\varnothing \), est l'ensemble qui ne contient aucun &eacute;l&eacute;ment.</li>
+			<li>
+				Un ensemble contenant un seul &eacute;l&eacute;ment \(x\) est appel&eacute; singleton, not&eacute; \(\{x\}\).<br />
+				Exemple : \( 1 \in \mathbb N\) signifie "\(1\) est un &eacute;l&eacute;ment de \(\mathbb N \).<br />
+				\(\{1\} \subset \mathbb N \) signifie "Le singleton \(\{1\}\) est inclus dans \(\mathbb N\)".<br />
+			</li>
+			<li>
+			<p>
+				L'ensemble des parties de \(E\) est not&eacute;e \(P(E)\) : Si \( E = \{0, 1\}, P(E) = \{\varnothing, \{0\}, \{1\}, \{0, 1\}\}\).<br />
+				Remarque : si \( F \subset E \), on &eacute;crira aussi \( F \in P(E) \).<br />
+				Remarque : Lorsqu'on prend le compl&eacute;mentaire, s'il n'y a pas d'ambiguit&eacute; sur \(F\), on notera aussi \(E^C \) au lieu de \( F\setminus E \).<br />
+			</p>
+			</li>
+		</ul>
+	</p>
+	<p>
+	<ul>
+		
+		<li><h3>Lien entre sous-ensemble et connecteurs logiques</h3>
+			<p>
+				Si \(E\) est une ensemble et \( A \subset E \), on peut leur associer une proposition logique \( P(x) \)
+				\(P(x)\) est vraie si \( x \in A \)<br />
+				\(P(x)\) est fausse si \( x \notin A \)<br />
+				On prend \( B \subset E \) et \( Q(x) \) la proposition logique associ&eacute;e. <br />
+				Alors :<br />
+				<ol>
+					<li>La proposition logique associ&eacute;e &agrave; \( A\cap B \) est \(P(x)\) et \(Q(x)\)</li>
+					<li>Celle associ&eacute;e &agrave; \(A \cup B\) est \( P(x) \vee Q(x) \)</li>
+					<li>Celle associ&eacute;e &agrave; \( A^C = E\setminus A \) est \( \neg P(x) \)</li>
+					<li>\( A \subset B \) se traduit par : \( P(x) \rightarrow Q(x) \)</li>
+					<li>\( A = B \) se traduit par : \( P(x) \leftrightarrow Q(x) \)</li>
+				</ol>
+			</p>
+		</li>
+		</ul>
+	<p>
+		Def : Si E et F sont deux ensembles, on appelle produit cart&eacute;sien de E par F,
+		not&eacute; \(E \times F\), l'ensemble \(\{x, y) | x\in F\text{et} y\in F\}\)<br />
+		Exemple : L'ensemble des points du plan est \(\mathbb R \times \mathbb R = \mathbb  R^2\).<br />
+		Remarque : De même, on d&eacute;finit \( E_1 \times E_2 \times ... \times E_n = \{ (x_1,..x_n) | x_1 \in E_1, ... x_n \in E_n \}\)<br />
+		Et on notera \(E^n = E\times E\times E\times E.. \), \(n\) fois.<br />
+		Remarque : \(E\times F, (x,y)=(x',y') \text{ssi} x=x' et y=y'\).<br />
+		Applications entre ensembles<br />
+		Def : Si \(E\) et \F\) sont deux ensembles, une application \(F\) de \(E\) dans \(F\) est la donn&eacute;e pour <strong>chaque</strong> &eacute;l&eacute;ment \(x\in E \) d'un unique &eacute;l&eacute;ment \(y \in F\)<br />
+		On notera \( y = f(x) \).<br />
+		<em>Sch&eacute;ma 1</em>
+		<br />
+		D&eacute;finition : Deux applications \(f\) et \(g\) sont les mêmes si : 
+		<ul>
+			<li>Les ensembles de d&eacute;part et d'arriv&eacute;e sont les mêmes.</li>
+			<li>\(\exists x\in E, f(x) = g(x)\)</li>
+		</ul>
+		Def : \(F\), \(E\) deux ensmebles, \( f:E\rightarrow F\) une application et \(A\subset E\).<br />
+		On appelle image directe de \(A\) par \(f\) l'ensemble \( f(A)= \{ f(x) | x\in A \} \)
+		On peut aussi &eacute;crire : \(f(A) = \{y\in F | \exists x\in A, y=f(x) \}\)<br />
+		Propriet&eacute; : \(E, F\) deux ensembles, \(f:E\rightarrow F \text{et} A, B \subset E \)
+		<ol>
+			<li>\(A \subset B \) \rightarrow \( f(A) \subset f(B)\)
+				<p>
+					On suppose que \(A\subset B\)<br />
+					Soit \(y\in f(A)\), on montre que \(y\in f(B)\)<br />
+					C'est à dire : \(\exists x\in B, y=f(x)\)<br />
+					On sait que \(y\in f(A)\)donc<br />
+					$$ \exists x\in A, y=f(x)$$<br />
+					Par ailleurs, \(A\subset B \)donc\( x\in B\)<br />
+					Et v&eacute;rifie \(y=f(x)\)<br />
+					On a bien montr&eacute; \(y\in f(A) \rightarrow y\in f(B)\)<br />
+					Autrement dit : $$ f(A) \subset f(B) $$<br />	
+				</p>
+			</li>
+			<li>\(f(A\cup B) = f(A) \cup f(B)\)</li>
+			<li>\(f(A\cap B \subset f(A)\cap f(b)\)</li>
+		</ol> 
+		D&eacute;finition : Soient \(E, F\) deux ensembles, \( f:E\rightarrow F\) et \( C\subset F \).<br />
+		On appelle image r&eacute;ciproque de \(C\) par \(f\), not&eacute;e \(f^{-1}(C)\), l'ensemble \(\{x\in E | f(x) \in C \}\)<br />
+		Sch&eacute;ma 3 !<br />
+		Remarque : \(x\in f^{-1}(C) \leftrightarrow f(x) \in C \)<br />
+		Propriet&eacute; : Si \( E, F \) sont des ensembles, $$ f: E \rightarrow F, C, D \subset F \\ C \subset D \rightarrow f^{-1}(C) \\ f^{-1}(C\cup D) = f^{-1}(C) \cup f^{-1}(D) \\ f^{-1}(C\cap D) = f^{-1}(C) \cap f^{-1}(C)\ $$
+	</p>
+	<p>
+		D&eacute;finition : Une application \(f:E \rightarrow F\) est dite injective si pour tout \(y\in F\) il y a a u plus un aunt&eacute;c&eacute;dent \(x\) par \(f\).<br />
+		De façon &eacute;quivalente: 
+		<ul>
+			<li>Si \(x \ne x'\), alors \(f(x) \ne f(x')\)</li>
+			<li>Si \(f(x)=f(x')\), alors \( x=x' \) <em>La plus simple et utilis&eacute;e pour d&eacute;montrer l'injection.</em></li>
+		</ul>
+		Exemple : \( f(x)=\frac{1}{x} \) d&eacute;finie sur \(\mathbb R_{+}\) est injective. <br />
+		Par contre, \(f: \mathbb R \rightarrow \mathbb R, f:x\mapsto x^2\) n'est pas injective. <br />
+		Attention : \(f: \mathbb R_+ \rightarrow \mathbb R_+, f:x\mapsto x^2\) est injective.<br />
+	</p>
+	<p>
+		D&eacute;finition : Une application \(f:E\rightarrow F\) est dite surjective si tout &eacute;l&eacute;ment \(y\in F\) a au moins un ant&eacute;c&eacute;dent \(x\in E\) par \(f\) : 
+		$$ \forall x\in F, \exists x\in E, y=f(x) $$
+		Exemple : \(f: \mathbb R \rightarrow \mathbb R, f:x\mapsto x\) est surjective<br />
+		\(f: \mathbb R \rightarrow \mathbb R, f:x\mapsto x^2 \) n'est pas surjective. <br />
+		Remarque : \( f \) est surjective \(\leftrightarrow\) \(f(E) = F\)<br />
+		Reremarque : Toute application \(f\) est surjective de \(E\) dans \(f(E)\)<br />
+	</p>
+	<p>
+		D&eacute;finition : Une application \(f:E\Rightarrow F\) est bijective si elle est injective et surjective. De façon &eacute;quivalente : 
+		$$ \forall y\in F, \exists ! x\in E, y=f(x) $$
+		Ex : \(f: \mathbb R \rightarrow \mathbb R, f:x\mapsto x^3 \) est bijective.<br />
+		Ex : \(f: \mathbb R_+ \rightarrow \mathbb R_+, f:x\mapsto x^2\) est bijective.<br />
+		Si \(f\) est bijective, on appelle application r&eacute;ciproque de \(f\) l'application \(f^{-1} : F\Rightarrow E\) d&eacute;finie par \(f^{-1}(y) = x\) où
+		\(x\) est l'unique ant&eacute;c&eacute;dent de \(y\) par \(f\).<br />
+		De façon &eacute;quivalol : \( x = f^{-1}(y) \leftrightarrow y = f(x) \).<br />
+		Exemple : \(f: \mathbb R_+ \rightarrow \mathbb R_+, f:x\mapsto x^2 \) on a \( f^{-1} : \mathbb R_+ \rightarrow \mathbb R_+, f:x\mapsto \sqrt{y} \)<br />
+		Remarque : Si \(E \Rightarrow F \) est bijective, $$ f^{-1}\circ f = id_E $$ et $$ f\circ f^{-1} = id_F $$.<br />
+		<br />
+		Propriet&eacute; : Si \(E\) et \(F\) sont des ensembles avec un nombre fini d'&eacute;l&eacute;ments :
+		<ul>
+			<li>S'il existe \(f:E\rightarrow F\) injective alors \( |E| \le |F| \)</li>
+			<li>S'il existe \(f:E\rightarrow F\) surjective alors \( |E| \ge |F| \)</li>
+			<li>S'il existe \(f:E\rightarrow F\) bijective alors \( |E| = |F| \)</li>
+		</ul>
+	</p>
+</p>
+</body>
+</html>

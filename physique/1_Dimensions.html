@@ -1,0 +1,207 @@
+<html>
+<head>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Dimensions, unit&eacute;s, analyse dimensionnelle.</title>
+<h1>Dimensions, unit&eacute;s, analyse dimensionnelle.</h1>
+</head>
+<body>
+<ol>
+	<li>
+		<h2>Dimension</h2>
+		<p>
+			<ol>
+				<li><h3>Mesurer</h3>
+				<p>
+					Mesurer, c'est comparer quelque chose de comparable &agrave; une grandeur choisie en tant qu'unit&eacute;.<br />
+					Exemple : Une longeur et une hauteur sont comparables, mais pas une longeur et une surface. Aucun sens.<br />
+				</p>
+				</li>
+				<li><h3>Notion de dimension</h3>
+				<p>
+					Une dimension est une famille de grandeurs comparables.<br />
+					Notation : La dimension de \( g \) est not&eacute;e \( [g] \).<br />
+					Il y a 7 grandeurs fondamentales.
+					<ul>
+						<li>Longeur : \( L \)</li>
+						<li>Temps : \( T \)</li>
+						<li>Masse : \( M \)</li>
+						<li>Temp&eacute;rature : \( \theta \)</li>
+						<li>Quantit&eacute; de mati&egrave;re : \( N \)</li>
+						<li>Intensit&eacute; du courant : \( I \)</li>
+						<li>Intensit&eacute; lumineuse : \( J \) <em>Pas manipul&eacute;e cette ann&eacute;e.</em></li>
+					</ul>
+					Par exemple : 
+					$$ [h] = [l] = [\lambda] = L $$
+					$$ [t] = [\tau] = T $$ 
+				</p>
+				</li>
+				<li><h3>Equation aux dimensions</h3>
+				<p>
+					C'est exprimer la dimension d'une grandeur en fonction des sept dimensions fondamentales \( M, L, T, \theta, I, N, J \)<br /><br />
+					R&egrave;gles de calcul : <br />
+					<ul>
+					<li><p>Les membres des op&eacute;rateurs \( =,>,<,+,- \) doivent &ecirc;tre de m&ecirc;me dimension. <br /> $$ l_1 > l_2 $$ possible, $$ l_1 > s_5 $$ impossible.</p></li>
+					<li><p>\( [g_1g_2] = [g_1][g_2] \) et \( [\frac{g_1}{g_2}] = \frac{[g_1]}{[g2]} \).<br /> Exemple : $$ [S] = [Ll] = [L][l] = L^2 $$</p></li>
+					<li><p>Les constantes, angles, fonctions et arguments sont sans dimension : \(  [\alpha] = 1 \)</p></li>
+					<li><p style="color : red;">Pas d'addition / soustraction de dimensions !</p></li>
+					
+					</ul>
+				</p>
+				</li>
+				<li><h3>Homog&eacute;n&eacute;it&eacute;</h3>
+				<p>
+					V&eacute;rifier l'homog&eacute;n&eacute;it&eacute;, c'est v&eacute;rifier que tous les membres d'une expression ont la m&ecirc;me dimension. Exemple :<br />
+					<em> V&eacute;rifier l'homog&eacute;n&eacute;it&eacute; de l'expression suivante : </em>
+					$$ h = \frac{v_{0}^2}{2g} $$
+					$$ [h] = L $$
+					$$ \left[\frac{v_{0}^2}{2g}\right] = \frac{[v_{0}^2]}{[2g]} = \frac{[v_0][v_0]}{[2][g]} = \frac{LT^{-1}LT^{-1}}{1LT^{-2}} = \frac{L^2T^{-2}}{LT^{-2}} = L $$ 
+					</p>
+				</li>
+				<li><h3>Analyse dimensionnelle</h3>
+				<p>
+					On utilise l'homog&eacute;n&eacute;it&eacute; pour pr&eacute;dire des d&eacute;pendances entre diff&eacute;rentes grandeurs entrant en jeu dans une situation donn&eacute;e.<br />
+					Exemple : <br /><br />
+					On cherche &agrave; conjecturer l'expression de la hauteur maximale atteinte par un objet lanc&eacute; en l'air.<br />
+					Intuitivement, on d&eacute;c&egrave;le les grandeurs pertinentes :
+					<ul>
+						<li>La vitesse initiale, \( v_0 \),</li>
+						<li>L'acc&eacute;l&eacute;ration gravitationnelle \( g \),</li>
+						<li>La masse \( m \).</li>
+					</ul>
+					On va chercher une loi de d&eacute;pendance. C est une constante ind&eacute;terminable par le biais de l'analyse dimensionnelle.
+					$$ h_{max} = Cv_{0}^{\alpha}g^{\beta}m^{\gamma}, (\alpha, \beta, \gamma) \in \mathbb R^3. $$
+					$$ [h_{max}] = L $$
+					$$ [Cv_{0}^{\alpha}g^{\beta}m^{\gamma}] = 1[v_0]^{\alpha}[g]^{\beta}[m]^{\gamma} = (LT^{-1})^{\alpha}(LT^{-2})^{\beta}M^{\gamma} = M^{\gamma}L^{\alpha + \beta }T^{-\alpha -2\beta }. (1) $$
+					$$ [h_{max}] = L = M^0L^1T^0 (2)$$
+					$$ (1=2) : M^0L^1T^0 = M^{\gamma}L^{\alpha + \beta }T^{-\alpha -2\beta } $$
+					On en d&eacute;duit le syst&egrave;me suivant : 
+					$$ \left\{
+								\begin{array}{11}
+									0=\gamma \\
+									1= \alpha + \beta \\
+									0= -\alpha -2\beta \\
+												\end{array}
+												\right.
+					\Leftrightarrow \left\{
+								\begin{array}{11}
+									\gamma = 0 \\
+									\beta = -1 \\
+									\alpha = 2 \\
+												\end{array}
+												\right.
+					$$
+					On a donc finalement :
+					$$ h_{max} = C \frac{v_0^2}{g} $$
+					C'est une m&eacute;thode puissante qui n&eacute;cessite cependant un bon sens physique.
+			</p>
+			</li>
+			</ol>
+		</p>
+		<h2>Unit&eacute;s</h2>
+		<p>
+			<ol>
+				<li><h3>D&eacute;finition</h3></li>
+				<p>
+					Une unit&eacute;, c'est une caleur de r&eacute;f&eacute;rence associ&eacute;e &agrave; une dimension, d&eacute;finie par un &eacute;talon.
+				</p>
+				<li><h3>Les sept unit&eacute;s de base du Syst&egrave;me International</h3></li>
+				<p>
+					\( L  \mapsto m \) <br />
+					\( M  \mapsto kg \) <br />
+					\( T  \mapsto s \) <br />
+					\( \theta  \mapsto K \) <br />
+					\( I  \mapsto A \) <br />
+					\( N  \mapsto \text{mol} \) <br />
+					\( J  \mapsto \text{candela} \) <br />
+				</p>
+				</li>
+				<li><h3>Pr&eacute;fixes SI</h3></li>
+				<p>
+				<table border="1">
+				<tr>
+					<th>\( 10^n \)</th>
+					<th>Pr&eacute;fixe</th>
+				</tr>
+				<tr>
+					<td>\( 10^{-15} \)</td>
+					<td>Femto \((f)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-12} \)</td>
+					<td>Pico \((p)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-9} \)</td>
+					<td>Nano \((n)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-6} \)</td>
+					<td>Micro \((\mu)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-3} \)</td>
+					<td>Milli \((m)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-2} \)</td>
+					<td>Centi \((c)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{-1} \)</td>
+					<td>D&eacute;ci \((d)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{1} \)</td>
+					<td>D&eacute;ca \((da)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{2} \)</td>
+					<td>Hecto \((h)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{3} \)</td>
+					<td>Kilo \((k)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{6} \)</td>
+					<td>M&eacute;ga \((M)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{9} \)</td>
+					<td>Giga \((G)\)</td>
+				</tr>
+				<tr>
+					<td>\( 10^{12} \)</td>
+					<td>T&eacute;ra \((T)\)</td>
+				</tr>
+				</table>
+				</p>
+				<li><h3> Pseudo unit&eacute;s du SI</h3>
+				<p>
+					Ce sont des unit&eacute;s associ&eacute;es &agrave; des grandeurs sans dimension.
+					<ul>
+					<li>
+					<p>
+						Radian : \( \theta = frac{l}{r} \Rightarrow [\theta] = frac{[l]}{[r]} = frac{L}{L} = 1 \)<br />
+						Le st&eacute;radian est associ&eacute; aux angles solides.
+					</p>
+					</li>
+					</ul>
+				</p>
+				</li>
+				<li><h3>Unit&eacute;s d&eacute;riv&eacute;es du SI</h3>
+				<p>
+				Unit&eacute;s compos&eacute;es des unit&eacute;s fondamentales : 
+				<ul>
+				<li>Volume : \( m^3 \)</li>
+				</ul>
+				</p>
+				</li>
+			</ol>
+		</p>
+		
+	</li>
+</ol>
+</body>
+</html>

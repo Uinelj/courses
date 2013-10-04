@@ -1,0 +1,92 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Rappels de math&eacute;matiques</title>
+<h1>Rappels de math&eacute;matiques</h1>
+</head>
+<body>
+<ol>
+	<li>
+		<h2>Vecteurs</h2>
+		<p>
+			Un vecteur est d&eacute;fini par une direction, un sens et une norme.
+			Une vecteur est diff&eacute;rent d'un scalaire. \( \vec{v} \not= v \)
+		</p>
+	</li>
+	<p>
+	<ul>
+	<li><p> Un vecteur peut &ecirc;tre plac&eacute; n'importe o&ugrave; dans l'espace. On peut le mettre ou on veut quoi.</p></li>
+	</ul>
+	<li> Op&eacute;rations sur les vecteurs.
+	<p>
+	Relation de Chasles : \( \vec{AB} + \vec{BC} = \vec{AC} \)<br />
+	Remarque : \( ||\vec{AC}|| \le ||\vec{AB}|| + ||{BC}|| \)<br />
+	( Le chemin le plus court est une droite. )<br />
+	Produit scalaire : <br />
+	Deux vecteurs ; \( \vec{v_1} . \vec{v_2} = ||\vec{v_1}|| ||\vec{v_2}|| cos \theta \)
+	<ul>
+	<li>C'est un scalaire.</li>
+	<li>\( cos \theta = cos-\theta \)</li>
+	<li>On peut prendre \( 2\pi - \theta \)</li>
+	<li>On peut donc choisir le plus petit des deux angles.</li>
+	<li><strong>Conclusion : On peuit choisir \(\theta\) non orient&eacute;.</strong></li>
+	<li>Cons&eacute;quence : \( \vec{v} . \vec{v} = ||v^2|| . cos \theta = ||v||^2 \)</li>
+	<li>Norme de \(\vec{v}\) est d&eacute;finie par \( ||\vec{v}|| = \sqrt{v*v} = \sqrt{v^2} \)</li>
+	</p>
+	</li>
+	<li>Dans la base cart&eacute;sienne</li>
+	<p>
+		<ul>
+			<li> D&eacute;finition : Base orthonorm&eacute;e (BON) avec des vecteurs directeurs \( (\vec{u_x}, \vec{u_y}, \vec{u_z}) \) UNITAIRES et perpendiculaires 2 &agrave; 2.</li>
+			<li>Coordonn&eacute;es : \( \vec{v} = v_x\vec{u_x} * v_y\vec{u_y} * v_z\vec{u_z} \)</li>
+			<li>Produit scalaire en coordonn&eacute;es cart&eacute;siennes <em>(exo 5 TD 2)</em> :  \( \vec{V_1} = V_{1_x} \vec{u_x} + V_{1_y} \vec{u_y} + \vec{V_{1_z}} \vec{u_z}\) et \( \vec{V_2} = \vec{V_{2_x}} \vec{u_x} + \vec{V_{2_y}} \vec{u_y} + \vec{V_{2_z}} \vec{u_z} \) </li>
+			<li> BON : \( \vec{u_x} . \vec{u_x} = \vec{u_y} . \vec{u_y} = \vec{u_z} . \vec{u_z} = 1 \)</li>
+			<li> \( \vec{u_x} . \vec{u_y} = \vec{u_x} . \vec{u_z} = \vec{u_y} . \vec{u_z} = 0 \)</li>
+			<li> 
+				\( \vec{V_1} . \vec{V_2} = (V_{1_x} \vec{u_x} + V_{1_y} \vec{u_y} + V_{1_z} \vec{u_z}).(V_{2_x} \vec{u_x} + V_{2_y} \vec{u_y} + V_{2_z} \vec{u_z}) \)<br /> 
+				On retrouve : \( \vec{V_1} . \vec{V_2} =  V_{1_x}V{2_x} + V_{1_y}V_{2_y} + V_{1_z}V_{2_z} \) <br />
+				<em> D'o&ugrave; l'int&eacute;r&ecirc;t de choisir une BON !</em>
+			</li>
+			<li>\( ||\vec{v}|| = \sqrt{V_x^2 + V_y^2 + V_z^2} \)</li>
+			<li>Projection d'un vecteur &agrave; deux dimensions.
+			<p>
+				<ul>
+				<li>D&eacute;finition : Dans un plan XY (GI)</li>
+				</ul>
+				\(V_x\) projection de \(V\) sur l'axe \((Ox)\), parall&egrave;lement &agrave; l'axe \(Oy\). <br />
+				Or \( \vec{V}.\vec{u_x} = (V_x\vec{u_x} + V_y\vec{u_y}) . \vec{u_x} = V_x. \) <br />
+				\(V_x\) projection de \(V\) sur l'axe \(Ox\), parall&egrave;lement &agrave; l'axe \(Oy\): \(V.Ux\).<br />
+				De m&ecirc;me \( V_y =  \) projet&eacute; de \(V\) sur \(Oy\) parall&egrave;lement &agrave; \((Ox)\) : \(V.Uy\). <br />
+				Graphe 2.<br />
+				On veut les composantes verticale et horizontale de \(V\).<br />
+				\(Vx\) n&eacute;gatif et \(Vy\) positif.<br />
+				\(Vx =  V.ux = -[v . (-Ux ) ] \) (Ultra important.) \( = [||v||.||ux||.cos(\frac{\pi}{2} - \alpha ) = -||\vec{v}||.sin \alpha \) .<br />
+				(Graphe 3) \(Vy = V.uy =  ||V||.||uy||cos \alpha\) = <strong>\(||v||cos \alpha\)</strong><br /><br />
+				Regle de projection : Projection d'un vecteur \(vec{v}\) sur un axe de la base.<br />
+				On a  \( \theta \in [0,\frac{\pi}{2}]\) entre \(\vec{v}\) et cet axe, \(cos \theta >= 0, sin \theta > 0\)<br />
+				Composantes : \(+-||v||cos \theta\) sur cet axe, \(+-||v||sin \theta\) sur la perpendiculaire.<br />
+				Et le signe est mis &agrave; la main.<br />
+				Graphe 4.<br />
+				Rappel : R&egrave;gles de report des angles. <br />
+				Graphe I. (R&egrave;gle nouvelle importante). <br />
+				\( \vec{N} = ||\vec{N}||cos \alpha \vec{u_y} - ||\vec{N}||sin \alpha \vec{u_x} \) <br />
+				\( \vec{f} = ||\vec{f}||cos \alpha * \vec{u_x} + ||\vec{f}||sin \alpha \vec{u_y} \) <br />  
+			</p>
+			</li>
+			<li><h4> Choix de la base cart&eacute;sienne</h4>
+			<p>
+			Choix arbitraire. A nous de le faire. <br />
+			\( \vec{V} \) ne change pas si on change de base mais ses coordonn&eacute;es changeront.<br />
+			On a des choix plus ou moins judicieux, qui simplifient les calculs (: <br />
+			En reprenant l'exemple du I : La base en pointill&eacute;s \((x', y')\) plus facile qu'un rep&egrave;re "traditionnel" \((x, y)\) <br />
+			</p>
+			</li>
+		</ul>
+	</p>
+	</ul>
+	</p>
+</p>
+</body>
+</html>
