@@ -3,25 +3,25 @@
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <ol>
-	<li><h2>Généralités sur les suites.</h2>
+	<li><h2>G&eacute;n&eacute;ralit&eacute;s sur les suites.</h2>
 		<p>
 			<ol>
-				<li><h3>Définition.</h3>
+				<li><h3>D&eacute;finition.</h3>
 					<p>
-						Une suite de nombres réels \(u\) esy une application de \(\mathbb N\) dans \(\mathbb R\)<br />
+						Une suite de nombres r&eacute;els \(u\) esy une application de \(\mathbb N\) dans \(\mathbb R\)<br />
 						On note \(u_n\) l'image de l'entier \(n\in \mathbb N\) par \(u\).<br />
 						La suite se note \(u\) ou \( (u_n)_{n\in\mathbb N} \).<br />
-						Remarque : L'ensemble de départ peut parfois être \(\mathbb N^*, ..\)<br />
+						Remarque : L'ensemble de d&eacute;part peut parfois être \(\mathbb N^*, ..\)<br />
 						Ex : \(u: \mathbb N \rightarrow \mathbb R\), \(n \mapsto \mathbb 2n+1\)<br />
 						
 					</p>
 					<p>
-						Définition : Si \(u\) et \(v\) sont deux suites, \(u+v\) est la suite définie par \((u+v)_{n} = u_n + v_n\). <br />
-						De même, \(uv\) est la suite définie par \((uv)_n = u_n \times v_n \)<br />
-						Si \( \lambda \in \mathbb R \) et \(u\) suite, alors \(\lambda u\) est la suite définie par \((\lambda u)_n = \lambda u_n \)<br />
+						D&eacute;finition : Si \(u\) et \(v\) sont deux suites, \(u+v\) est la suite d&eacute;finie par \((u+v)_{n} = u_n + v_n\). <br />
+						De même, \(uv\) est la suite d&eacute;finie par \((uv)_n = u_n \times v_n \)<br />
+						Si \( \lambda \in \mathbb R \) et \(u\) suite, alors \(\lambda u\) est la suite d&eacute;finie par \((\lambda u)_n = \lambda u_n \)<br />
 					</p>
 					<p>
-						Définition : On dira qu'une proprieté \(P(n)\) est vraie à partir d'un certain rang si 
+						D&eacute;finition : On dira qu'une propriet&eacute; \(P(n)\) est vraie à partir d'un certain rang si 
 						$$ \exists n\in\mathbb N \text{ tel que } n\ge n_0 \rightarrow P(n) \text{vraie} $$
 						Exemple : \( P(n) : "u_n \ge 0" \)<br />
 						Soit : \( \mathbb N \rightarrow \mathbb R \)<br />
@@ -30,30 +30,30 @@
 						Donc \(P(n)\) est vraie à partir d'une certain rang \(n\)<br />
 					</p>
 				</li>
-				<li><h3>Suites croissantes / décroissantes.</h3>
+				<li><h3>Suites croissantes / d&eacute;croissantes.</h3>
 					<p>
-						Définition : On dit que la suite \((u_n)_{n\in\mathbb N}\) est :
+						D&eacute;finition : On dit que la suite \((u_n)_{n\in\mathbb N}\) est :
 						<ul>
 							<li>Croissante si : \(\forall n \in \mathbb N, u_n \le u_{n+1}\)</li>
-							<li>Décroissante si : \(\forall n \in \mathbb N, u_n \ge u_{n+1}\)</li>
+							<li>D&eacute;croissante si : \(\forall n \in \mathbb N, u_n \ge u_{n+1}\)</li>
 							<li>Strictement croissante si : \(\forall n \in \mathbb N, u_n < u_{n+1}\)</li>
 							<li>Croissante si : \(\forall n \in \mathbb N, u_n > u_{n+1}\)</li>
-							<li>Monotone si elle est croissante ou décroissante.</li>
+							<li>Monotone si elle est croissante ou d&eacute;croissante.</li>
 							<li>Constante si : \( \forall n \in\mathbb N, u_n = u_{n+1}\)</li>
 							<li>Stationnaire si : \exists n_0 \in \mathbb N, \forall n\ge n_0, u_n = u_{n+1}</li>
 						</ul>
 					</p>
 				</li>
-				<li><h3>Suites minorées, majorées, bornées.</h3>
+				<li><h3>Suites minor&eacute;es, major&eacute;es, born&eacute;es.</h3>
 					<p>	
-						Définition : On dit qu'une suite est :
+						D&eacute;finition : On dit qu'une suite est :
 						<ul>
-							<li>Majoriée si \( \exists M \in \mathbb R, \forall n \in \mathbb N, u_n \le M\)</li>
-							<li>Minorée si \( \exists m \in \mathbb R, \forall n\in \mathbb N, u_n \ge m\)</li>
-							<li>Bornée si elle est majorée et minorée.</li>
+							<li>Majori&eacute;e si \( \exists M \in \mathbb R, \forall n \in \mathbb N, u_n \le M\)</li>
+							<li>Minor&eacute;e si \( \exists m \in \mathbb R, \forall n\in \mathbb N, u_n \ge m\)</li>
+							<li>Born&eacute;e si elle est major&eacute;e et minor&eacute;e.</li>
 						</ul>
-						Remarque : Si \(u\) est croissante (resp. décroissante), alors elle est minorée(majorée) par \(u_0\).<br />
-						Remarque : \(u\) est bornée si et seulement si : \( \exists M \in \mathbb R \text{ tel que } \forall n \in \mathbb N, |u_n|\le M\)<br />
+						Remarque : Si \(u\) est croissante (resp. d&eacute;croissante), alors elle est minor&eacute;e(major&eacute;e) par \(u_0\).<br />
+						Remarque : \(u\) est born&eacute;e si et seulement si : \( \exists M \in \mathbb R \text{ tel que } \forall n \in \mathbb N, |u_n|\le M\)<br />
 					</p>
 				</li>
 				<li><h3>Limites de suites</h3>
@@ -64,12 +64,12 @@
 								On dit qu'une suite \(u_n\) a pour limite \(l \in \mathbb R\), que l'on note \(lim u_n = l \) ou bien \( u_n \rightarrow_{n\rightarrow l}\),
 								si : 
 								$$ \forall \epsilon > 0, \exists N\in\mathbb N, \forall n\ge N, |u_n - l|<\epsilon $$ 
-								( on peut écrire )<br />
+								( on peut &eacute;crire )<br />
 								$$ \forall \epsilon > 0, \exists N\in\mathbb N, \forall n\in\mathbb N, n\ge \rightarrow [u_n - l|< \epsilon $$
 								On dit que la suite \(u_n\) converge s'il existe \(n\in\mathbb R\) tel que \(lim u_n = l\)<br />
 								Sinon, on dit qu'elle diverge.<br />
-								Proprieté : Si la suite \(u\) converge, alors sa limite est unique.<br />
-								Démonstration : <em>Par l'absurde.</em>
+								Propriet&eacute; : Si la suite \(u\) converge, alors sa limite est unique.<br />
+								D&eacute;monstration : <em>Par l'absurde.</em>
 								<p>
 									On suppose que \(u\) a deux limites \(l_1, l_2\) distinctes.<br />
 									Soit \(\epsilon = |\frac{l_2 - l_1}{2}>0 \).
@@ -92,19 +92,19 @@
 						</li>
 						<li>Suites divergentes.
 						<p>
-							Définition : On dit que la suite \(u\) tend vers \(+\infty\) si :
+							D&eacute;finition : On dit que la suite \(u\) tend vers \(+\infty\) si :
 							$$ \forall A\in\mathbb R, \exists n\in\mathbb N, n\ge N \rightarrow u_n > A $$<br />
-							Définition : On dit que la suite \(u\) tend vers \(-\infty\) si :
+							D&eacute;finition : On dit que la suite \(u\) tend vers \(-\infty\) si :
 							$$ \forall A\in\mathbb R, \exists n\in\mathbb N, n\ge N \rightarrow u_n < A $$<br />
 						</p>
 						</li>
-						Proprietés :
+						Propriet&eacute;s :
 						<ol>
-							<li>Si \(u\) converge elle est bornée.</li>
-							<li>Si \(u\) tend vers \(+\infty\), elle est minorée et pas majorée.</li>
-							<li>Si \(u\) tend vers \(-\infty\), elle est majorée et pas minorée.</li>
+							<li>Si \(u\) converge elle est born&eacute;e.</li>
+							<li>Si \(u\) tend vers \(+\infty\), elle est minor&eacute;e et pas major&eacute;e.</li>
+							<li>Si \(u\) tend vers \(-\infty\), elle est major&eacute;e et pas minor&eacute;e.</li>
 						</ol>
-						Démontration du (1) et du (2).<br />
+						D&eacute;montration du (1) et du (2).<br />
 						<ol>
 							<li>
 								<p>
@@ -119,7 +119,7 @@
 									Soit \(M=max(|u_0|, |u_1|, ... |u_{n-1}|,|l|+1\)<br />
 									Pour tout \(n\in\mathbb N\) on a bien : 
 									$$ |u_n| \le M $$
-									Donc \((u_n)_n est bornée. <br /> 
+									Donc \((u_n)_n est born&eacute;e. <br /> 
 								</p>
 							</li>
 							<li>
@@ -128,7 +128,7 @@
 								$$ \exists N\in\mathbb N, n\ge N \rightarrow u_n > 0 $$
 								Soit \(m=min(u_0, u_1, ... 0\)\)<br />
 								On a bien \(u_n\ge m\) pout tout \(n\in\mathbb N\)<br />
-								Par l'absurde, si \(M\) est un majorant, par définition de \(u_n \rightarrow +\infty\) :
+								Par l'absurde, si \(M\) est un majorant, par d&eacute;finition de \(u_n \rightarrow +\infty\) :
 								$$ \exists N\in\mathbb N, n\ge N \rightarrow u_n > M $$
 								ce qui contredit le fait que \(M\) est un majorant.<br />
 							</p>
@@ -139,16 +139,16 @@
 				</li>
 			</ol>
 		</p>
-				<li><h3>Opérations sur les limites.</h3></li>
+				<li><h3>Op&eacute;rations sur les limites.</h3></li>
 				<p>
-				Proprieté : Si \(u\rightarrow l \text{et} v\rightarrow l'\)
+				Propriet&eacute; : Si \(u\rightarrow l \text{et} v\rightarrow l'\)
 				<ol>
 					<li>\(u+v\) tend vers \(l+l'\)</li>
 					<li>u\times v\) tend vers \(l\times l'\)</li>
 					<li>Si \(\lambda\in\mathbb R, \lambda u\) tend vers \(\lambda l\)</li>
 					<li>Si \(\forall n\in\mathbb N, u_n \ne 0 \text{et} l\ne 0\) :<br />, \(\frac{1}{u}\)tend vers \(\frac{1}{l}\).</li>
 					<li>Si \(\forall n\in\mathbb N, u_n \ne 0 et l\ne 0,\), alors \frac{v}{u} tend vers \frac{l'}{l}\).</li>
-					<li>Si \(u\) bornée et \(v\) tend cers 0 alors u\times v tend vers 0.</li>
+					<li>Si \(u\) born&eacute;e et \(v\) tend cers 0 alors u\times v tend vers 0.</li>
 					<li>Si \(u\rightarrow +\infty\) et \(v\rightarrow +\infty alors \(u+v\rightarrow +\infty.\)</li>
 					<li>Si \(u\rightarrow -\infty\) et \(v\rightarrow -\infty alors \(u+v\rightarrow -\infty.\)</li>
 					<li>Si \(u\rightarrow l\) et \(v\rightarrow +\infty alors \(u+v\rightarrow +\infty.\)</li>
@@ -160,7 +160,7 @@
 					<li>Si \(u\rightarrow +\infty\) alors \frac{1}{u} \rightarrow 0\)</li>
 					<li>Si \[u\rightarrow 0\) et \(u\) strictement positive à partir d'un certain rang, alors \(\frac{1}{u}\rightarrow +\infty</li>
 				</ol>
-				Démonstration du 1.<br />
+				D&eacute;monstration du 1.<br />
 				On sait : 
 				<ul>
 					<li>$$\forall\epsilon > 0, \exists N_1\in\mathbb N, n\ge N_1 \rightarrow |u_n-l|<\epsilon $$<br /></li>
@@ -173,7 +173,7 @@
 				et donc \( |u_n+v_n)-(l+l')|\le|u_n-l|+|v_n-l'|<2\frac{\epsilon}{2}\)<br />
 				</p>
 	</li>
-	<li><h2>Proprietés d'ordre des suites convergentes ( théorème des gendarmes. )</h2>
+	<li><h2>Propriet&eacute;s d'ordre des suites convergentes ( th&eacute;orème des gendarmes. )</h2>
 		<p>
 			<ul>
 				Soient \((u_n)_n, (v_n)_n \text{et} (w_n)_n \) telles que :<br /> 
@@ -182,7 +182,7 @@
 					<li>$$ \lim_{n\rightarrow\infty} u_n = \lim_{n\rightarrow\infty} = l</li>
 				</ul>
 				Alors \((v_n)_n\) converge vers \(l\).<br />
-				Démonstration : <br />
+				D&eacute;monstration : <br />
 				On sait : <br />
 				<ul>
 					<li>$$ \exists N_0\in\mathbb N \text{ t.q }\forall n\ge N_0, u_n\le v_n \le w_n $$</li>
@@ -195,7 +195,191 @@
 				Pour n>=N on a ... 
 			</ul>
 		</p>
+		<p>
+			Propriet&eacute; : Soit \((u_n)_n \text{ t.q } u_n\rightarrow l\)
+			<ol>
+				<li><p>Si \(l\ge a\), alors \(u_n\ge\) a à partir d'un certain rang.</p></li>
+				<li><p>Si \(u_n\ge a\) a partir d'un certain range alors \(l\ge a\)<p></li>
+			</ol>
+			Remarques:
+			<ol>
+				<li><p>Si l\ge a\) on ne peut à priori rien dire entre \(u_n\) et \(a\)</p></li>
+				<li><p>Si \(u_n>a\) a partir d'un certain rang, alors \(l\ge a\).</p></li>
+			</ol>
+		Propriet&eacute; : Si \(u_n\rightarrow l\) et \(v_n\rightarrow l'\) et \(u_n\le v_n\) a partir d'un certain rang. Alors \(l\le l'\)<br />
+		</p>
 
+	</li>
+	<li><h2>Suites monotones et convergence</h2>
+		<p>
+			<ol>
+				<li><h3>Borne inf&eacute;rieure et borne sup&eacute;rieure.</h3>
+					<p>
+						D&eacute;finition : Soit \(A\subset\mathbb R\), non-vide et major&eacute;, ie :
+						$$ \exists M\in\mathbb R \text{ t.q }\forall x\in A, x\le M$$
+						On appelle borne sup&eacute;rieure de \(A\) le plus petit majorant de \(A\)<br />
+						Th&eacute;orème(admis): Tout ensemble major&eacute; non vide de \(\mathbb R\) admet une borne sup&eacute;rieure, not&eacute;e \(sup(A\))<br />
+						Exemple : <p>
+									\(A=[0,1]\)<br />
+									\(sup(A) = 1\)<br />
+									En effet,\(\forall a\in A, a\le 1 \) donc 1 est un majorant.<br />
+								  </p>
+								  <p>
+								  	\(A=[0,1[\)<br />
+								  	\(sup(A)=1\)<br />
+								  	<ul>
+								  	<li>En effet, \(1\) est bien un majorant de \(A\)</li>
+								  	<li>c'est le plus petit majorant de A. Soit \(x<1\), on montre que x n'est pas un majorant de A. En effet, \(x<\frac{x+1}{2}<1\)
+								  	 Donc \(x\) n'est pas un majorant (\frac{x+1}{2}\)<br />
+								  	 Ici, \(1\ne A\), \(A\) n'a pas de plus grand &eacute;l&eacute;ment.<br />
+								  	 Notation : Si \(A\) possède un plus grand &eacute;l&eacute;ment on le note \(max(A)\).<br />
+								  	 Dans ce cas, \(sup(A)=max(A)\)<br />
+								  	</li>
+
+
+								  </p>
+						Propriet&eacute; : Soir \(A\) un ensemble major&eacute; non-vide. Les propriet&eacute;s suivantes sont &eacute;quivalentes.
+						<ol>
+							<li>\(M\) est un majorant et $$ \forall\epsilon >0, \exists x\in A \text{ t.q } M-\epsilon < x \le M\)</li>
+							<li>\(M\) est un majorant de \(A\) et \(\exists (x_n)_n\) suite d'&eacute;l&eacute;ments de \(A\) tels que \( x_n\rightarrow M\) <br /> On peut voir : \( (x_n)_n \in A^{\mathbb N}</li>
+							
+						</ol>
+
+					</p>
+				</li>
+				<li><h3>Th&eacute;orème des suites monotones.</h3>
+					<p>
+						Th&eacute;orème : Soit \((u_n\) une suite.
+						<ol>
+							<li>Si \((u_n)_n\) est croissante et major&eacute;e, alors elle convergge.</li>
+							<li>Si \((u_n)_n\) est d&eacute;croissante et minor&eacute;e alors elle converge.</li>
+						</ol>
+						<p>
+							D&eacute;monstration :<br />
+							$$ A=\{u_n, n\in\mathbb N\} $$
+							\(A\) est non vide et major&eacute; deonc admet une borne sup&eacute;rieure \(l=sup(A)\)<br />
+							On va montrer que \(u_n\rightarrow l\).<br />
+							$$ l=sup(A) \text{ donc } \forall\epsilon>0, \exists x\in A\text{ tq } l-\epsilon<x\le l $$<br />
+							On veut montrer que \(u_n\rightarrow l\), ie :
+							$$ \forall\epsilon>0, \exists N\in\mathbb N, \foralln\ge N, |u_n-l|<\epsilon $$.
+							Soit \(\epsilon>0, \exists n\in N\text{ tq } l-\epsilon<u_N\le l\)<br />
+							Si \(n\ge N, u_n \ge u_N\), car \((u_n)_n\) est croissante 
+							donc \(l-\epsilon)<u_n\)<br />
+							Par ailleurs u_n\ge l car l=sup(A).
+							Ainsi, on a $$ \forall n\ge N, l-\epsilon<u_n\le l<l+\epsilon $$<br />
+							D'où \(u_n\rightarrow l\).<br /> 
+						</p>
+						Remarque : Si \((u_n)_n) est croissante et \(M\) est un majorant de \(u\)<br />
+						Alors \((u_n)\) converge et sa limite \(l\) v&eacute;rifie \(l\le M\).<br />
+						<ol>
+							Th&eacute;orème.
+							<li>Si \(u_n)_n\) est croissante mais pas major&eacute;e alors alors \(u_n \rightarow \infty</li>
+							<li>Si \(u_n)_n\) est d&eacute;croissante mais pas minor&eacute;e alors alors \(u_n \rightarow -\infty</li>
+						</ol>	
+						<p>
+							D&eacute;monstration : <br />
+							Il faut montrer : 
+							$$ \forall A\in\mathbb R, \exists N\in\mathbb N, \forall n\ge N, u_n>A $$
+							Soit \(A\in\mathbb R\), \(u\) n'est pas major&eacute;e.<br />
+							Donc \(\exists N\in\mathbb N, u_n>A\) car \(A\) n'est pas majorant.<br />
+							Par ailleurs \(u\) est croissante donc : 
+							$$ \forall n\ge N, u_n\ge u_n > A $$
+							Donc \(u_n\rightarrow +\infty\).
+						</p>
+						<p>
+							Ex : on d&eacute;finit : $$ u_n=\sum_{k=1}^n \frac{1}{k^2} $$.
+							On va montrer que \((u_n)_n\) converge.
+							<ul>
+								<li>\((u_n)_n\) est croissante : soit \(n\ge 1\), $$ u_{n+1}-u_n = \sum_{k=1}^{n+1} \frac{1}{k^2} - \sum_{k=1}^n \frac{1}{k^2} = \frac{1}{(n+1)^2} > 0 $$</li>
+								<li>
+									On montre que \(u\) est major&eacute;e.<br />
+									Si \(k\ge 2\), \(\begin{align*} 
+														k^2 &\ge k(k-1)\\
+														\Leftrightarrow \frac{1}{k^2} &\le \frac{1}{k(k-1)} - \frac{1}{k}\\
+													\end{align*}
+									\)
+									Donc : 
+									$$ \begin{align*}
+											u_n &= 1+\sum_{k=2}^{n} \frac{1}{k^2}\\
+											    &\le 1+\sum_{k=2}^{n} \left( \frac{1}{k-1} - \frac{1}{k}\\
+											    &\le 1+1-\frac{1}{n}\\
+											    &\le 2
+										\end{align*}
+									$$
+									La quite est bien major&eacute;e par \(2\).<br />
+									La suite \(u\) est croissante major&eacute;e donc elle converge.<br />
+									Sa limite \(l\) v&eacute;rifie \(l\le 2\).<br />
+							</ul>
+						</p>
+					</p>
+				</li>
+
+				</li>
+			</ol>
+		</p>
+	</li>
+	<li>Suites adjacentes.
+		<p>
+			def : On dit que deux suites \(u\) et \(v\) sont adjacentes si :
+			<ul>
+				<li>l'une est croissante et l'autre décroissante.</li>
+				<li>\(u_n - v_n\rightarrow 0\)</li>
+			</ul>
+			<p>Théorème :<br />
+				Si \(u\) et \(v\) sont deux suites adjacentes alors elles convergent vers une même limite.
+			</p>
+			<p>Remarque :<br />
+				Si on sait juste \(u_n - v_n\rightarrow 0\), on ne peut rien dire.
+				<p>Lemme :<br />
+					Si \(u_n\) est décroissante et u_n\rightarrow 0 alors \(u_n\ge 0 \forall n\in\mathbb N\)<br />
+					Démonstration : <br />
+					<em>Par l'absurde</em>
+					$$ \exists N\in\mathbb N, u_N<0. $$
+					Pour tout \(n\in\mathbb N \) on a \(u_n\le u_N\)<br />
+					Soit : \(\epsilon = -u_n>0\).<br />
+					Comme : $$ u_n\rightarrow 0, \exists N_1\in\mathbb N \text{ t.q } \forall n\ge N_1, \text{ on a } |u_n-0|<-u_N\Leftrightarrow u_N<u_n<-u_n $$<br />
+					Ce qui est incompatible !
+				</p>
+				<p>Démonstration
+					On suppose que \((u_n)_n\) est croissante et \((v_n)_n\) est décroissante.<br />
+					Soit \(w_n = v_n-u_n\)<br />
+					On sait que \(w_n\rightarrow 0\) par hypothèse.<br />
+					Par ailleurs, si \(n\in\mathbb N\) :
+					$$
+						\begin{align*}
+							w_{n+1}-w_n&=(v_{n+1}-u_{n+1})-(v_n-u_n)\\
+							           &=(v_{n+1}-v_n)(\le 0)+(u_n-u_{n+1})(\le 0)\le 0\\
+						\end{align*}
+					$$
+					Donc \(w\) est décroissante.<br />
+					D'après le lemme on a \(w_n\ge0\)<br />
+					i.e \(v_n\ge u_n, \forall n\in\mathbb N\)<br />
+					$$ \forall n\in\mathbb N, u_n\le v_n\le v_0 \text{ car } v \text{ décroissante.} $$
+					Donc \(u\) est majorée. Comme elle est croissante elle converge. On note \(l\) sa limite.
+					Enfin : $$ v_n=(v_n-u_n)+u_n\rightarrow 0+l=l $$
+				</p>
+		</p>
+	</li>
+	<li>Suites extraites / Sous-suites.
+		<p>
+			<ol>Suites extraites et convergence.
+				<p>
+					Définition : On appelle extractrice toute application de \(\mathbb N\) dans \(\mathbb N\) <strong>strictement</strong> croissante.<br />
+					Ex : $$ \begin{align*}
+							\mathbb N\rightarrow N\\
+							n\mapsto n+1
+							\end{align*}
+						$$
+					Remarque : Si \(\varphi\) est une extractrice alors \(\forall n\in \mathbb N, \varphi (n)\ge n\)<br />
+					Définition :<br />
+					Une sous-suite de \((u_n)_n\) est une suite de la forme \(u_{\varphi_n}\) où \varphi (n) est une extractrice.<br />
+					Principe d'une sous-suite : 
+					Tu jettes un paquet de termes qui satisfassent pas l'équation de l'extractrice. <br />
+					Proprieté: si \(u_n\rightarrow l\) alors n'importe quelle sous-suite de\(u_n\rightarrow l\)<br />
+					
+				</p>
+			</ol>
+		</p>
 	</li>
 </ol>
 </html>
