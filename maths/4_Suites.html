@@ -362,7 +362,7 @@
 	</li>
 	<li>Suites extraites / Sous-suites.
 		<p>
-			<ol>Suites extraites et convergence.
+			<li>Suites extraites et convergence.
 				<p>
 					Définition : On appelle extractrice toute application de \(\mathbb N\) dans \(\mathbb N\) <strong>strictement</strong> croissante.<br />
 					Ex : $$ \begin{align*}
@@ -376,9 +376,37 @@
 					Principe d'une sous-suite : 
 					Tu jettes un paquet de termes qui satisfassent pas l'équation de l'extractrice. <br />
 					Proprieté: si \(u_n\rightarrow l\) alors n'importe quelle sous-suite de\(u_n\rightarrow l\)<br />
-					
+					Démonstration : $$ \forall\epsilon >0, \exists N\in\mathbb N, \forall n\ge\mathbb N, |u_n-l|<\epsilon $$<br />
+					Soit \((u_{\varphi (n)})_n\) une sous-suite de (\(u_n)_n\).<br />
+					Soit \(\epsilon > 0\), \(\varphi (n)\ge n\) donc si \(n\ge N\) on a aussi \(\varphi (n)\ge N\). <br />
+					En particulier \(|u_{\varphi (n} -l|<\epsilon)\)<br />
+					Remarque : Pour montrer qu'une suite n'a pas de limite, il suffit de trouver 2 sous-suites qui ont des limites différentes.<br />
 				</p>
-			</ol>
+			</li>
+			<li>Théorème de Bolzano-Weierstrass
+				<p>
+					Théorème:
+					<p>
+						Soit \((u_n)_n\) une suite bornée. Alors elle admet au moins une sous-suite convergente.<br />
+						Démonstration(<em>Dichotomie</em>):
+						Idée:<br/>
+						<ol>
+							<li>Construire 2 suites adjacentes \(a_n\) et \(b_n\)</li>
+							<li>Construire une extractrice \(\varphi\) tel que \(\forall n\in\mathbb N, a_n\le u_{\varphi (n)}\le b_n\)</li>
+						</ol>
+						<p>
+							On construit \(a_n\) et \(b_n\) par récurrence : 
+							<ul>
+								<li>\(a_n\) croissante, \(b_n\) décroissante.</li>
+								<li>\(b_n - a_n = \frac{1}{2^n}(b_0 - a_0)</li>
+								<li>IL y a une infinité de termes de la suite \(u\) dans \([a_n,b_n]\)</li>
+							</ul>
+						\(u\) est bornée : soit \(a_0\) a un monorant et \(b_0\) un majorant.<br />
+						Soit n_0...
+						</p>
+					</p>
+				</p>
+			</li>
 		</p>
 	</li>
 </ol>
