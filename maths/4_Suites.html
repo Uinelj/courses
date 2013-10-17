@@ -1,7 +1,10 @@
 <html>
+<head>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+</head>
+<body>
 <ol>
 	<li><h2>G&eacute;n&eacute;ralit&eacute;s sur les suites.</h2>
 		<p>
@@ -402,7 +405,21 @@
 								<li>IL y a une infinité de termes de la suite \(u\) dans \([a_n,b_n]\)</li>
 							</ul>
 						\(u\) est bornée : soit \(a_0\) a un monorant et \(b_0\) un majorant.<br />
-						Soit n_0...
+						Soit \(m_0 = \frac {a_0 + b_0}{2}\) s'il y a une infinité de termes de la suite U entre \(a_0\) et \(m_0\), on pose \(a_1 = a_0\) et \(b_1 = m_0\) sinon on pose \(a_1 = m_0\) et \(b_1 = b_0\)et ainsi de suite.<br />
+						On a bien\((a_n)_n\) croissante et (\b_n\) décroissante.
+						$$ \forall n, b_n-a_n = \fra{1}{2}(b_{n-1}-a_{n-1}) $$
+						Et donc \(b_n - a_n\) = \frac{1}{2^n}(b_0-a_0)\rightarrow 0\).<br />
+						Les suites \((a_n)n\) et \((b_n)n\)sont adjacentes.<br />
+						On construit \(\varphi\) par récurrence.
+						<ul>
+							<li>\(\varphi (0) = 0\), on a bien u_0\in [a_0, b_0]\).</li>
+							<li>[a_1, b_1] contient une infinité dee termes de \(u\).</li> On prend \(\varphi (1)\) le plus petit indice strictement plus grans que \(\varphi (0) \text{ tq } u_{\varphi (1)}\in [a_1, b_1] et ainsi de suite, si \(\varphi (0) ... \varphi (n)\) sont construits, \(\varphi(n+1)\) est le plus petit indice strictement supérieur à \(\varphi (n)\) tel que \(u_{\varphi(n+1)})<br />
+							On construit ainsi \(\varphi\).<br />
+							La sous suite \((u_{\varphi (n)})_n\) vérifie
+							$$ a_n \le u_{\varphi (n) \le b_n}$$
+							Comme \(a_n\) et \(b_n\) sont adjacentyes elles convertgent vers même limite 
+							D'après th gendarmes u_n -> L
+						</ul>
 						</p>
 					</p>
 				</p>
@@ -410,5 +427,6 @@
 		</p>
 	</li>
 </ol>
+</body>
 </html>
 
