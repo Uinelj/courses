@@ -209,7 +209,84 @@
 							<li>
 								<p>	
 									Si pas de frottements, \(\vec{F_\text{support}} = \vec{N}\)<br />
-									Si il y a des frottements, \(\vec{F_\text{support}} = \vec{N}+\vec{f}\) <br />
+									Si il y a des frottements, \(\vec{F_\text{support}} = ||\vec{N}|| + \vec{f}\) <br />
+								</p>
+							</li>
+						</ul>
+					</p>
+				</li>
+				<li>Quelques exp&eacute;riences simples
+					<p>
+						-Bloc sur une table<br />
+						-Bureau sur le sol<br />
+						<br />
+						<u>Au repos</u><br />
+						Syst&egrave;me : bloc m
+						forces : \(m\vec{g} \text{, } \vec{F_{support}}\)
+						2&egrave;me loi de Newton : bloc au repos \(\vec{v} = \vec{0} \Rightarrow \vec{a} = \vec{0}\)<br />
+						\(\vec{F_{support}} + m\vec{g} = \vec{0}\)<br />
+						\(\Rightarrow \vec{F_{support}} = -m\vec{g}\)<br />
+						\(\Rightarrow \vec{N} = -m\vec{g} \text{ et } \vec{f} = \vec{0}\)<br />
+						<u>* Si on pose l&eacute;g&egrave;rement le bloc :</u><br />
+						\(\rightarrow\) Il ne bouge pas<br />
+						Sur \(O_x \text{ : } \vec{F} = \vec{f_s} = \vec{0} \Leftrightarrow \vec{f_s} = -\vec{F}\)<br />
+						Sur \(O_y \text{ : } m\vec{g} + \vec{N} = \vec{0} \Leftrightarrow \vec{N} = -m\vec{g}\)<br />
+						\(\vec{f_s}\) = force de frottement statique<br />
+						<u>* Si on  pousse le bloc plus fort</u><br />
+						Il existe une force de frottement statique maximal au dela de laquelle le bloc se met &agrave; glisser : \(\vec{f_{s max}}\)<br />
+						Si \(||\vec{F}||\) augmente, \(||\vec{f_s}||\) augmente jusqu'&agrave; \(||\vec{f_{s max}}||\)<br />
+						C'est le moment ou le bloc se met &agrave; glisser<br />
+						<u>* Le bloc glisse et on le l&acirc;che</u><br />
+						Le bloc glisse puis s'arr&ecirc;te :<br />
+						Il est frein&eacute; \(\Rightarrow \vec{a}\) oppos&eacute; &agrave; \(\vec{v}\)<br />
+						Syst&egrave;me : bloc m<br />
+						forces : \(\vec{F_{support}}\) et \(m\vec{g}\)<br />
+						2&egrave;me loi de Newton : \(\vec{F_{support}} + m\vec{g} = m\vec{a}\)<br />
+						Sur \(O_x\) : \(\vec{f_d} = m\vec{a}\)<br />
+						Sur \(O_y\) : \(\vec{N} + m\vec{g} = \vec{0}\)<br />
+						On a : \(\vec{f_d} = m\vec{a}\) et \(\vec{N} = -m\vec{g}\)<br />
+						Ici le bloc glisse<br />
+						\(\Rightarrow \vec{f_d}\) = force de frottement dynamique<br />
+						\(\vec{f_d}\)  est oppos&eacute; &agrave; \(\vec{v}\)<br />
+					</p>
+				</li>
+				<li>Forces de frottements solide : les lois de Coulombs
+					<p>
+						Loi d&eacute;duites de l'exp&eacute;rience :<br />
+						<ul>
+							<li>-Frottement sans glissement
+								<p>
+									\(\vec{F_{support}} = \vec{N} + \vec{f_s}\)<br />
+									\(\rightarrow\) on ne connait pas la direction de \(\vec{f_s}\), ni sa norme, on sait seulement que \(\vec{f_s}\) est parall&egrave;le au support<br />
+									et on a : \(||\vec{f_s}|| \le ||\vec{f_{s max}}|| = \mu_s ||\vec{N}||\)<br />
+									ou \(\mu_s\) est le coefficient de frottement statique d&egrave;s que \(||\vec{f_s}|| = ||\vec{f_{s max}}||\), le corps est sur le point de bouger.<br />
+								</p>
+							</li>
+							<li>- Frottement avec glissement
+								<p>
+									\(\vec{F_{support}} = \vec{N} + \vec{f_d}\)<br />
+									\(\vec{f_d}\) est oppos&eacute;e &agrave; \(\vec{v}\) et \(||\vec{f_d}|| = \mu_d.||\vec{N}||\)<br />
+									où \(\mu_d\) = coefficient de frottement dynamique<br />
+									Remarques : <br />
+									- On connait \(\vec{f_d}\) mais pas \(\vec{f_s}\) directement<br />
+									On obtient \(\vec{f_s}\) par la deuxi&egrave;me loi de Newton (somme des forces &eacute;gales 0)<br />
+									- \(||\vec{f_{s max}}||\) et \(||\vec{f_s}||\) sont proportionnels &agrave; \(||\vec{N}\)<br />
+									\(\Rightarrow\) + l'objet est loud<br />
+									\(\Rightarrow\) + \(||\vec{N}||\) est grand<br />
+									\(\Rightarrow\) + il y a de frottement<br />
+									<br />
+									- coefficients de frottements \(M_s, M_d\)</u><br />
+									- d&eacute;termin&eacute;s exp&eacute;rimentalement<br />
+									- d&eacute;pendant de la nature des corps en contact
+									- Ils sont sans dimensions
+									\(M_s = \frac{||\vec{f_{s max}}||}{||\vec{N}||}\)<br />
+									\(M_s = \frac{||\vec{f_d}||}{||\vec{N}||}\)<br />
+									- Les frottements r&eacute;sultent de l'effet moyenn&eacute; de toutes les int&eacute;ractions entre les mol&eacute;cules du support et celles du corps au niveau microscopique.<br />
+									\(\Rightarrow\) normal que \(\mu_s\) et \(\mu_d\) d&eacute;pendent de la nature des corps<br />
+									\(\Rightarrow\) si le bloc glisse, on brise les liaisons<br />
+									\(\rightarrow\) elles vont s'&eacute;tablir puis se d&eacute;truire<br />
+									\(\rightarrow\) on aura - de liaisons que dans le cas statique.<br />
+									\(\Rightarrow\) en g&eacute;n&eacute;ral \(\mu_s > \mu_d\)<br />
 								</p>
 							</li>
 						</ul>
