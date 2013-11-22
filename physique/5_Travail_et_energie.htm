@@ -21,9 +21,11 @@
 						\(\vec{v} = \frac{d\vec{OM}}{dt} \Leftrightarrow d\vec{OM} = \vec{v}dt\)
 						$$\delta.W_{\vec{F}} = \vec{F}.\vec{v}.dt$$
 						- travail de \(\vec{F}\) sur trajectoire allant de a &agrave; B<br />
-						\(W_{\vec{F}}, A\rightarrow B = \int \delta.W_{\vec{F}}\)<br />
-						\( = \int^B_A \vec{F}.d\vec{OM}\)<br />
-						\( = \int^(t_B)_(t_A) \vec{F}.\vec{v}dt\)<br />
+						$$\begin{align}
+						W_{\vec{F}}, A\rightarrow B &= \int \delta.W_{\vec{F}} \\
+						&= \int^B_A \vec{F}.d\vec{OM} \\
+						&= \int^{t_B}_{t_A} \vec{F}.\vec{v}dt
+						\end{align}$$
 						Unit&eacute; internationale : Joule (J)<br />
 						<br />
 						- Si \(\vec{F}\) s'oppose au mouvement<br />
@@ -39,13 +41,15 @@
 						\(\Rightarrow W est moteur\)<br />
 						<br />
 						- Expression du \(W_{\vec{F}}, A\rightarrow B\) en coordonn&eacute;es cartesiennes<br />
-						\(\vec{F} = F_x.\vec{U_x} + F_y.\vec{U_y} + F_z.\vec{U_z}\)<br />
-						\(\vec{OM}(t) = x(t).\vec{U_x} + y(t).\vec{U_y} + z(t).\vec{U_z}\)<br />
-						\(\vec{OM}(t+dt)\) (ligne au dessus en remplacement x(t) par (x(t)+dx) etc...<br />
-						\(d\vec{OM} = \vec{OM}(t+dt) - \vec{OM}(t)\)<br />
-						\( = dx.\vec{U_x} + dy.\vec{U_y} + dz\vec{U_z}\)<br />
-						\(\delta.W_{\vec{F}} = F_x.dx + F_y.dy + F_z.dz\)<br />
-						où :<br />
+						$$\vec{F} = F_x.\vec{U_x} + F_y.\vec{U_y} + F_z.\vec{U_z}\\$$
+						$$\vec{OM}(t) = x(t).\vec{U_x} + y(t).\vec{U_y} + z(t).\vec{U_z}\\$$
+						$$\vec{OM}(t+dt)\\$$
+						$$\begin{align}
+						d\vec{OM} &= \vec{OM}(t+dt) - \vec{OM}(t) \\
+						&= dx.\vec{U_x} + dy.\vec{U_y} + dz\vec{U_z}
+						\end{align} \\$$
+						$$\delta.W_{\vec{F}} = F_x.dx + F_y.dy + F_z.dz$$
+						o&ugrave; :<br />
 						\(F_x = F_x(x,y,z)\)<br />
 						\(F_y = F_y(x,y,z)\)<br />
 						\(F_z = F_z(x,y,z)\)<br />
@@ -65,11 +69,13 @@
 							</li>
 							<li>si \(\vec{F} = \vec{constante}\)
 								<p>
-									\(W_{\vec{F}}, A\rightarrow B = \int^B_A \vec{F}.d\vec{OM}\)<br />
-									= \(\vec{F}.\int^V_A d\vec{OM}\)<br />
-									= \(\vec{AB}\)<br />
-									\(W_{\vec{F}}, A\rightarrow B = \vec{F}.\vec{AB}\)<br />
-									= \(||\vec{F}||.||\vec{AB}||.cos(\vec{F}, \vec{AB})\)<br />
+									\(\begin{align}
+									W_{\vec{F}}, A\rightarrow B &= \int^B_A \vec{F}.d\vec{OM} \\
+									&= \vec{F}.\int^V_A d\vec{OM} \\
+									&= \vec{AB} \\
+									&= \vec{F}.\vec{AB} \\
+									&= ||\vec{F}||.||\vec{AB}||.cos(\vec{F}, \vec{AB})
+									\end{align}\)<br />
 									\(\Rightarrow W_{\vec{F}}, A\rightarrow B\) ne d&eacute;pend pas de la trajectoire ! Il ne d&eacute;pend que de A et B.<br />
 								</p>
 							</li>
@@ -97,17 +103,25 @@
 			d'apr&egrave;s la 2&egrave;me loi de Newton : \(\sum_i \vec{F_i} = m.\vec{a}\)<br />
 			<br />
 			$$\vec{a} = \frac{d\vec{v}}{dt}$$
-			$$\sum_i P_{\vec{F_i}} = m.\vec{v}.\frac{d\vec{v}}{dt}$$
-			$$= \frac{d}{dt}(\frac{1}{2}.m.\vec{v}^2 + constante)$$
-			$$= \frac{1}{2}.m.\frac{d}{dt}(\vec{v}.\vec{v})$$
-			$$= \frac{1}{2}.m.2.\vec{v}.\frac{d\vec{v}}{dt}$$
+			$$\begin{align}
+			\sum_i P_{\vec{F_i}} &= m.\vec{v}.\frac{d\vec{v}}{dt} \\
+			&= \frac{d}{dt}(\frac{1}{2}.m.\vec{v}^2 + constante) \\
+			&= \frac{1}{2}.m.\frac{d}{dt}(\vec{v}.\vec{v}) \\
+			&= \frac{1}{2}.m.2.\vec{v}.\frac{d\vec{v}}{dt}
+			\end{align}$$
 			$$\Rightarrow \sum_i P_{\vec{F_i}} = \frac{dE_c}{dt}$$
 			\(\rightarrow\) th&eacute;or&egrave;me de l'&eacute;nergie cin&eacute;tique ou th&eacute;or&egrave;me de l'Energie cin&eacute;tique infinit&eacute;simal<br />
-			$$\sum_i W_{\vec{F_i}, A\rightarrow B} = \sum_i \int^B_A \vec{F_i}.\vec{v}.dt$$
-			$$= \int^B_A \sum_i P_{\vec{F_i}}.dt$$
-			car la somme des travaux de toutes les forces = travail de \(\vec{F_{nette}} = \sum_i \vec{F_i}\)<br />
-			\( =\int^B_A \frac{d.E_c}{dt}.dt\)<br />
-			\( = \int^B_A d.E_c = E_c(B) - E_c(A)\)<br />
+			$$\begin{align}
+			\sum_i W_{\vec{F_i}, A\rightarrow B} = \sum_i \int^B_A \vec{F_i}.\vec{v}.dt
+			&= \int^B_A \sum_i P_{\vec{F_i}}.dt
+			\end{align}$$
+			car la somme des travaux de toutes les forces <br />
+			\(\begin{align}
+			&= \text{travail de }\vec{F_{nette}} \\
+			&= \sum_i \vec{F_i} \\
+			&=\int^B_A \frac{d.E_c}{dt}.dt \\
+			&= \int^B_A d.E_c = E_c(B) - E_c(A)
+			\end{align}\)<br />
 			<br />
 			\(\Delta E_c = E_c(B)-E_c(A) = \sum_i W_{\vec{F_i}, A\rightarrow B}\)<br />
 			<br />
