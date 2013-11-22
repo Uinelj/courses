@@ -1,0 +1,134 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<center><h1>Chapitre 4 : Les lois de Newton</h1></center>
+</head>
+<body>
+<ol>
+	<li>Travail d'une force
+		<p>
+			Soit une particule sur une courbe C sous l'action d'une force \(\vec{F}\)
+			<ul>
+				<li>Travail &eacute;l&eacute;mentaire de la force \(\vec{F}\)
+					<p>
+						$$\delta.W_{\vec{F}} = \vec{F}.d\vec{OM}$$
+						\(d\vec{OM} = \vec{OM}(t+dt)-\vec{OM}(t)\)<br />
+						\(\delta.W_{\vec{F}} = ||\vec{F}||.||d\vec{OM}||.cos(\angle{\vec{F},d\vec{OM}})\)<br />
+						<font color=red>ATTENTION</font> il existe d'autres forces appliqu&eacute;es au syst&egrave;me<br />
+						\(\rightarrow\) donc \(\vec{F}\) n'est pas forc&eacute;ment parall&egrave;le &agrave; \(d\vec{OM}\)<br />
+						\(\vec{v} = \frac{d\vec{OM}}{dt} \Leftrightarrow d\vec{OM} = \vec{v}dt\)
+						$$\delta.W_{\vec{F}} = \vec{F}.\vec{v}.dt$$
+						- travail de \(\vec{F}\) sur trajectoire allant de a &agrave; B<br />
+						\(W_{\vec{F}}, A\rightarrow B = \int \delta.W_{\vec{F}}\)<br />
+						\( = \int^B_A \vec{F}.d\vec{OM}\)<br />
+						\( = \int^(t_B)_(t_A) \vec{F}.\vec{v}dt\)<br />
+						Unit&eacute; internationale : Joule (J)<br />
+						<br />
+						- Si \(\vec{F}\) s'oppose au mouvement<br />
+						\(\Rightarrow \vec{F}.\vec{v} < 0\)<br />
+						\(\Rightarrow \delta.W_{\vec{F}} < 0\)<br />
+						\(\Rightarrow W_{\vec{F}}, A\rightarrow B < 0\)<br />
+						Le W est r&eacute;sistant !<br />
+						<br />
+						- Si \(\vec{F}\) est dans le sens du mouvement<br />
+						\(\Rightarrow \vec{F}.\vec{v} > 0 \)<br />
+						\(\Rightarrow \delta.W_{\vec{F}} > 0\)<br />
+						\(\Rightarrow W_{F}, A\rightarrow B > 0\)<br />
+						\(\Rightarrow W est moteur\)<br />
+						<br />
+						- Expression du \(W_{\vec{F}}, A\rightarrow B\) en coordonn&eacute;es cartesiennes<br />
+						\(\vec{F} = F_x.\vec{U_x} + F_y.\vec{U_y} + F_z.\vec{U_z}\)<br />
+						\(\vec{OM}(t) = x(t).\vec{U_x} + y(t).\vec{U_y} + z(t).\vec{U_z}\)<br />
+						\(\vec{OM}(t+dt)\) (ligne au dessus en remplacement x(t) par (x(t)+dx) etc...<br />
+						\(d\vec{OM} = \vec{OM}(t+dt) - \vec{OM}(t)\)<br />
+						\( = dx.\vec{U_x} + dy.\vec{U_y} + dz\vec{U_z}\)<br />
+						\(\delta.W_{\vec{F}} = F_x.dx + F_y.dy + F_z.dz\)<br />
+						où :<br />
+						\(F_x = F_x(x,y,z)\)<br />
+						\(F_y = F_y(x,y,z)\)<br />
+						\(F_z = F_z(x,y,z)\)<br />
+						<br />
+					</p>
+				</li>
+				<li>Quelques forces particuli&egrave;res
+					<p>
+						<ul>
+							<li>Si \(\vec{F}\) est perpendiculaire au d&eacute;placement
+								<p>
+									\(\Rightarrow \vec{F} (perpendiculaire) \vec{v}\)<br />
+									\(\Rightarrow \delta.W_{\vec{F}} = \vec{0}\)<br />
+									\(\Rightarrow W_{\vec{F}}, A\rightarrow B = 0\) pour tout les trajets<br />
+									\(\Rightarrow \vec{F}\) ne travaille pas !
+								</p>
+							</li>
+							<li>si \(\vec{F} = \vec{constante}\)
+								<p>
+									\(W_{\vec{F}}, A\rightarrow B = \int^B_A \vec{F}.d\vec{OM}\)<br />
+									= \(\vec{F}.\int^V_A d\vec{OM}\)<br />
+									= \(\vec{AB}\)<br />
+									\(W_{\vec{F}}, A\rightarrow B = \vec{F}.\vec{AB}\)<br />
+									= \(||\vec{F}||.||\vec{AB}||.cos(\vec{F}, \vec{AB})\)<br />
+									\(\Rightarrow W_{\vec{F}}, A\rightarrow B\) ne d&eacute;pend pas de la trajectoire ! Il ne d&eacute;pend que de A et B.<br />
+								</p>
+							</li>
+							<li>Cas dorce de frottement dynamique
+								<p>
+									\(\vec{f_d}\) selon \(-\vec{v}\)<br />
+									\(\rightarrow \vec{f_d}.\vec{v} = -||\vec{f_d}||.||\vec{v}|| < 0\)<br />
+									\(\Rightarrow W_{\vec{f_d}}\) est toujours r&eacute;sistant !<br />
+									<font color=red>ATENTION</font> ne pas confondre W et effort !
+								</p>
+							</li>
+						</ul>
+					</p>
+				</li>
+				<li>W d&eacute;pend en g&eacute;n&eacute;ral du chemin suivi
+				</li>
+			</ul>
+		</p>
+	</li>
+	<li>Energie cin&eacute;tique et son th&eacute;or&egrave;me
+		<p>
+			def : \(E_c(M) = \frac{1}{2}.m.v^2(M)\)<br />
+			\(\sum_i P_{\vec{F_i}} = \sum_i \vec{F_i}.\vec{v} = m\vec{a}.\vec{v}\)<br />
+			\(\rightarrow\) somme sur toutes les forces appliqu&eacute;es au syst&egrave;me de masse m<br />
+			d'apr&egrave;s la 2&egrave;me loi de Newton : \(\sum_i \vec{F_i} = m.\vec{a}\)<br />
+			<br />
+			$$\vec{a} = \frac{d\vec{v}}{dt}$$
+			$$\sum_i P_{\vec{F_i}} = m.\vec{v}.\frac{d\vec{v}}{dt}$$
+			$$= \frac{d}{dt}(\frac{1}{2}.m.\vec{v}^2 + constante)$$
+			$$= \frac{1}{2}.m.\frac{d}{dt}(\vec{v}.\vec{v})$$
+			$$= \frac{1}{2}.m.2.\vec{v}.\frac{d\vec{v}}{dt}$$
+			$$\Rightarrow \sum_i P_{\vec{F_i}} = \frac{dE_c}{dt}$$
+			\(\rightarrow\) th&eacute;or&egrave;me de l'&eacute;nergie cin&eacute;tique ou th&eacute;or&egrave;me de l'Energie cin&eacute;tique infinit&eacute;simal<br />
+			$$\sum_i W_{\vec{F_i}, A\rightarrow B} = \sum_i \int^B_A \vec{F_i}.\vec{v}.dt$$
+			$$= \int^B_A \sum_i P_{\vec{F_i}}.dt$$
+			car la somme des travaux de toutes les forces = travail de \(\vec{F_{nette}} = \sum_i \vec{F_i}\)<br />
+			\( =\int^B_A \frac{d.E_c}{dt}.dt\)<br />
+			\( = \int^B_A d.E_c = E_c(B) - E_c(A)\)<br />
+			<br />
+			\(\Delta E_c = E_c(B)-E_c(A) = \sum_i W_{\vec{F_i}, A\rightarrow B}\)<br />
+			<br />
+			\(\sum_i P_{\vec{F_i}}\) et \(sum_i W_{\vec{F_i},A\rightarrow B}\)<br />
+			\(\rightarrow\) somme sur toutes les forces agissant sur le syst&egrave;me<br />
+			Il faut toujours pr&eacute;ciser A et B quand on a appliqu&eacute; le th&eacute;or&egrave;me de l'&eacute;nergie cin&eacute;tique<br />
+			En particulier, l'instant, la position et la vitess en a et B<br />
+			<br />
+			Th&eacute;or&egrave;me de l'&eacute;nergie cin&eacute;tique est valable dans les r&eacute;f&eacute;rentiels galil&eacute;ens car on a utilis&eacute; \(\sum_i \vec{F_i} = m.\vec{a}\) valable dans un r&eacute;f&eacute;rentiel galil&eacute;en seulement<br />
+			<br />
+			<u>th&eacute;or&egrave;me de l'&eacute;nergie cin&eacute;tique :</u><br />
+			C'est un th&eacute;or&egrave;me : il se d&eacute;montre &agrave; partir de la &eacute;&egrave;me loi de Newton<br />
+			\(\rightarrow\) th&eacute;or&egrave;me de l'&eacute;nergie cin&eacute;tique = 2&egrave;me loi de N int&eacute;gr&eacute;<br />
+			<br />
+			Si on cherche les forces : 2&egrave;me loi de Newton<br />
+			Si on cherche W ou des vitesses : th&eacute;or&egrave;me de l'&eacute;nergie cin&eacute;tique<br />
+			<br />
+			Le travail est transform&eacute; :<br />
+			En un gain ou une perte d'&eacute;nergie cin&eacute;tique
+		</p>
+	</li>
+</ol>
+</body>
+</html>
