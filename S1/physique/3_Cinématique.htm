@@ -1,0 +1,476 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="/home/bastien/Documents/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<center><h1>Chapitre 3 : Cinématique</h1></center>
+</head>
+<body>
+
+Etude d'un mouvement indépendamment de ses causes : trajectoires, vitesse, accélération.<br />
+<ol>
+<li>Position et déplacement
+<p>
+	<ul>
+	<li> * à 1d
+		<p>a
+			Shéma 1
+			position : x(t) = \(\vec{OM}\)
+			déplacement pendant \(\delta\)t : \(\delta\)x = x(t+\(\delta\)t)-x(t) = \(\vec{MM}\)
+		</p>
+	</li>
+	<li>* à 3d
+		<p>
+			position : \(\vec{r} \text{(t) = } \vec{OM} \)(t) = x(t)\(\vec{U_x}\) + y(t)\(\vec{U_y}\) + z(t)\(\vec{U_z}\)
+			déplacement : \(\delta\vec{OM}=\vec{OM}(t+\delta t) - \vec{om}(t) = \vec{MM'} \)<br />
+			trajectoire : ensemble des points \( M(t) \)<br />
+			Eq. horaires : \(\{x(t),y(t),z(t) \}\) Relie le position au temps. <br />
+		</p>
+	</li>
+	</ul>
+</li>
+<li>Vitesse moyenne
+	<p>
+	<ul>
+	<li>A 1 d :<br />
+		\( v_{moy} = \frac{\delta x}{\delta t} = \frac{x(t+\Delta t) - x(t)}{\delta t}\)<br />
+		Sur trajectoire : A
+		$$ \vec{v_moy} = \frac {\delta\vec{OM}}{\delta t} = \frac{\vec{OM}(t+\delta T) - \vec{OM}(t)}{\delta t} = 
+		\frac{\delta x}{\delta t} \vec{u_x} + \frac{\delta y}{\delta t} \vec{u_y} + \frac{\delta z}{\delta t} \vec{u_z}$$
+		Sur trajectoire à deux dimensions : voir schéma.<br />
+		\( \vec{v_moy} = \frac{MM'}{\delta t} \)
+		Sur équations horaires x(t) et y(t)<br />
+		Attention  : \( ||\vec{v_{moy}} \neq \frac{d}{\Delta t} = \frac{\text{distance parcourue pendant }\Delta t}{\Delta t} \)
+	<br />
+	</li>
+	</ul>
+	</p>
+</li>
+<li>Vitesse instantannée
+	<p>
+		<ul>
+			<li>A une dimension :
+			<p>
+				$$ \begin{align*}
+				v(t) & = \lim_{\Delta t \rightarrow 0} v_moy \\
+				 &= \lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t) - x(t)}{\Delta t} = x'(t)
+				 \end{align*}$$
+				Sur trajectoire : <br />
+				Schémaaaaaaa ! <br />
+				Sur équation horaire :<br />
+				SCHEMAAAAAAAAAAAAAAAAAAAAA ! <br />
+				\( \begin{align*}
+				v(t) &= \lim_{\Delta t \rightarrow 0 } \text{pente de MM' dans le plan }x(t) \\
+				&= \text{pente de la tangente à} x(t) à t \\
+				&= tan\alpha
+				\end{align*}\)<br />
+				Shéma
+			<ul>
+			<li>notations différentielles
+			<p>
+				lorsque \(\Delta t \to 0\) :<br />
+				On a \(\Delta x \to 0\); l'accroissement devient tellement petit qu'on peut confondre la droite MM' avec la courbre \(x(t)\)<br />
+				Shema<br />
+				dx = accroissement infinitésimal de la variable x<br />
+				dt = accroissement infinitésimal de la variable t<br />
+				(accroissement infinitésimal : aussi petit que l'on veut \(\ne\) 0<br />
+				dx : différentielle de la variable x<br />
+				dt : différentielle de la variable t<br />
+				$$ dx = x(t+dt) - x(t) $$
+				\( \begin{align*}
+				v(t) &= tan\alpha = \text{ pente de la tangente à }x(t) \\
+				&= \frac{dx}{dt} \text{ car la droite MM' est confondue avec x(t) entre t et t+dt } \\
+				&= x'(t)
+				\end{align*}\)<br /> 
+				<br />
+				\(\frac{d}{dt}\) = dérivée par rapport à t<br />
+				et donc on a :<br />
+				$$ dx = v(t) dt$$
+				<br />
+				Remarque : lorsque \(\Delta t \to 0\), on a \(\Delta x \to 0\), mais \(\frac{\Delta x}{\Delta t} \not{\to} = 0\)<br />
+				\(\frac{\Delta x}{\Delta t} \to v(t)\)<br />
+				- à 3d :<br />
+				\(\vec{v}(t) = lim_{\Delta t \rightarrow 0} \frac{\Delta x}{\Delta t}\vec{Ux} + lim_{\Delta t \rightarrow 0} \frac{\Delta y}{\Delta t}\vec{Uy} + lim_{\Delta t \rightarrow 0} \frac{\Delta z}{\Delta t}\vec{Uz}\)<br />
+				$$ \vec{v}(t) = \frac{d\vec{OM}}{dt} = \frac{dx}{dt}\vec{u_x} + \frac{dy}{dt}\vec{u_y} + \frac{dz}{dt}\vec{u_z} $$
+				</p>
+				<p>
+				<br />
+				Sur trajectoire :<br />
+				$$ \begin{align*}
+				\vec{v}(t) &= \lim_{\Delta t \rightarrow 0} \frac{\vec{MM'}}{\Delta t} \\
+				&= \lim_{x\to\infty}\frac{1}{x} 
+				\end{align*}$$
+				Remarque : En mécanique, la dérivée par rapport à \(t\) est aussi notée \(x'(t)\) = \(\dot{x}\)<br />
+				Qu'en est-il des dimensions ?<br />
+				\(\left[ \frac{dx}{dt}\right] = \frac{[dx]}{[dt]} = \frac{L}{T} \)<br />
+				Mouvement uniforme : Si et seulement si \(||\vec{v}(t)|| = \text{constante}\)<br />
+				Mouvement rectiligne uniforme : Si et seulement si \(\vec{v}(t) = \vec{\text{constante}} \)
+				
+			</p>
+		
+			</li>
+			</ul>
+			</p>
+			</li>
+		</ul>
+	</p>
+</li>
+<li> Accélération moyenne, instantannée.
+	<p>
+		<ul>
+            <li>A une dimension : <br />
+                $$ a_{\text{moy}} = \frac{v(t+\Delta t) - v(t)}{\Delta t} = \frac{\Delta v}{\Delta t} $$
+                $$ a(t) = lim_{\Delta t \to 0} a_{\text{moy}} $$
+                Notation différentielle : <br />
+                $$ a(t) = \frac{d}{dt} v(t) $$
+                $$ v(t) = \frac{dx(t)}{dt} $$
+                $$ \begin{align*}
+                \mapsto a(t) &= \frac{d}{dt}\left(\frac{d}{dt} x(t) \right) \\
+                &= \frac{d^2x}{dt^2} 
+                \end{align*}$$
+                \(d^2\) : On dérive deux fois.<br />
+                \(dt^2\) : Chaque fois par rapport à t.<br />
+                Au niveau des dimensions :<br />
+                \( [d^2x] = L \text{ MAIS } [dt^2] = [dt]^2 = T^2 \)<br />
+                et donc : <br />
+                $$ [a]= \frac{[d^2x]}{[dt]^2} = \frac{L}{T^2} $$
+                $$ a(t) = \frac{dv}{dt}(t) = \frac{d^2x}{dt^2} = v'(t) = x''(t) = \dot{v} = \ddot{x} $$
+                <br />
+                <br />
+            </li>
+            <li>A 3 dimensions :<br />
+                \( \vec{a_{\text{moy}}} = \frac{\Delta \vec{v}}{\Delta t} \)
+                $$ \begin{align*}
+                \vec{a}(t) = lim_{\Delta t \to 0}\vec{a}_{moy} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{OM}}{dt^2} \\
+                &= \frac{d^2x}{dt^2}\vec{u_x} + \frac{d^2y}{dt^2}\vec{u_y} + \frac{d^2z}{dt^2}\vec{u_z} 
+                \end{align*}$$
+                Mouvement accéléré : si et seulement si \( || \vec{v}(t) \)fonction croissante du temps. <br />
+                <br />
+                $$ \vec{v} . \vec{a} = \vec{v} . \frac{d\vec{v}}{dt} =  \frac{d}{dt}\left(\frac{v^2}{2}\right) $$
+                $$ ff'  = \left(\frac{f^2}{2}\right) $$
+                or \(\vec{v^2} = ||\vec{v}||^2\)<br />
+                DONC : \( v.a = \frac{1}{2}\frac{d}{dt}\left(||\vec{v}||^2 \right)\)<br />
+                Si \(||\vec{v}||\) fonction croissante du temps<br />
+                alors ||v||^2 la même, <br />
+                donc \( \frac{d}{dt}||\vec{v}||^2 > 0. \)<br />
+                Donc \(\vec{a} . \vec{v} > 0\) ! Eh oui Jamie !<br />
+                Mouvement accéléré ssi \(\vec{a}{v}>0\text{, freiné si < 0}\). <br />
+                Mouvement uniformément varié. ssi : \( \vec{a}(t) = \text{cste} \ne 0 \)<br />
+            </li>
+        </ul>
+	</p>
+</li>
+
+<li>THE LAAST. Interprétation géométrique.<br />
+	<p>
+		A une dimension.<br />
+		Shéééééééééééééééééééééééémaaaaaaaa
+		<br />
+		Courbe \(x(t)\) : \(v(t) = \frac{dx}{dt}\) = pente à courbe x(t) à t.<br />
+		Courbe v(t) :<br />
+		Déterminer a partir de la pente à \(x(t)\).<br />
+		v(t) \(>=\) 0<br />
+		v(t) décroissante de \(V_0\) à 0 (= pente de l'asymptote)<br />
+		Shémaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
+		Supposons qu'on obtient cette courbe<br />
+		a(t) = \(\frac{dv}{dt}\)<br />
+		= pente à v(t) à t<br />
+		<br />
+		on a aussi :<br />
+		v(t) = \(\frac{dx}{dt} => dx = v(t) dt\)<br />
+		On intègre : <br />
+		\(\int^{t_2}_{t_1}\,dx = \int^{t_2}_{t_1} v(t)\,dt\)<br />
+		\(\Delta x = x(t_2) = x(t_1) = \pm \text{ aire sous la courbe } v(t)\)<br />
+		Shéma !!!!!!!!!!!!!!!!!!!!!!!!!!!<br />
+		Ici, \(\Delta x > 0\)<br />
+		\(=> \Delta x = + aire\)<br />
+		Si \(v(t) >= 0 \text{ et } t_2 > t_1 => + l'aire\)<br />
+		Si \(v(t) <= 0 \text{ et } t_2 > t_1 => - l'aire\)<br />
+		<br />
+		* courbe a(t)<br />
+		déterminer à partir de pente v(t)<br />
+		\(a(t) <= 0\)<br />
+		a(t) décroissante jusqu'à \(t_i\) puis croissante jusqu'à t qui tend vers l'infini (elle tend vers 0)<br />
+		\(int^{t_2}_{t_1}\,dv = \int{t_2}_{t_1}a(t)\,dt\)<br />
+		$$ \Delta v = v(t_2)-v(t_1)=\pm\text{ aire sous }a(t)$$
+		ici \(\Delta v < 0\)<br />
+		=> \(\Delta v = - aire\)
+	</p>
+</li>
+<li>Quelques mouvements simples
+	<ol>
+		<li>Mouvements rectilignes uniforme
+			<p>
+				\(\vec{v}(t) = \vec{constante} \Leftrightarrow \vec{a} = \vec{0} \Leftrightarrow \vec{v} = \vec{v}_{moy}\)
+			</p>
+		</li>
+		<li>Mouvement uniformément varié
+			<p>
+				\(\vec{a}(t) = \vec{constante} \Leftrightarrow \vec{a} = \vec{a}_{moy}\)<br />
+				<ul>
+					<li>à 1d : \(a(t) = a_0 = constante\)<br />
+						<br />
+						2 méthodes :
+						<ul>
+							<li>
+								<p>
+									$$ a(t) = \frac{dv}{dt} $$
+									$$ v(t) = primitive de a(t) $$
+									$$ a(t) = a_0$$
+									$$ v(t) = a_0 t + C$$
+									$$ \text{or à }t = 0, v(0) = v_0 = a_0 * O + C$$
+									$$ \rightarrow C = v_0$$
+									\(\rightarrow v(t) = a_0 t + v_0\)<br />
+									<br />
+									v(t) = \(\frac{dx}{dt}\)<br />
+									=> x(t) = primitive de v(t)<br />
+									x(t) = a_0 \(\frac{t^2}{2} + V_O t + C'\)<br />
+									or x(0) = X0 = 0+0+C'<br />
+									=> C4 = X0<br />
+									=> x(t) = a_0 \(\frac{t^2}{2} + V_0 t + X_0\)<br />
+								</p>
+							</li>
+							<li>
+								<p>
+									$$ a(t) = a_0 = \frac{dv}{dt} $$
+									$$ => dv = a_0 dt $$
+									$$ \text{on intègre entre t = 0 et t} $$
+									$$ \int^t_t=0 \,dv = a_0 \int^t_t=0 \,dt $$
+									$$ v(t) - v_0 = a_0 (t-0) $$
+									$$ v(t) = a_0 t + v_0 $$
+									$$ v(t) = a_0 t + v_0 = \frac{dx}{dt} $$
+									$$ => dx = (a_0 t + v_0) dt = a_0 t dt + v_0 dt $$
+									<center>on intègre entre t = 0 et t</center>
+									$$ \int^t_t+0 = a_0 \int^t_0 t\,dt + v_0 \int^t_0 \,dt $$
+									$$ x(t)-x0 = a_0((\frac{t^2}{2}-0) + v_0(t-0) $$
+									$$ x(t) = a_0 t^2/2 + v_0 t + x0 $$
+								</p>
+							</li>
+						</ul>
+						ex : chute libre à 1d
+						Shéma 1
+						<ul>
+							<li>chute libre :
+								<p>
+									corps soumis uniquement à son poid \(m\vec{g}\)<br />
+									\(\vec{g} = -g\vec{U}_y\) avec g (environ egale) 9,8 \(m.s^{-1}\)<br />
+									\(m\vec{g} = m\vec{a}\)<br />
+									\(\vec{a}(t) = \vec{g} = \vec{constante}\)<br />
+									ATTENTION \(\vec{a}(t) \not{=} -\vec{g}\)<br />
+									\(\Leftrightarrow \{ax(t) = 0
+													  \{ay(t) = -g\)<br />
+								</p>
+							</li>
+							<li>mouvement rectiligne (1d)
+								<p>
+									ssi \(\vec{V_0} = V_0 \vec{U_y}\)<br />
+									<br />
+									<ul>
+										<li>sur x :
+											<p>
+												$$ ax(t) = 0 = \frac{dvx}{dt} $$
+												$$ \rightarrow Vx(t) = constante = Vx(t=0) = 0 $$
+												$$ = \frac{dx}{dt} $$
+												$$ \rightarrow x(t) = constante = x(t=0) = X_0 $$
+												$$ \rightarrow \text{ On a bien mouvement rectiligne sur }\vec{U_y} $$
+												<br />
+											</p>
+										</li>
+										<li>sur y :
+											<p>
+												$$ ay(t) = -g = \frac{dv_y}{dt} $$
+												$$ V_y(t) = -gt + V_{oy} $$
+												$$ = -gt + v_0 = \frac{dy}{dt} $$
+												$$ y(t) = -g\frac{t^2}{2} + v_0 t + y_0 $$
+												<br />
+											</p>
+										</li>
+										<li>cas part \(V_0 = 0\)
+											<p>
+												Shéma 2<br />
+												<ul>
+													<li>
+														<p>
+															$$ h = y_0 - 0 = y_0 - y(t_f) $$
+															$$ or y(t) = \frac{-gt^2}{2} + 0 + y_0 $$
+															$$ \rightarrow y_0 - y(t) = \frac{gt^2}{2} \alpha t^2 $$
+															$$ \rightarrow h = \frac{gt^2_f}{2} $$
+															<center>mesure de \(t_f\) permet de calculer la hauteur de la chute<br />
+															ex : mesurer la profondeur d'un puits ou la heuteur d'un pont...</center><br />
+														</p>
+													</li>
+													<li>
+														<p>
+															$$ V_y(t) = -gt + 0 $$
+															$$ \text{donc : }||\vec{v}|| = |v_y(t)| car v_2(t) = 0 $$
+															$$ \text{= gt fonction croissante de t }$$
+															$$ \rightarrow \text{ mouvement accéléré }$$
+															$$ \rightarrow \text{ V_y(t_f) est la vitesse max et non = 0 !!!!!!!} $$
+														</p>
+													</li>
+													<li>
+														<p>
+															Galilée avait prédit avec l'existence<br />
+															\(h.\alpha.t^2\)<br />
+															\(||\vec{v}||\) fonction croissante de t<br />
+															v(t) indépendant de la masse<br />
+														</p>
+													</li>
+												</ul>
+											</p>
+										</li>
+										<li>si \(v_0 >= 0\)
+											<p>
+												Shéma 3<br />
+												$$ a(t) = -g $$
+												$$ v_y(t) = -gt + v_0 $$
+												$$ y(t) = -g\frac{t^2}{2} + V_0 t + y_0 $$
+												$$ \text{hauteur max : à }t_s, y(t_s) = y_s $$
+												$$ \text{or à t_s : }v_y(t_s) = 0 $$
+												$$ \text{la balle fait demi tour}$$
+												$$ v_y(t_s) = 0 $$
+												$$ \Leftrightarrow -gt_s + v_0 = 0 $$
+												$$ \Leftrightarrow t_s = \frac{v_0}{g} $$
+												$$ \Leftrightarrow y_s = y(t_s) = -g\frac{t_s}{2} + v_0 t_s + y_0 $$
+												$$ y_s = \frac{-g}{2}.\frac{v^2_0}{g^2} + v_0.\frac{v_0}{g} + y_0 $$
+												$$ \frac{v_0^2}{2g} + y_0 $$
+												$$ v_y(t) = -gt + v_0 $$
+												$$ 0 <= t <= t_s, v_y(t) >= 0 $$
+												$$ \rightarrow ||\frac{v}(t)|| = |v_y(t)| = v_y(t) $$
+												$$ = -gt + v_0\text{ fonction décroissante de t} $$
+												$$ \rightarrow \text{ mouvement ralenti} $$
+												$$ t_s <= t <= t_f, v_y(t) <= 0  $$
+												$$ \rightarrow ||\vec{v}|| n= |v_y(t)| = -v_y(t) $$
+												$$ = gt - v_0 \text{ fonction croissante de t }$$
+												$$ \rightarrow \text{ mouvement accéléré} $$
+												ATTENTION \(\vec{a}(t) = \vec{constante} = \vec{g}\)<br />
+												pendant toute la chute et non a = +g à la monté et a =-g à la descente<br />
+											</p>
+										</li>
+									</ul>
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>* à 3d
+						<p>
+							$$ \vec{a}(t) = \vec{constante} = \vec{a_0} $$
+							$$ \vec{v}(t) = \vec{a_0}.t + \vec{constante} $$
+							$$ \rightarrow \vec{v}(t) = \vec{a_0}.t + \vec{V_0} $$
+							$$ \vec{OM}(t) = \vec{a_0}.\frac{t^2}{2} + \vec{v_0}.t + \vec{OM_0} $$
+							<ul>
+								<li>ex à 2d : Le tir parabolique.<br />
+									<p>
+										Chute libre avec \(\vec{V_0}\) pas // à \(\vec{g}\)<br />
+										\(\vec{a}(t) = \vec{g}\)<br />
+										Shéma 4<br />
+										\(\vec{V_0} = v_{0x}.\vec{U_x} + v_{0y}.\vec{U_y}\)<br />
+										\(\vec{a}(t) = \vec{g}\)<br />
+										\(\rightarrow V_x(t) = \text{ constante } = v_{0x}\) pendant la chute libre<br />
+										\(x(t) = v_{0x}.t + 0\)<br />
+										\(y(t) = -g.\frac{t^2}{2} + v_{0y}.t + 0\)<br />
+										<br />
+										Equation de la trajectoire :<br />
+										\(t = \frac{x}{v_{0x}}\)<br />
+										\(y = -\frac{g}{2}.\frac{x^2}{v_{0x}^2} + \frac{v_{0y}}{v_{0x}}.x\)<br />
+										<br />
+										Sommets :<br />
+										au sommet la pente à la trajectoire est nulle<br />
+										\(\rightarrow \vec{v_s} = v_s.\vec{U_x}\)<br />
+										or \(v_x(t) = v_{0x}\)<br />
+										\(\rightarrow \vec{v_s} = v_{0x}.\vec{U_x}\)<br />
+										Le sommet est sur l'axe de symétrie de la parabole<br />
+										\(\rightarrow x_s = \frac{d}{2}\)<br />
+										\(\rightarrow t_{vol} = 2.t_s\)<br />
+										car \(x(t) = v_{0x}(t)\)<br />
+										\(x_s = v_{0x}.ts\)<br />
+										\(d = V_{0x}.t_{vol} = 2 x_s\)<br />
+										\(= 2.V_{0x}.t_s\)<br />
+										\(\rightarrow t_{vol} = 2.t_s\)<br />
+										\(\rightarrow\) même temps à la montée qu'à la descente<br />
+										<br />
+										Point d'impact F<br />
+										par symétrie de la parbole<br />
+										\(||\vec{v_F}|| = ||\vec{v_0}||\) (ATTENTION \(\vec{v_F} \ne -\vec{v_0}\)<br />
+										angle \(\vec{v_F},\vec{v_0}\) avec Ox et A le même \(\theta_0\)
+									</p>
+								</li>
+							</ul>
+						</p>
+					</li>
+				</ul>
+			</p>
+		</li>
+		<li>Mouvement circulaire uniforme
+			<p>
+				Def : Mouvement d'un corps sur un cercle avec une vitesse angulaire<br />
+				\(w(t) = \frac{d\theta}{dt} = \dot{\theta} = constante\)<br />
+				Shéma 1<br />
+				La position du corps repéré par l'angle \(\theta(t)\) (W en \(rad.s_{-1}\))<br />
+				Supposons à t=0, \(\theta(t=0)=0 \)<br />
+				\(\rightarrow w = \frac{d\theta}{dt} = constante\)<br />
+				\(\rightarrow \theta(t) = wt\)<br />
+				\( \begin{align*}
+				\vec{OM} &= R.cos(\theta(t)).\vec{U_x} + R.sin(\theta(t)).\vec{U_y} \\
+				&= R.cos(wt).\vec{U_x} + R.sin(wt).\vec{U_y}
+				\end{align*}\)<br />
+				\( \begin{align*}
+				\vec{v}(t) &= \frac{d\vec{OM}}{dt} \\
+				&= -R.w.sin(wt).\vec{U_x} + R.cos(wt).\vec{U_y}
+				\end{align*}\)<br />
+				\(a(t) = -R.w².cos(wt).\vec{U_x} - R.w².sin(wt).\vec{U_y}\)<br />
+				<br />
+				\(\vec{v}(t)\) tangent au cercle<br />
+				\(\rightarrow\) il existe un choix de base plus astucieurx = base polaire<br />
+				Shéma 2<br />
+				\(\vec{U_r}\) = vecteur unitaire parallèle à \(\vec{OM}\)<br />
+				\(\vec{U_{\theta}}\) = vecteur unitaire tant que \((\widehat{U_r;U_{\theta}}) = \frac{\pi}{2}\)<br />
+				Shéma 3<br />
+				\(\vec{U_r} = cos(wt).\vec{U_x} + sin(wt).\vec{U_y}\)<br />
+				\(\vec{U_{\theta}} = -sin(wt).\vec{U_x} + cos(wt).\vec{U_y}\)<br />
+				On peut réécrire ces vecteurs dans la base polaire :<br />
+				\(\vec{OM} = R.\vec{U_r}\)<br />
+				\(\vec{v}(t) = R.w.\vec{U_{\theta}}\)<br />
+				\(\vec{a}(t) = -R.w².\vec{U_r}\) centripète<br />
+				<br />
+				\(||\vec{u}|| = R.w = constante\)<br />
+				\(||\vec{a}|| = R.w² = constante = \frac{v²}{R}\)<br />
+				\(||\vec{v}|| = constante\) MAIS \(\vec{v} \ne \vec{constante}\)<br />
+				<br />
+				période de rotation<br />
+				\(T = \frac{2.\pi}{w}\)<br />
+				\(\vec{OM} = R.\vec{U_r}\)<br />
+				\(\rightarrow \vec{v} = \frac{d\vec{OM}}{dt} = R.\frac{d\vec{U_r}}{dt}\)
+			</p>
+		</li>
+		<li>Mouvement relatif
+			<p>
+				<u>Référentiel</u><br />
+				repère + horloge -> R(0,x,y,z;t)<br />
+				le mouvement est relatif s'il dépend de l'observateur.<br />
+				ex : balle lancée à la verticale dans un train à vitesse constante<br />
+				<br />
+				On considère R' en translation rectiligne uniforme dans R<br />
+				Shéma suivant<br />
+				R'(O',x,y,z;t) tel que O' se déplace avec \(\vec{v} = \vec{constante} \text{ dans R}\)
+				<br />
+				<u>passage de R à R'</u><br />
+				\(\vec{OM} = \vec{OO'} + \vec{O'M}\)<br />
+				\(\vec{V_r}(M) = \vec{V} + \vec{V_R'}(M)\)<br />
+				<br />
+				Schéma 1<br />
+				\(\vec{a_R}(M) = \frac{d².\vec{OM}}{dt²}\)<br />
+				\(\vec{a_R'} = \frac{d².\vec{O'M}}{dt²}\)<br />
+				on dérive encore :<br />
+				\(\frac{d.\vec{v_R}(M)}{dt} = \frac{d\vec{v}}{dt} + \frac{d\vec{v_{R'}}(M)}{dt}\)<br />
+				\(\rightarrow \vec{a_R}(M) = \vec{a_{R'}}(M)\)<br />
+			</p>
+		</li>			
+	</ol>
+</li>
+</ul>
+</p>
+</li>
+</ol>
+</body>
+</html>
