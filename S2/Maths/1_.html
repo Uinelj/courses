@@ -1,0 +1,160 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="/home/bastien/Documents/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<center><h1>Chapitre 1 : Structures-Polynômes</h1></center>
+</head>
+<body>
+<ol>
+	<li>Vocabulaire des structures
+		<p>
+			Idée d'économie : Si on a démontré un résultat concernant un ensemble précis, il arrive qu'il s'applique à d'autre ensembles ayant des propriétés analogues<br />
+			<br />
+			On dit qu'un ensemble est muni d'une structure algébrique si on y a définit des opérations ayant des propriétés précises.<br />
+			<ol>
+				<li>Lors de compositions (ou opéréations)
+					<p>
+						Def : E un ensemble<br />
+						Une loi de composition est une application de ExE dans E<br />
+						\(ExE \rightarrow E\)<br />
+						\((a, b) \rightarrow a*b\)<br />
+						<br />
+						Exemples : \(\mathbb{N}, \mathbb{Z}, \mathbb{R}\) etc... avec les lois d'addition et de muiltiplcation mais aussi, la soustraction, la division, l'exponentiation.<br />
+						<br />
+						E un ensemble quelquonque<br />
+						P(E), l'ensemble des parties de E<br />
+						Dans P(E), on définit l'intersection \(\inter\) et l'union \(\Union\)<br />
+						\(P(E)xP(E) \rightarrow P(E)\)<br />
+						\((A, B) \rightarrow A \inter B\)<br />
+						<br />
+						Si \(f:\mathbb{R} \rightarrow \mathbb{R}, g: \mathbb{R} \rightarrow \mathbb{R}\)<br />
+						On peut définir \(f\rond g: \mathbb{R} \rightarrow \mathbb{R}\)<br />
+						<br />
+						Propriété possibiles pour * dans E
+						<ul>
+							<li>Associativité
+								<p>
+									La loi * est associative si \(\forall(a, b, c) \in E^3, (a*b) * c = a*(b*c)\)<br />
+									<br />
+									La plupart des lois sont associatives <b>sauf</b> :
+									<ul>
+										<li>La soustraction
+											<p>
+												\((a-b)-c \ne a-(b-c)\)
+											</p>
+										</li>
+										<li>La division
+											<p>
+												\(frac{\frac{a}{b}}{c} \ne \frac{a}{\frac{b}{c}}\)
+											</p>
+										</li>
+									</ul>
+								</p>
+							</li>
+							<li>Commutativité
+								<p>
+									La loi * est commutative lorsque \(\forall(a, b)\in E^2, a*b = b*a\)<br />
+									En général, \(f\rond g \ne g \rond f\)<br />
+									<br />
+									Le produit de matrice n'est pas en général commuatif
+								</p>
+							</li>
+							<li>Element neutre
+								<p>
+									Il existe un élément neutre e pour la loi * si \(\forall a \in E, a*e = e*a = a\)<br />
+									Pour l'addition des nombres, c'est 0<br />
+									Pour le porduit de nombre, c'est 1<br />
+									Pour la loi rond, c'est l'identité de R<br />
+									\(f\rond id_r = id_r \rond f = f\)
+								</p>
+							</li>
+							<li>Symétrique
+								<p>
+									On dit que \(x\in E\) admet un symétrique pour * s'il existe \(x'\in E\)<br />
+									x*x' = x'*x = e<br />
+									<br />
+								</p>
+							</li>
+						</ul>
+
+						théorème 1 : (E, *) s'il existe un élément neutre e, il est unique<br />
+						Si e est neutre, e*e' = e' = e
+					</p>
+				</li>
+				<li>Structure de groupe
+					<p>
+						def : (E, *) est un groupe si : 
+						<ul>
+							<li>
+								<p>
+									* est associative
+								</p>
+							</li>
+							<li>
+								<p>
+									il existe un élément neutre e
+								</p>
+							</li>
+							<li>
+								<p>
+									Tout élément \(x \in E), admet un symétrique par x
+								</p>
+							</li>
+						</ul>
+					</p>
+				</li>
+				<li>Structures d'anneaux, de corps
+					<p>
+						Def : Un ensemble A \(\ne\) est un anneau si on a défini deux lois de composition notées + et x ayant les propriétés suivantes
+						<ul>
+							<li>
+								<p>
+									(A, +) est un groupe commutatif d'élement netres \(O_a\)
+								</p>
+							</li>
+							<li>
+								<p>
+									(A, x) est associative et possède un élément neutre noté \(1_A\)
+								</p>
+							</li>
+							<li>
+								<p>
+									La loi x doit être distributive sur +<br />
+									\(\forall(a, b, c)\) : ax(b+c) = axb + axc<br />
+								</p>
+							</li>
+							<li>
+								<p>
+									Si de plus tout élément de A différent de \(O_A\) admet un inverse, on dit que A est un corps<br />
+									\(A \ne {O_A}\)
+								</p>
+							</li>
+						</ul>
+
+						Théorème : On suppose que (A, +, x) est un anneau
+						<ul>
+							<li>
+								<p>
+									\(\forall a \in A, O_A*a = a*O_A = O_A\)
+								</p>
+							</li>
+							<li>
+								<p>
+									Si \(O_A = 1_A) alors A = \({O_A}\), c'est l'anneau nul
+								</p>
+							</li>
+							<li>
+								<p>
+									Si \(A \ne {O_A}\) alors \(O_A\) ne peut être inversible
+								</p>
+							</li>
+						</ul>
+					</p>
+				</li>
+			</ul>
+		</p>
+	</li>
+</ol>
+</body>
+</html>
